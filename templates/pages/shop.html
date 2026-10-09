@@ -83,6 +83,7 @@
         </div>
       </div>
     </div>
+    <button class="fl-basket" type="button" data-fl-basket>{{ icon('bag') }}<span>{{ t.shop.basket }}</span><span class="fl-basket-count" data-fl-count></span></button>
     <div class="shop-foot">
       <p>{{ t.shop.fallback }} <a href="{{ site.spreadshop.url }}" target="_blank" rel="noopener">{{ t.shop.fallback_link }} {{ icon('arrow-up-right') }}</a></p>
     </div>
@@ -162,6 +163,74 @@
   })();
 </script>
 <script>
+  // Keep the embedded shop working well inside our page.
+  (function () {
+    var root = document.getElementById("shop");
+    if (!root) return;
+    var header = document.querySelector("[data-header]");
+    var btn = document.querySelector("[data-fl-basket]"), countEl = document.querySelector("[data-fl-count]");
+    var cartEl = null, lastCount = "";
+    var CART = /basket|cart|warenkorb|panier|carrito|carrinho/i;
+
+    // 1) Spreadshop's sticky header must sit BELOW our site menu, not on top of it.
+    //    Big fixed overlays (basket drawer, pop-ups) go above our menu so their buttons stay reachable.
+    function fixLayers() {
+      var h = header ? header.offsetHeight : 72;
+      root.querySelectorAll("*").forEach(function (el) {
+        var cs = getComputedStyle(el);
+        if (cs.position === "sticky") {
+          if (parseFloat(cs.top) < h) el.style.setProperty("top", h + "px", "important");
+        } else if (cs.position === "fixed") {
+          var r = el.getBoundingClientRect();
+          if (r.height > window.innerHeight * 0.5 || r.width > window.innerWidth * 0.6) el.style.setProperty("z-index", "1000", "important");
+        }
+      });
+    }
+
+    // 2) Find Spreadshop's basket button so our big pink one can open it.
+    function findCart() {
+      var best = null;
+      root.querySelectorAll("a, button, [role=button]").forEach(function (el) {
+        if (best) return;
+        var label = (el.getAttribute("aria-label") || "") + " " + (el.getAttribute("title") || "") + " " + (el.getAttribute("href") || "") + " " + (el.className && el.className.baseVal !== undefined ? el.className.baseVal : el.className || "");
+        if (CART.test(label) && !/checkout/i.test(label)) best = el;
+      });
+      if (best !== cartEl) {
+        if (cartEl) cartEl.classList.remove("fl-cart-el");
+        cartEl = best;
+        if (cartEl) cartEl.classList.add("fl-cart-el");
+      }
+      btn.classList.toggle("is-ready", !!cartEl);
+      if (cartEl) {
+        var m = (cartEl.textContent || "").match(/\d+/);
+        var c = m && m[0] !== "0" ? m[0] : "";
+        if (c !== lastCount) {
+          countEl.textContent = c;
+          if (c && lastCount !== "" || (c && lastCount === "" && c !== "")) { btn.classList.remove("bump"); void btn.offsetWidth; btn.classList.add("bump"); }
+          lastCount = c;
+        }
+      }
+    }
+    btn && btn.addEventListener("click", function () { if (cartEl) cartEl.click(); });
+
+    // 3) Checkout opens in a new tab, so visitors keep the site open.
+    document.addEventListener("click", function (e) {
+      var a = e.target.closest && e.target.closest("#shop a[href]");
+      if (!a) return;
+      var href = a.getAttribute("href") || "";
+      if (/checkout/i.test(href) || (/^https?:/i.test(href) && !/myspreadshop|spreadshirtmedia/i.test(href) && /spreadshirt|spreadshop/i.test(href) && /checkout|order|payment/i.test(href))) {
+        e.preventDefault(); e.stopPropagation();
+        window.open(a.href, "_blank", "noopener");
+      }
+    }, true);
+
+    var queued = false;
+    function run() { queued = false; fixLayers(); findCart(); }
+    new MutationObserver(function () { if (!queued) { queued = true; setTimeout(run, 250); } }).observe(root, { childList: true, subtree: true, attributes: true, attributeFilter: ["class", "style"] });
+    window.addEventListener("resize", function () { if (!queued) { queued = true; setTimeout(run, 250); } });
+    run();
+  })();
+
   // Hide Spreadshop's own "Open your own shop" promo bar inside the embedded shop.
   (function () {
     var root = document.getElementById("shop");

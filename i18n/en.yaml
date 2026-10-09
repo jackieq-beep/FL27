@@ -160,6 +160,7 @@ shop:
   all_products: All products
   stickers: Stickers
   back: All categories
+  basket: Basket
   loading: "Loading the shop…"
   fallback: "Shop not loading?"
   fallback_link: "Open it in a new tab"

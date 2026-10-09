@@ -98,7 +98,7 @@ button { font: inherit; color: inherit; background: none; border: 0; cursor: poi
 
 /* ---------- header ---------- */
 .site-header {
-  position: fixed; inset: 0 0 auto; z-index: 50; height: var(--header-h);
+  position: fixed; inset: 0 0 auto; z-index: 900; height: var(--header-h);
   transition: background-color .3s ease, border-color .3s ease, backdrop-filter .3s;
   border-bottom: 1px solid transparent;
 }
@@ -148,7 +148,7 @@ button { font: inherit; color: inherit; background: none; border: 0; cursor: poi
 .lang-list small { font-size: 11px; letter-spacing: .08em; text-transform: uppercase; color: var(--dim); border: 1px solid var(--line); border-radius: 999px; padding: 1px 8px; }
 
 /* mobile menu */
-.mobile-menu { position: fixed; inset: 0; z-index: 60; }
+.mobile-menu { position: fixed; inset: 0; z-index: 950; }
 .mobile-menu[hidden] { display: none; }
 .mobile-backdrop { position: absolute; inset: 0; background: rgba(0, 0, 0, .55); backdrop-filter: blur(3px); animation: fade .25s ease; }
 .mobile-panel {
@@ -560,7 +560,7 @@ button { font: inherit; color: inherit; background: none; border: 0; cursor: poi
 }
 
 /* ---------- shop: category bar ---------- */
-.shop-nav { position: sticky; top: var(--header-h); z-index: 20; margin: 0 0 24px; background: rgba(9, 9, 11, .92); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); border-bottom: 1px solid var(--line); }
+.shop-nav { position: relative; z-index: 20; margin: 0 0 24px; background: rgba(9, 9, 11, .92); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); border-bottom: 1px solid var(--line); }
 .shop-nav-main { display: flex; gap: 4px; flex-wrap: wrap; }
 .sn-item { position: relative; }
 .sn-item > a { display: flex; align-items: center; gap: 6px; padding: 16px 14px; font-weight: 700; font-size: 15px; color: #d4d4d8; white-space: nowrap; border-bottom: 3px solid transparent; transition: color .2s, border-color .2s; }
@@ -603,3 +603,22 @@ button { font: inherit; color: inherit; background: none; border: 0; cursor: poi
 @media (max-width: 640px) {
   .cat-product { width: 42%; }
 }
+
+/* floating basket button (opens the shop's basket) */
+.fl-basket {
+  position: fixed; inset-inline-end: 20px; bottom: 20px; z-index: 880;
+  display: none; align-items: center; gap: 10px; min-height: 56px; padding: 0 22px 0 18px;
+  border-radius: 999px; background: var(--pink); color: #fff; font-weight: 700; font-size: 16px;
+  box-shadow: 0 16px 36px -10px rgba(255, 0, 85, .8), 0 0 0 4px rgba(255, 0, 85, .18);
+  transition: transform .2s ease, box-shadow .2s ease;
+}
+.fl-basket:hover { transform: translateY(-2px) scale(1.03); }
+.fl-basket .icon { width: 22px; height: 22px; }
+.fl-basket-count { min-width: 24px; height: 24px; padding: 0 7px; border-radius: 999px; background: #fff; color: var(--pink); font-size: 13px; display: inline-grid; place-items: center; }
+.fl-basket-count:empty { display: none; }
+.fl-basket.bump { animation: bump .5s ease; }
+@keyframes bump { 30% { transform: scale(1.15); } 60% { transform: scale(.95); } }
+.shop-open .fl-basket.is-ready { display: inline-flex; }
+/* make Spreadshop's own basket icon stand out too */
+#shop .fl-cart-el { color: var(--pink) !important; transform: scale(1.25); }
+@media (max-width: 640px) { .fl-basket { inset-inline-end: 14px; bottom: 14px; min-height: 52px; } }
