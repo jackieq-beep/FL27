@@ -155,7 +155,8 @@ def main():
     english = load_yaml(ROOT / "i18n" / "en.yaml")
     languages = [l for l in site["languages"] if l.get("enabled")]
     pages = [("home", "", "pages/home.html")] + [
-        (n["key"], n["path"], "pages/coming-soon.html") for n in site["nav"] if n["key"] != "home"
+        (n["key"], n["path"], f"pages/{n['key']}.html" if (ROOT / "templates" / "pages" / f"{n['key']}.html").exists() else "pages/coming-soon.html")
+        for n in site["nav"] if n["key"] != "home"
     ]
     sitemap = []
 

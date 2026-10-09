@@ -1,0 +1,49 @@
+{% extends "base.html" %}
+{% block title %}{{ t.shop.meta_title }}{% endblock %}
+{% block description %}{{ t.shop.meta_description }}{% endblock %}
+{% block content %}
+<section class="shop-hero">
+  <div class="shop-hero-bg">{{ img('stadiums.webp', '', '100vw', eager=True) }}</div>
+  <div class="container shop-hero-inner">
+    <div>
+      <p class="kicker">{{ t.shop.kicker }}</p>
+      <h1 class="display display-xl">{{ t.shop.title_1 }} <span class="accent-pink">{{ t.shop.title_2 }}</span></h1>
+      <p class="lead">{{ t.shop.text }}</p>
+    </div>
+    <ul class="shop-perks" role="list">
+      {% for p in t.shop.perks %}
+      <li>{{ icon(p.icon) }}<span>{{ p.text }}</span></li>
+      {% endfor %}
+    </ul>
+  </div>
+</section>
+
+<section class="shop-section">
+  <div class="container">
+    <div id="shop" class="shop-embed">
+      <div class="shop-loading" aria-live="polite">
+        <span class="spinner" aria-hidden="true"></span>
+        <p>{{ t.shop.loading }}</p>
+        <div class="shop-skeleton" aria-hidden="true">
+          {% for i in range(8) %}<div><span></span><i></i><i></i></div>{% endfor %}
+        </div>
+      </div>
+    </div>
+    <div class="shop-foot">
+      <p>{{ t.shop.powered }}</p>
+      <p>{{ t.shop.fallback }} <a href="{{ site.spreadshop.url }}" target="_blank" rel="noopener">{{ t.shop.fallback_link }} {{ icon('arrow-up-right') }}</a></p>
+    </div>
+  </div>
+</section>
+
+<script>
+  var spread_shop_config = {
+    shopName: {{ site.spreadshop.name | tojson }},
+    prefix: {{ site.spreadshop.url | tojson }},
+    baseId: "shop",
+    updateMetadata: false,
+    swipeMenu: true
+  };
+</script>
+<script src="{{ site.spreadshop.url }}/js/shopclient.nocache.js" defer></script>
+{% endblock %}
