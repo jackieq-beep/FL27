@@ -50,12 +50,29 @@
   (function () {
     var root = document.getElementById("shop");
     if (!root) return;
+    var PROMO_TEXT = /open (your|a) (own )?shop|eigenen shop|propre boutique|tu propia tienda|sua própria loja/i;
+    function isPromo(el) {
+      var text = (el.textContent || "").trim();
+      if (PROMO_TEXT.test(text) && text.length < 80) return true;
+      var href = el.getAttribute && el.getAttribute("href");
+      if (!href) return false;
+      try {
+        var u = new URL(href, location.href);
+        return /(^|\.)spreadshop\.[a-z.]+$/.test(u.hostname) && !/myspreadshop/.test(u.hostname) &&
+               !/help|service|legal|privacy|terms|imprint/i.test(u.pathname) && (u.pathname === "/" || u.search.indexOf("affiliate") > -1);
+      } catch (e) { return false; }
+    }
     function hidePromo() {
-      root.querySelectorAll('a[href*="spreadshop.com?affiliateid"], a[href*="spreadshop.com/?affiliateid"]').forEach(function (link) {
-        var el = link;
-        // Walk up through wrappers that hold nothing but this link, so the whole bar disappears.
-        while (el.parentElement && el.parentElement !== root && el.parentElement.children.length === 1) el = el.parentElement;
-        el.classList.add("fl-hidden-promo");
+      root.querySelectorAll("a, button").forEach(function (link) {
+        if (!isPromo(link)) return;
+        var el = link, own = (link.textContent || "").trim();
+        // Walk up through wrappers that contain nothing else (no other text or links), so the whole bar disappears.
+        while (el.parentElement && el.parentElement !== root &&
+               (el.parentElement.textContent || "").trim() === own &&
+               el.parentElement.querySelectorAll("a, button").length <= 1) {
+          el = el.parentElement;
+        }
+        el.style.setProperty("display", "none", "important");
       });
     }
     new MutationObserver(hidePromo).observe(root, { childList: true, subtree: true });
