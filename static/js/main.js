@@ -41,12 +41,41 @@
     window.matchMedia("(min-width: 1081px)").addEventListener("change", (e) => { if (e.matches && !menu.hidden) close(); });
   }
 
-  // Gentle fade-in of sections as they scroll into view
-  if ("IntersectionObserver" in window && !window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
-    const items = document.querySelectorAll(".split-head, .feature-shot, .points, .mode-grid, .clubs-grid, .news-grid, .merch-card, .download-grid, .community-grid");
+  const reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+  // Hero entrance on load
+  requestAnimationFrame(() => document.documentElement.classList.add("is-loaded"));
+
+  // Content slides in as it scrolls into view; grids animate their items one after another
+  if ("IntersectionObserver" in window && !reduce) {
+    const singles = document.querySelectorAll(".split-head, .feature-shot, .clubs-copy, .clubs-media figure, .merch-card, .download-copy, .download-media, .cat-more");
+    const groups = document.querySelectorAll(".points, .mode-grid, .news-grid, .community-grid, .cat-grid, .hero-stats");
     const io = new IntersectionObserver((entries) => {
       entries.forEach((en) => { if (en.isIntersecting) { en.target.classList.add("is-in"); io.unobserve(en.target); } });
-    }, { rootMargin: "0px 0px -8% 0px" });
-    items.forEach((el) => { el.classList.add("reveal"); io.observe(el); });
+    }, { rootMargin: "0px 0px -10% 0px" });
+    singles.forEach((el) => { el.classList.add("reveal"); io.observe(el); });
+    groups.forEach((g) => {
+      [...g.children].forEach((child, i) => { child.classList.add("reveal"); child.style.setProperty("--i", i); io.observe(child); });
+    });
+  }
+
+  // Parallax depth: hero image and big pictures drift slower than the page
+  if (!reduce) {
+    const heroMedia = document.querySelector(".hero-media, .shop-hero-bg, .coming-bg");
+    const drifters = [...document.querySelectorAll(".feature-shot img, .clubs-media img")];
+    let ticking = false;
+    const frame = () => {
+      const y = window.scrollY, vh = window.innerHeight;
+      if (heroMedia && y < vh * 1.2) heroMedia.style.transform = `translate3d(0, ${y * 0.3}px, 0)`;
+      drifters.forEach((img) => {
+        const r = img.getBoundingClientRect();
+        if (r.bottom < -100 || r.top > vh + 100) return;
+        const p = (r.top + r.height / 2 - vh / 2) / vh;   // -0.5 … 0.5 while on screen
+        img.style.transform = `translate3d(0, ${p * -40}px, 0) scale(1.1)`;
+      });
+      ticking = false;
+    };
+    window.addEventListener("scroll", () => { if (!ticking) { ticking = true; requestAnimationFrame(frame); } }, { passive: true });
+    frame();
   }
 })();

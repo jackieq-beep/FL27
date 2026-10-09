@@ -34,6 +34,15 @@ hero:
     - { value: "Online + Offline", label: "play anywhere" }
     - { value: "Official", label: "club licenses" }
 
+ticker:
+  - Free to play
+  - Official Manchester City license
+  - Official AS Monaco license
+  - Online + offline
+  - Live events every week
+  - Leagues & cups
+  - Made for match day
+
 engine:
   kicker: "01 / Next-gen mobile football"
   title_1: Realistic football.

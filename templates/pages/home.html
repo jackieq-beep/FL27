@@ -30,6 +30,16 @@
   </div>
 </section>
 
+<div class="ticker-wrap" aria-hidden="true"><div class="ticker">
+  <div class="ticker-track">
+    {% for _ in range(2) %}
+    <ul role="list">
+      {% for item in t.ticker %}<li>{{ item }}</li>{% endfor %}
+    </ul>
+    {% endfor %}
+  </div>
+</div></div>
+
 <section class="section engine" id="highlights">
   <div class="container">
     <div class="split-head">
