@@ -1,0 +1,79 @@
+{% macro lang_options(cls) %}
+<ul class="{{ cls }}" role="list">
+  {% for l in all_languages %}
+  <li>
+    {% if l.enabled %}
+    <a href="{{ lang_url(l.code, page_path) }}" lang="{{ l.code }}" hreflang="{{ l.code }}"{% if l.code == lang.code %} aria-current="true"{% endif %}>
+      <span>{{ l.label }}</span>{% if l.code == lang.code %}{{ icon('check') }}{% endif %}
+    </a>
+    {% else %}
+    <span class="is-disabled" lang="{{ l.code }}"><span>{{ l.label }}</span><small>{{ t.nav.soon }}</small></span>
+    {% endif %}
+  </li>
+  {% endfor %}
+</ul>
+{% endmacro %}
+
+
+<header class="site-header" data-header>
+  <div class="header-inner">
+    <button class="icon-btn burger" type="button" aria-label="{{ t.nav.menu }}" aria-expanded="false" aria-controls="mobile-menu" data-menu-open>
+      {{ icon('menu') }}
+    </button>
+
+    <a class="brand" href="{{ url() }}" aria-label="{{ site.name }} – {{ t.nav.home }}">
+      <img src="{{ site.base }}/img/logo-mark.png" alt="" width="385" height="371">
+      <span class="brand-word">FL<em>2026</em></span>
+    </a>
+
+    <nav class="main-nav" aria-label="Main">
+      <ul role="list">
+        {% for n in site.nav %}
+        <li><a href="{{ url(n.path) }}"{% if n.key == page_key %} aria-current="page"{% endif %}>{{ t.nav[n.key] }}</a></li>
+        {% endfor %}
+      </ul>
+    </nav>
+
+    <div class="header-actions">
+      <div class="lang-picker" data-dropdown>
+        <button class="lang-btn" type="button" aria-expanded="false" aria-haspopup="true" data-dropdown-toggle>
+          {{ icon('globe') }}<span>{{ lang.short }}</span>{{ icon('chevron-down', 'icon chev') }}
+        </button>
+        <div class="lang-menu" data-dropdown-menu hidden>
+          {{ lang_options('lang-list') }}
+        </div>
+      </div>
+      <a class="btn btn-primary btn-sm header-cta" href="{{ url() }}#download">{{ t.nav.play_now }}</a>
+    </div>
+  </div>
+</header>
+
+<div class="mobile-menu" id="mobile-menu" data-menu hidden>
+  <div class="mobile-panel" role="dialog" aria-modal="true" aria-label="{{ t.nav.menu }}">
+    <div class="mobile-top">
+      <a class="brand" href="{{ url() }}">
+        <img src="{{ site.base }}/img/logo-mark.png" alt="" width="385" height="371">
+        <span class="brand-word">FL<em>2026</em></span>
+      </a>
+      <button class="icon-btn" type="button" aria-label="{{ t.nav.close }}" data-menu-close>{{ icon('close') }}</button>
+    </div>
+    <nav aria-label="Mobile">
+      <ul class="mobile-nav" role="list">
+        {% for n in site.nav %}
+        <li><a href="{{ url(n.path) }}"{% if n.key == page_key %} aria-current="page"{% endif %}>{{ icon(n.icon) }}<span>{{ t.nav[n.key] }}</span></a></li>
+        {% endfor %}
+      </ul>
+    </nav>
+    <details class="mobile-lang">
+      <summary>{{ icon('globe') }}<span>{{ t.nav.language }}</span><b>{{ lang.short }}</b>{{ icon('chevron-down', 'icon chev') }}</summary>
+      {{ lang_options('lang-list') }}
+    </details>
+    <a class="btn btn-primary mobile-cta" href="{{ url() }}#download" data-menu-link>{{ t.nav.play_now }} {{ icon('arrow-right') }}</a>
+    <ul class="social-row" role="list">
+      {% for k in site.social_list %}
+      <li><a href="{{ site.social[k] }}" target="_blank" rel="noopener" aria-label="{{ k | capitalize }}">{{ icon(k) }}</a></li>
+      {% endfor %}
+    </ul>
+  </div>
+  <div class="mobile-backdrop" data-menu-close></div>
+</div>

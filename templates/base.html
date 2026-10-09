@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="{{ lang.code }}" dir="{{ lang.dir }}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% block title %}{{ t.meta.home_title }}{% endblock %}</title>
+  <meta name="description" content="{% block description %}{{ t.meta.home_description }}{% endblock %}">
+  <link rel="canonical" href="{{ canonical }}">
+  {% for l in languages %}
+  <link rel="alternate" hreflang="{{ l.code }}" href="{{ site.site_url }}{{ lang_url(l.code, page_path) }}">
+  {% endfor %}
+  <link rel="alternate" hreflang="x-default" href="{{ site.site_url }}{{ lang_url('en', page_path) }}">
+  <meta name="theme-color" content="#121214">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="{{ site.name }}">
+  <meta property="og:title" content="{{ self.title() }}">
+  <meta property="og:description" content="{{ self.description() }}">
+  <meta property="og:url" content="{{ canonical }}">
+  <meta property="og:image" content="{{ img_url('hero.png', 1440) }}">
+  <meta property="og:locale" content="{{ lang.code | replace('-', '_') }}">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" type="image/png" href="{{ site.base }}/favicon.png">
+  <link rel="apple-touch-icon" href="{{ site.base }}/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Chivo:ital,wght@0,700;0,900;1,900&family=Space+Grotesk:wght@400;500;700&display=swap">
+  <link rel="stylesheet" href="{{ asset('main.css') }}">
+  <script type="application/ld+json">
+  {{ {
+    "@context": "https://schema.org",
+    "@type": "MobileApplication",
+    "name": site.name,
+    "operatingSystem": "iOS, Android",
+    "applicationCategory": "GameApplication",
+    "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"},
+    "publisher": {"@type": "Organization", "name": site.company},
+    "image": img_url('hero.png', 1440),
+    "url": site.site_url ~ url()
+  } | tojson }}
+  </script>
+</head>
+<body class="page-{{ page_key }}">
+  <a class="skip-link" href="#main">{{ t.nav.skip }}</a>
+  {% include "partials/header.html" %}
+  <main id="main">
+    {% block content %}{% endblock %}
+  </main>
+  {% include "partials/footer.html" %}
+  <script src="{{ asset('main.js') }}" defer></script>
+</body>
+</html>

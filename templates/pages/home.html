@@ -1,0 +1,166 @@
+{% extends "base.html" %}
+{% from "partials/macros.html" import store_buttons, section_head %}
+
+{% block content %}
+<section class="hero">
+  <div class="hero-media">
+    {{ img('hero.png', '', '100vw', 'hero-img', eager=True) }}
+  </div>
+  <div class="container hero-inner">
+    <p class="kicker hero-kicker"><span class="live-dot"></span>{{ t.hero.eyebrow }}</p>
+    <h1 class="hero-title">
+      <span>{{ t.hero.title_1 }}</span>
+      <span><em>{{ t.hero.title_2a }}</em> {{ t.hero.title_2b }}</span>
+    </h1>
+    <p class="hero-tagline">{{ t.hero.tagline }}</p>
+    <p class="hero-body">{{ t.hero.body }}</p>
+    <div class="hero-ctas">
+      <a class="btn btn-primary btn-lg" href="#download">{{ t.hero.cta_primary }} {{ icon('arrow-right') }}</a>
+      {% if site.trailer_url %}
+      <a class="play-link" href="{{ site.trailer_url }}" target="_blank" rel="noopener"><span class="play-circle">{{ icon('play') }}</span>{{ t.hero.cta_trailer }}</a>
+      {% else %}
+      <a class="play-link" href="#highlights"><span class="play-circle">{{ icon('play') }}</span>{{ t.hero.cta_explore }}</a>
+      {% endif %}
+    </div>
+    <ul class="hero-stats" role="list">
+      {% for s in t.hero.stats %}
+      <li><b>{{ s.value }}</b><span>{{ s.label }}</span></li>
+      {% endfor %}
+    </ul>
+  </div>
+</section>
+
+<section class="section engine" id="highlights">
+  <div class="container">
+    <div class="split-head">
+      <div>{{ section_head(t.engine.kicker, t.engine.title_1, t.engine.title_2) }}</div>
+      <p class="lead">{{ t.engine.intro }}</p>
+    </div>
+    <figure class="feature-shot">
+      {{ img('goal-attempt.webp', 'A shot on goal in Football League 2026', '(min-width: 1240px) 1200px, 100vw') }}
+      <figcaption><span class="tag-dot"></span>{{ t.engine.caption }}</figcaption>
+    </figure>
+    <ol class="points" role="list">
+      {% for p in t.engine.points %}
+      <li>
+        <span class="point-num">{{ p.num }} /</span>
+        <h3>{{ p.title }}</h3>
+        <p>{{ p.text }}</p>
+      </li>
+      {% endfor %}
+    </ol>
+  </div>
+</section>
+
+<section class="section modes">
+  <div class="container">
+    <div class="split-head">
+      <div>{{ section_head(t.modes.kicker, t.modes.title_1, t.modes.title_2, 'green') }}</div>
+      <a class="text-link" href="{{ url('game/') }}">{{ t.nav.game }} {{ icon('arrow-right') }}</a>
+    </div>
+    <ul class="mode-grid" role="list">
+      {% for m in t.modes['items'] %}
+      <li class="mode-card">
+        {{ img(m.img, m.title, '(min-width: 1000px) 300px, (min-width: 640px) 50vw, 100vw') }}
+        <div class="mode-body">
+          <h3>{{ m.title }}</h3>
+          <p>{{ m.text }}</p>
+        </div>
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+</section>
+
+<section class="section clubs">
+  <div class="container clubs-grid">
+    <div class="clubs-copy">
+      {{ section_head(t.clubs.kicker, t.clubs.title_1, t.clubs.title_2, 'cyan') }}
+      <p class="lead">{{ t.clubs.text }}</p>
+      <a class="btn btn-outline" href="{{ url('news/') }}">{{ t.clubs.cta }} {{ icon('arrow-right') }}</a>
+    </div>
+    <div class="clubs-media">
+      <figure>{{ img('license-mancity.jpg', 'Manchester City players in Football League 2026', '(min-width: 1000px) 560px, 100vw') }}<figcaption>Manchester City</figcaption></figure>
+      <figure>{{ img('license-monaco.jpg', 'AS Monaco players in Football League 2026', '(min-width: 1000px) 560px, 100vw') }}<figcaption>AS Monaco</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<section class="section updates">
+  <div class="container">
+    <div class="split-head">
+      <div>
+        <p class="kicker">{{ t.updates.kicker }}</p>
+        <h2 class="display">{{ t.updates.title }}</h2>
+      </div>
+      <a class="text-link" href="{{ url('news/') }}">{{ t.updates.all }} {{ icon('arrow-right') }}</a>
+    </div>
+    <ul class="news-grid" role="list">
+      {% for post in news[:3] %}
+      <li class="news-card">
+        <a href="{{ url('news/') }}">
+          <div class="news-img">{{ img(post.image, '', '(min-width: 1000px) 400px, 100vw') }}</div>
+          <div class="news-body">
+            <span class="tag tag-{{ post.tag | lower }}">{{ post.tag }}</span>
+            <h3>{{ post.title }}</h3>
+            <p>{{ post.summary }}</p>
+            <span class="more">{{ t.updates.read }} {{ icon('arrow-up-right') }}</span>
+          </div>
+        </a>
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+</section>
+
+<section class="section merch">
+  <div class="container merch-card">
+    <div class="merch-copy">
+      {{ section_head(t.merch.kicker, t.merch.title_1, t.merch.title_2) }}
+      <p class="lead">{{ t.merch.text }}</p>
+      {% if site.shop_url %}
+      <a class="btn btn-primary" href="{{ site.shop_url }}" target="_blank" rel="noopener">{{ t.merch.cta }} {{ icon('arrow-up-right') }}</a>
+      {% else %}
+      <a class="btn btn-primary" href="{{ url('shop/') }}">{{ t.merch.cta }} {{ icon('arrow-right') }}</a>
+      {% endif %}
+    </div>
+    <div class="merch-art" aria-hidden="true">
+      <span class="merch-word">FL2026</span>
+      <img src="{{ site.base }}/img/logo-mark.png" alt="" width="385" height="371" loading="lazy">
+    </div>
+  </div>
+</section>
+
+<section class="section download" id="download">
+  <div class="container download-grid">
+    <div class="download-copy">
+      {{ section_head(t.download.kicker, t.download.title_1, t.download.title_2, 'green') }}
+      <p class="lead">{{ t.download.text }}</p>
+      {{ store_buttons(t, site, icon) }}
+    </div>
+    <div class="download-media">
+      {{ img('cups.jpg', 'Cup selection screen in Football League 2026', '(min-width: 1000px) 640px, 100vw') }}
+    </div>
+  </div>
+</section>
+
+<section class="section community">
+  <div class="container">
+    <div class="split-head">
+      <h2 class="display">{{ t.community.title }}</h2>
+      <p class="lead">{{ t.community.text }}</p>
+    </div>
+    <ul class="community-grid" role="list">
+      {% for k in site.social_list %}
+      <li>
+        <a class="community-card cc-{{ k }}" href="{{ site.social[k] }}" target="_blank" rel="noopener">
+          {{ icon(k, 'icon cc-icon') }}
+          <span><b>{{ k | capitalize if k != 'x' else 'X' }}</b><small>{{ t.community[k] }}</small></span>
+          {{ icon('arrow-up-right', 'icon cc-arrow') }}
+        </a>
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+</section>
+{% endblock %}

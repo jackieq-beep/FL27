@@ -1,0 +1,42 @@
+# Football League 2026 – website
+
+The official website for Football League 2026. It is built with a small Python script and published to GitHub Pages automatically whenever `main` changes.
+
+## Where things live
+
+| What | Where |
+| --- | --- |
+| Store links, social links, shop URL, trailer, languages, menu | `site.yaml` |
+| All English text on the site | `i18n/en.yaml` (other languages: `i18n/<code>.yaml`) |
+| News posts | `content/news/*.md` (one file per post) |
+| Images | `static/img/` (resized and converted to WebP automatically) |
+| Page layouts | `templates/` |
+| Styles and scripts | `static/css/main.css`, `static/js/main.js` |
+
+## Add a news post
+
+Create a new file in `content/news/`, for example `summer-cup.md`:
+
+```markdown
+---
+title: Summer Cup is live
+tag: Event          # Official, Event or Feature
+image: live-event.webp   # a file in static/img/
+summary: One or two sentences shown on the card.
+date: 2026-10-15
+---
+
+The full post text goes here.
+```
+
+Commit it to `main` and the site updates in a minute or two.
+
+## Preview locally
+
+```bash
+pip install -r requirements.txt
+python build.py --base ""
+python -m http.server 8000 -d dist
+```
+
+Then open http://localhost:8000.

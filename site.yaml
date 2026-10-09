@@ -1,0 +1,49 @@
+# Site-wide settings. Edit these values and the site rebuilds automatically.
+
+name: Football League 2026
+short_name: FL2026
+company: Mobile Soccer
+contact_email: partnerships@mobilesoccer.net
+
+# Where the site lives. Leave base_path empty once a custom domain is set up.
+site_url: https://jackieq-beep.github.io
+base_path: /FL27
+
+stores:
+  google_play: https://play.google.com/store/apps/details?id=com.football.soccer.league
+  app_store: https://apps.apple.com/us/app/football-league-2025/id6447961802
+
+# Your Spreadshop address (added in step 4). Until then the Shop links go to the Shop page.
+shop_url: ""
+
+# A YouTube link to the trailer. When set, a "Watch Trailer" button appears on the home page.
+trailer_url: ""
+
+# Only filled-in links are shown.
+social:
+  discord: https://discord.gg/m825ft9xGn
+  instagram: https://www.instagram.com/fl2024official/
+  facebook: https://www.facebook.com/playfootballleague/
+  youtube: ""
+  x: ""
+  tiktok: ""
+
+# Languages. Set enabled: true once a language's file in i18n/ is translated.
+languages:
+  - { code: en, label: English, short: EN, dir: ltr, enabled: true }
+  - { code: zh-cn, label: 简体中文, short: 中文, dir: ltr, enabled: false }
+  - { code: es, label: Español, short: ES, dir: ltr, enabled: false }
+  - { code: pt, label: Português, short: PT, dir: ltr, enabled: false }
+  - { code: id, label: Bahasa Indonesia, short: ID, dir: ltr, enabled: false }
+  - { code: fr, label: Français, short: FR, dir: ltr, enabled: false }
+  - { code: ar, label: العربية, short: AR, dir: rtl, enabled: false }
+  - { code: ja, label: 日本語, short: JA, dir: ltr, enabled: false }
+
+# Main menu: page key, icon, and path.
+nav:
+  - { key: home, icon: home, path: "" }
+  - { key: game, icon: gamepad, path: game/ }
+  - { key: news, icon: news, path: news/ }
+  - { key: shop, icon: bag, path: shop/ }
+  - { key: media, icon: megaphone, path: media/ }
+  - { key: contact, icon: mail, path: contact/ }

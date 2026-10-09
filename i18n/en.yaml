@@ -1,0 +1,113 @@
+# English text for the website. Other languages copy this file and translate the values.
+
+meta:
+  home_title: "Football League 2026 – Free Mobile Football Game for iOS & Android"
+  home_description: "Build your ultimate squad, play official clubs like Manchester City and AS Monaco, and take on rivals worldwide. Football League 2026 is free to play on iOS and Android."
+
+nav:
+  home: Home
+  game: Game
+  news: News
+  shop: Shop
+  media: Media
+  contact: Contact
+  play_now: Play Now
+  menu: Menu
+  close: Close menu
+  language: Language
+  soon: Soon
+  skip: Skip to content
+
+hero:
+  eyebrow: "New season · Out now"
+  title_1: Football
+  title_2a: Lives
+  title_2b: Here
+  tagline: A global game for everyone.
+  body: "Create your ultimate squad, take on global rivals, and dive into the full match-day rush of Football League 2026."
+  cta_primary: Play Now
+  cta_trailer: Watch Trailer
+  cta_explore: See the game
+  stats:
+    - { value: "Millions", label: "of players" }
+    - { value: "Free", label: "to play" }
+    - { value: "Online + Offline", label: "play anywhere" }
+    - { value: "Official", label: "club licenses" }
+
+engine:
+  kicker: "01 / Next-gen mobile football"
+  title_1: Realistic football.
+  title_2: Tactical depth.
+  intro: "Smart AI, responsive controls and fluid animations, with stylized visuals built for players all over the world."
+  caption: "In-game capture · Football League 2026"
+  points:
+    - { num: "01", title: "Dynamic Match Engine", text: "Smart AI, responsive controls and fluid animations power every match, from the first touch to the final whistle." }
+    - { num: "02", title: "Tactics Style", text: "New tactical styles with their own playing instructions, so your team plays the way you think." }
+    - { num: "03", title: "Improved Set Pieces", text: "More challenging, more realistic free kicks and rebalanced penalties. Every dead ball is a chance." }
+
+modes:
+  kicker: "02 / Game highlights"
+  title_1: Every match.
+  title_2: Every stage.
+  items:
+    - { img: leagues-cups.png, title: "Leagues & Cups", text: "Global-inspired leagues and knockout cups, from title races to final nights." }
+    - { img: live-event.webp, title: "Live Events", text: "Fresh challenges arrive regularly. Earn coins and unlock exclusive rewards." }
+    - { img: set-pieces.jpg, title: "Set Pieces", text: "Bend free kicks, beat the keeper, and win it from the spot." }
+    - { img: stadiums.webp, title: "Stadiums", text: "Packed stands and match-day atmosphere in every ground." }
+
+clubs:
+  kicker: "03 / Official licenses"
+  title_1: Official clubs.
+  title_2: True colors.
+  text: "Official Manchester City and AS Monaco licenses are in Football League 2026. Authentic kits, elite football, and the whole season in true club colors."
+  cta: Read the announcement
+
+updates:
+  kicker: "04 / Latest updates"
+  title: What's new
+  all: All news
+  read: Read more
+
+merch:
+  kicker: "05 / Merchandise"
+  title_1: Wear
+  title_2: the game.
+  text: "Official Football League 2026 shirts, hoodies and accessories. Designed for the stands, the street and the pitch."
+  cta: Visit the shop
+
+download:
+  kicker: "Free on iOS & Android"
+  title_1: Join millions
+  title_2: on the pitch.
+  text: "Download Football League 2026 for free and make your mark this season."
+  gp_small: Get it on
+  gp_big: Google Play
+  as_small: Download on the
+  as_big: App Store
+
+community:
+  title: Join the community
+  text: "Match-day talk, event news and giveaways. Follow us wherever you play."
+  discord: "Chat with players"
+  instagram: "Clips & highlights"
+  facebook: "News & events"
+  youtube: "Trailers & guides"
+  x: "Live updates"
+  tiktok: "Short clips"
+
+footer:
+  about: "Football League 2026 is a free mobile football game for iOS and Android, made by Mobile Soccer for players everywhere."
+  col_game: Game
+  col_company: Company
+  col_legal: Legal
+  privacy: Privacy Policy
+  terms: Terms of Service
+  cookies: Cookie Settings
+  contact: Contact us
+  rights: "All rights reserved."
+  disclaimer: "Club names, logos and kits are trademarks of their respective owners and are used under license."
+
+coming:
+  kicker: "Coming soon"
+  text: "This page is being built in the next step. Check back soon."
+  back: Back to home

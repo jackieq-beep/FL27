@@ -1,0 +1,17 @@
+{% macro store_buttons(t, site, icon) %}
+<div class="store-buttons">
+  <a class="store-btn" href="{{ site.stores.google_play }}" target="_blank" rel="noopener">
+    {{ icon('googleplay', 'store-icon') }}
+    <span><small>{{ t.download.gp_small }}</small><b>{{ t.download.gp_big }}</b></span>
+  </a>
+  <a class="store-btn" href="{{ site.stores.app_store }}" target="_blank" rel="noopener">
+    {{ icon('apple', 'store-icon') }}
+    <span><small>{{ t.download.as_small }}</small><b>{{ t.download.as_big }}</b></span>
+  </a>
+</div>
+{% endmacro %}
+
+{% macro section_head(kicker, title_1, title_2, accent='pink') %}
+<p class="kicker">{{ kicker }}</p>
+<h2 class="display">{{ title_1 }}<br><span class="accent-{{ accent }}">{{ title_2 }}</span></h2>
+{% endmacro %}
