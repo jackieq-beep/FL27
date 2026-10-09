@@ -226,15 +226,28 @@
     btn && btn.addEventListener("click", function () { if (cartEl) cartEl.click(); });
 
     // 3) Checkout opens in a new tab, so visitors keep the site open.
+    var CHECKOUT = /checkout/i;
+    var isCheckout = function (u) {
+      try { var x = new URL(u, location.href); return CHECKOUT.test(x.hostname + x.pathname) && x.href.split("#")[0] !== location.href.split("#")[0]; } catch (e) { return false; }
+    };
+    var openCheckout = function (u) { var w = window.open(u, "_blank"); if (w) { try { w.opener = null; } catch (e) {} return true; } return false; };
+    //   a) plain links
     document.addEventListener("click", function (e) {
       var a = e.target.closest && e.target.closest("#shop a[href]");
-      if (!a) return;
-      var href = a.getAttribute("href") || "";
-      if (/checkout/i.test(href) || (/^https?:/i.test(href) && !/myspreadshop|spreadshirtmedia/i.test(href) && /spreadshirt|spreadshop/i.test(href) && /checkout|order|payment/i.test(href))) {
-        e.preventDefault(); e.stopPropagation();
-        window.open(a.href, "_blank", "noopener");
-      }
+      if (a && isCheckout(a.href)) { e.preventDefault(); e.stopPropagation(); if (!openCheckout(a.href)) location.href = a.href; }
     }, true);
+    //   b) forms posted to checkout
+    document.addEventListener("submit", function (e) {
+      var f = e.target; if (f && f.closest && f.closest("#shop") && isCheckout(f.action)) f.target = "_blank";
+    }, true);
+    //   c) buttons that send the page to checkout with script (most common) — caught via the Navigation API
+    if (window.navigation && navigation.addEventListener) {
+      navigation.addEventListener("navigate", function (e) {
+        if (!e.cancelable || e.hashChange || e.downloadRequest) return;
+        var url = e.destination && e.destination.url;
+        if (url && isCheckout(url) && openCheckout(url)) e.preventDefault();
+      });
+    }
 
     var queued = false;
     function run() { queued = false; fixLayers(); findCart(); }
