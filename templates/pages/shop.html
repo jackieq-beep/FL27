@@ -45,4 +45,21 @@
   };
 </script>
 <script src="{{ site.spreadshop.url }}/js/shopclient.nocache.js" defer></script>
+<script>
+  // Hide Spreadshop's own "Open your own shop" promo bar inside the embedded shop.
+  (function () {
+    var root = document.getElementById("shop");
+    if (!root) return;
+    function hidePromo() {
+      root.querySelectorAll('a[href*="spreadshop.com?affiliateid"], a[href*="spreadshop.com/?affiliateid"]').forEach(function (link) {
+        var el = link;
+        // Walk up through wrappers that hold nothing but this link, so the whole bar disappears.
+        while (el.parentElement && el.parentElement !== root && el.parentElement.children.length === 1) el = el.parentElement;
+        el.classList.add("fl-hidden-promo");
+      });
+    }
+    new MutationObserver(hidePromo).observe(root, { childList: true, subtree: true });
+    hidePromo();
+  })();
+</script>
 {% endblock %}

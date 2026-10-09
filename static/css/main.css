@@ -459,3 +459,5 @@ button { font: inherit; color: inherit; background: none; border: 0; cursor: poi
 .shop-foot a:hover { color: var(--pink); }
 .shop-foot .icon { width: 15px; height: 15px; }
 @media (max-width: 900px) { .shop-skeleton { grid-template-columns: repeat(2, 1fr); } }
+/* Hide Spreadshop's own "open a shop" promo links inside the embedded shop */
+#shop a[href*="spreadshop.com?affiliateid"], #shop a[href*="spreadshop.com/?affiliateid"], #shop .fl-hidden-promo { display: none !important; }
