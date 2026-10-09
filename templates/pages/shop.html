@@ -25,8 +25,15 @@
       {% for c in site.shop_categories %}
       <li>
         <a class="cat-tile cat-{{ c.key }}" href="#!/{{ c.slug }}" data-shop-route="!/{{ c.slug }}">
-          {% if c.image %}{{ img(c.image, '', '(min-width: 900px) 620px, 100vw', 'cat-img', style='object-position:' ~ c.position) }}
-          {% else %}<span class="cat-art" aria-hidden="true"><img src="{{ site.base }}/img/logo-mark.png" alt="" width="385" height="371" loading="lazy"></span>{% endif %}
+          <span class="cat-products" aria-hidden="true">
+            {% for pr in c.products %}
+            {% set q = 'backgroundColor=' ~ site.shop_photo_bg ~ ('&appearanceId=' ~ pr.color if pr.color else '') %}
+            <img class="cat-product" src="{{ pr.img }}?width=700&height=700&{{ q }}"
+                 srcset="{{ pr.img }}?width=400&height=400&{{ q }} 400w, {{ pr.img }}?width=700&height=700&{{ q }} 700w, {{ pr.img }}?width=1000&height=1000&{{ q }} 1000w"
+                 sizes="(min-width: 900px) 320px, 50vw" width="700" height="700" alt="" loading="lazy" decoding="async"
+                 onerror="this.style.visibility='hidden'">
+            {% endfor %}
+          </span>
           <span class="cat-label">{{ t.shop.categories[c.key] }}</span>
         </a>
       </li>
