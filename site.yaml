@@ -26,23 +26,23 @@ shop_categories:
   - key: men
     slug: men
     products:
-      - { img: "https://image.spreadshirtmedia.com/image-server/v1/products/T111A1PA4247PT17X70Y22D1058835926W20844H20844/views/1/Football%20League%20Crest.png", color: 1 }
-      - { img: "https://image.spreadshirtmedia.com/image-server/v1/products/T23A4PA3989PT17X47Y43D1058835926W21791H21791/views/1/Football%20League%20Crest.png", color: 4 }
+      - { img: "https://image.spreadshirtmedia.com/image-server/v1/products/T210A1PA4301PT17X41Y37D1058835926W25000H25000/views/1/Football%20League%20Crest.png" }   # Men's T-Shirt
+      - { img: "https://image.spreadshirtmedia.com/image-server/v1/products/T111A1PA4247PT17X70Y22D1058835926W20844H20844/views/1/Football%20League%20Crest.png" }   # Men's Hoodie
   - key: women
     slug: women
     products:
-      - { img: "https://image.spreadshirtmedia.com/image-server/v1/products/T405A1PA4081PT17X57Y21D1058835926W19538H19538/views/1/Football%20League%20Crest.png", color: 1 }
-      - { img: "https://image.spreadshirtmedia.com/image-server/v1/products/T491A1123PA4308PT17X40Y37D1058835926W25000H25000/views/1/Football%20League%20Crest.png", color: 1123 }
+      - { img: "https://image.spreadshirtmedia.com/image-server/v1/products/T405A1PA4081PT17X57Y21D1058835926W19538H19538/views/1/Football%20League%20Crest.png" }   # Women's Hoodie
+      - { img: "https://image.spreadshirtmedia.com/image-server/v1/products/T491A1123PA4308PT17X40Y37D1058835926W25000H25000/views/1/Football%20League%20Crest.png", color: 1123 }   # Tie Dye T-Shirt
   - key: kids
     slug: "kids+%26+babies"
     products:
-      - { img: "https://image.spreadshirtmedia.com/image-server/v1/products/T654A1249PA4215PT17X69Y12D1058835926W11192H11192/views/1/Football%20League%20Crest.png", color: 1249 }
-      - { img: "https://image.spreadshirtmedia.com/image-server/v1/products/T499A236PA4452PT17X69Y12D1058835926W10865H10865/views/1/Football%20League%20Crest.png", color: 236 }
+      - { img: "https://image.spreadshirtmedia.com/image-server/v1/products/T48A1PA4545PT17X37Y31D1058835926W17341H17341/views/1/Football%20League%20Crest.png" }    # Kid's T-Shirt
+      - { img: "https://image.spreadshirtmedia.com/image-server/v1/products/T877A1PA5115PT17X17Y21D1058835926W8000H8000/views/1/Football%20League%20Crest.png" }     # Toddler Long Sleeve
   - key: accessories
     slug: accessories
     products:
-      - { img: "https://image.spreadshirtmedia.com/image-server/v1/products/T842A1PA3667PT17X38Y31D1058835926W17574H17574/views/1/Football%20League%20Crest.png" }
-      - { img: "https://image.spreadshirtmedia.com/image-server/v1/products/T1186A1PA3066PT17X29Y28D1058835926W13429H13429/views/1/Football%20League%20Crest.png" }
+      - { img: "https://image.spreadshirtmedia.com/image-server/v1/products/T842A1PA3667PT17X38Y31D1058835926W17574H17574/views/1/Football%20League%20Crest.png" }   # Tote Bag
+      - { img: "https://image.spreadshirtmedia.com/image-server/v1/products/T4554A1PA5179PT10X10Y5D1058835926W4895H4895/views/3/Football%20League%20Crest.png" }     # Tennis Socks
 
 # Background colour painted behind the product photos (no #). Matches the tiles.
 shop_photo_bg: "16161a"
