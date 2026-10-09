@@ -718,3 +718,80 @@ button { font: inherit; color: inherit; background: none; border: 0; cursor: poi
   .cookie-actions .btn { flex: 1 1 auto; }
 }
 .cookie-actions [hidden], .cookie-banner[hidden] { display: none !important; }
+
+/* ---------- shared page hero ---------- */
+.page-hero { position: relative; overflow: hidden; isolation: isolate; padding: calc(var(--header-h) + clamp(56px, 8vw, 110px)) 0 clamp(36px, 5vw, 64px); border-bottom: 1px solid var(--line); }
+.page-hero-bg { position: absolute; inset: 0; z-index: -1; }
+.page-hero-bg img { width: 100%; height: 100%; object-fit: cover; opacity: .3; }
+.page-hero-bg::after { content: ""; position: absolute; inset: 0; background: radial-gradient(90% 120% at 100% 0%, rgba(255, 0, 85, .25), transparent 60%), linear-gradient(180deg, rgba(9, 9, 11, .5), var(--bg)); }
+.page-hero .lead { margin-top: 18px; }
+
+/* ---------- news ---------- */
+.news-page { padding-block: clamp(28px, 4vw, 48px) var(--section-y); }
+.news-tabs { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 28px; }
+.news-tabs a { display: inline-flex; align-items: center; gap: 8px; padding: 10px 16px; border: 1px solid var(--line); font-weight: 700; font-size: 15px; color: #d4d4d8; transition: border-color .2s, color .2s, background-color .2s; }
+.news-tabs a span { font-size: 12px; font-weight: 500; color: var(--dim); }
+.news-tabs a:hover { border-color: #fff; color: #fff; }
+.news-tabs a[aria-current] { background: var(--pink); border-color: var(--pink); color: #fff; }
+.news-tabs a[aria-current] span { color: rgba(255, 255, 255, .8); }
+.news-list { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 20px; }
+.news-list > li[hidden] { display: none; }
+.news-card-big { grid-column: 1 / -1; }
+.news-card-big a { display: grid; grid-template-columns: minmax(0, 1.4fr) minmax(0, 1fr); }
+.news-card-big .news-img img { height: 100%; aspect-ratio: auto; min-height: 320px; }
+.news-card-big .news-body { padding: clamp(24px, 3vw, 40px); justify-content: center; }
+.news-card-big h3 { font-family: var(--font-display); font-weight: 900; font-size: clamp(24px, 2.6vw, 34px); line-height: 1.1; }
+.news-card-big p { font-size: 16px; }
+.news-meta { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; font-size: 13px; color: var(--muted); }
+.news-body .more .icon { width: 16px; height: 16px; }
+.news-empty { color: var(--muted); padding: 40px 0; }
+.tag-announcements { color: var(--pink); background: rgba(255, 0, 85, .12); }
+.tag-updates { color: var(--cyan); background: rgba(109, 255, 253, .1); }
+.tag-events { color: var(--green); background: rgba(0, 255, 102, .1); }
+.tag-licenses { color: #ffd166; background: rgba(255, 209, 102, .12); }
+@media (max-width: 900px) {
+  .news-list { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .news-card-big a { grid-template-columns: minmax(0, 1fr); }
+  .news-card-big .news-img img { min-height: 0; aspect-ratio: 16 / 9; }
+}
+@media (max-width: 640px) { .news-list { grid-template-columns: minmax(0, 1fr); } }
+
+/* ---------- news post ---------- */
+.post-hero { position: relative; overflow: hidden; isolation: isolate; padding: calc(var(--header-h) + clamp(40px, 6vw, 80px)) 0 clamp(32px, 4vw, 56px); }
+.post-hero-bg { position: absolute; inset: 0; z-index: -1; }
+.post-hero-bg img { width: 100%; height: 100%; object-fit: cover; opacity: .25; filter: blur(2px); transform: scale(1.05); }
+.post-hero-bg::after { content: ""; position: absolute; inset: 0; background: linear-gradient(180deg, rgba(9, 9, 11, .6), var(--bg)); }
+.post-hero-inner { max-width: 900px; }
+.post-hero .news-meta { margin-top: 8px; }
+.post-title { margin-top: 18px; font-size: clamp(34px, 5vw, 64px); }
+.post-hero .lead { margin-top: 18px; }
+.post-layout { max-width: calc(900px + var(--gutter) * 2); padding-bottom: var(--section-y); }
+.post-figure img { width: 100%; aspect-ratio: 16 / 9; object-fit: cover; border: 1px solid var(--line); }
+.post-body { margin-top: 36px; font-size: 18px; }
+.post-share { display: flex; align-items: center; gap: 10px; margin-top: 40px; padding-top: 24px; border-top: 1px solid var(--line); color: var(--muted); font-size: 14px; }
+.post-share a, .post-share button { display: inline-flex; align-items: center; gap: 8px; height: 40px; padding: 0 12px; border: 1px solid var(--line); color: #d4d4d8; font-size: 14px; }
+.post-share a:hover, .post-share button:hover { border-color: var(--pink); color: #fff; }
+.post-share .icon { width: 18px; height: 18px; }
+.post-related { padding-top: 0; }
+
+/* ---------- community ---------- */
+.community-page { padding-top: clamp(32px, 4vw, 56px); }
+.discord-card { display: grid; grid-template-columns: auto minmax(0, 1fr) auto; align-items: center; gap: 24px; padding: clamp(24px, 3vw, 36px); background: linear-gradient(110deg, #5865f2 0%, #3b3fa8 55%, #1a1a3a 100%); transition: transform .3s; }
+.discord-card:hover { transform: translateY(-3px); }
+.discord-icon { display: grid; place-items: center; width: 72px; height: 72px; background: rgba(255, 255, 255, .15); }
+.discord-icon .icon { width: 40px; height: 40px; color: #fff; }
+.discord-copy { display: grid; gap: 6px; }
+.discord-copy b { font-family: var(--font-display); font-weight: 900; font-size: clamp(24px, 3vw, 34px); text-transform: uppercase; line-height: 1; }
+.discord-copy span { color: rgba(255, 255, 255, .85); }
+.discord-card .btn-primary { background: #fff; color: #3b3fa8; box-shadow: none; }
+.community-sub { font-size: clamp(26px, 3.2vw, 40px); margin: clamp(48px, 6vw, 72px) 0 24px; }
+.topic-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; }
+.topic-grid li { padding: 24px; background: var(--surface); border: 1px solid var(--line); }
+.topic-num { font: 900 italic 40px/1 var(--font-display); color: var(--pink); }
+.topic-grid h3 { margin: 12px 0 6px; font-size: 19px; }
+.topic-grid p { color: var(--muted); font-size: 15px; }
+@media (max-width: 760px) {
+  .discord-card { grid-template-columns: auto minmax(0, 1fr); }
+  .discord-card .btn { grid-column: 1 / -1; }
+  .topic-grid { grid-template-columns: minmax(0, 1fr); }
+}

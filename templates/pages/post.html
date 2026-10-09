@@ -1,0 +1,51 @@
+{% extends "base.html" %}
+{% from "partials/macros.html" import news_card, news_date %}
+{% block title %}{{ post.title }} – {{ site.name }}{% endblock %}
+{% block description %}{{ post.summary }}{% endblock %}
+{% block content %}
+<article class="post">
+  <header class="post-hero">
+    <div class="post-hero-bg">{{ img(post.image, '', '100vw', eager=True) }}</div>
+    <div class="container post-hero-inner">
+      <a class="shop-back" href="{{ url('news/') }}">{{ icon('arrow-right', 'icon back-arrow') }} {{ t.news.back }}</a>
+      <div class="news-meta"><a class="tag tag-{{ post.section }}" href="{{ url('news/') }}#{{ post.section }}">{{ t.news.sections[post.section] }}</a>{{ news_date(post) }}</div>
+      <h1 class="display post-title">{{ post.title }}</h1>
+      <p class="lead">{{ post.summary }}</p>
+    </div>
+  </header>
+
+  <div class="container post-layout">
+    <figure class="post-figure">{{ img(post.image, post.title, '(min-width: 1000px) 900px, 100vw') }}</figure>
+    <div class="prose post-body">{{ post.html }}</div>
+    <div class="post-share">
+      <span>{{ t.news.share }}</span>
+      <a href="https://twitter.com/intent/tweet?url={{ (site.site_url ~ url('news/' ~ post.slug ~ '/')) | urlencode }}&text={{ post.title | urlencode }}" target="_blank" rel="noopener" aria-label="X">{{ icon('x') }}</a>
+      <a href="https://www.facebook.com/sharer/sharer.php?u={{ (site.site_url ~ url('news/' ~ post.slug ~ '/')) | urlencode }}" target="_blank" rel="noopener" aria-label="Facebook">{{ icon('facebook') }}</a>
+      <button type="button" data-copy-link data-copied="{{ t.news.copied }}">{{ icon('link') }}<span>{{ t.news.copy_link }}</span></button>
+    </div>
+  </div>
+</article>
+
+{% if related %}
+<section class="section updates post-related">
+  <div class="container">
+    <div class="split-head">
+      <h2 class="display">{{ t.news.related }}</h2>
+      <a class="text-link" href="{{ url('news/') }}">{{ t.updates.all }} {{ icon('arrow-right') }}</a>
+    </div>
+    <ul class="news-grid" role="list">
+      {% for p in related %}{{ news_card(p, t, url, img, icon) }}{% endfor %}
+    </ul>
+  </div>
+</section>
+{% endif %}
+<script>
+  document.querySelectorAll("[data-copy-link]").forEach(function (b) {
+    b.addEventListener("click", function () {
+      (navigator.clipboard ? navigator.clipboard.writeText(location.href) : Promise.reject()).then(function () {
+        var s = b.querySelector("span"), old = s.textContent; s.textContent = b.dataset.copied; setTimeout(function () { s.textContent = old; }, 1800);
+      }).catch(function () {});
+    });
+  });
+</script>
+{% endblock %}

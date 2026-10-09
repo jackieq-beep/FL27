@@ -1,5 +1,5 @@
 {% extends "base.html" %}
-{% from "partials/macros.html" import store_buttons, section_head %}
+{% from "partials/macros.html" import store_buttons, section_head, news_card %}
 
 {% block content %}
 <section class="hero">
@@ -86,7 +86,7 @@
     <div class="clubs-copy">
       {{ section_head(t.clubs.kicker, t.clubs.title_1, t.clubs.title_2, 'cyan') }}
       <p class="lead">{{ t.clubs.text }}</p>
-      <a class="btn btn-outline" href="{{ url('news/') }}">{{ t.clubs.cta }} {{ icon('arrow-right') }}</a>
+      <a class="btn btn-outline" href="{{ url('news/official-club-licenses/') }}">{{ t.clubs.cta }} {{ icon('arrow-right') }}</a>
     </div>
     <div class="clubs-media">
       <figure>{{ img('license-mancity.jpg', 'Manchester City players in Football League 2026', '(min-width: 1000px) 560px, 100vw') }}<figcaption>Manchester City</figcaption></figure>
@@ -106,17 +106,7 @@
     </div>
     <ul class="news-grid" role="list">
       {% for post in news[:3] %}
-      <li class="news-card">
-        <a href="{{ url('news/') }}">
-          <div class="news-img">{{ img(post.image, '', '(min-width: 1000px) 400px, 100vw') }}</div>
-          <div class="news-body">
-            <span class="tag tag-{{ post.tag | lower }}">{{ post.tag }}</span>
-            <h3>{{ post.title }}</h3>
-            <p>{{ post.summary }}</p>
-            <span class="more">{{ t.updates.read }} {{ icon('arrow-up-right') }}</span>
-          </div>
-        </a>
-      </li>
+      {{ news_card(post, t, url, img, icon) }}
       {% endfor %}
     </ul>
   </div>

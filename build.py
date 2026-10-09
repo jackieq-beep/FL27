@@ -81,9 +81,11 @@ def load_news(lang):
         m = re.match(r"^---\n(.*?)\n---\n(.*)$", raw, re.S)
         meta, body = (yaml.safe_load(m.group(1)), m.group(2)) if m else ({}, raw)
         meta["slug"] = path.stem
+        meta["section"] = meta.get("section") or "announcements"
         meta["html"] = Markup(markdown.markdown(body))
         posts.append(meta)
-    posts.sort(key=lambda p: (-(p.get("date") or date.min).toordinal() if p.get("date") else 0, p.get("order", 999)))
+    # Newest first: undated posts (pinned with "order") on top, then by date
+    posts.sort(key=lambda p: (1 if p.get("date") else 0, -(p["date"].toordinal()) if p.get("date") else p.get("order", 999)))
     return posts
 
 
@@ -156,7 +158,7 @@ def main():
     languages = [l for l in site["languages"] if l.get("enabled")]
     pages = [("home", "", "pages/home.html")] + [
         (n["key"], n["path"], f"pages/{n['key']}.html" if (ROOT / "templates" / "pages" / f"{n['key']}.html").exists() else "pages/coming-soon.html")
-        for n in site["nav"] if n["key"] != "home"
+        for n in site["nav"] + site.get("extra_pages", []) if n["key"] != "home"
     ]
     sitemap = []
 
@@ -180,6 +182,21 @@ def main():
                 t=t, lang=lang, languages=languages, all_languages=site["languages"],
                 page_key=key, page_path=path, url=url, lang_url=lang_url, news=news,
                 canonical=f"{site['site_url']}{url(path)}",
+            )
+            out.write_text(html, encoding="utf-8")
+            sitemap.append(f"{site['site_url']}{url(path)}")
+
+        # One page per news post
+        for post in news:
+            path = f"news/{post['slug']}/"
+            out = DIST / prefix.strip("/") / path / "index.html"
+            out.parent.mkdir(parents=True, exist_ok=True)
+            related = [p for p in news if p["slug"] != post["slug"] and p["section"] == post["section"]]
+            related += [p for p in news if p["slug"] != post["slug"] and p not in related]
+            html = env.get_template("pages/post.html").render(
+                t=t, lang=lang, languages=languages, all_languages=site["languages"],
+                page_key="news", page_path=path, url=url, lang_url=lang_url, news=news,
+                canonical=f"{site['site_url']}{url(path)}", post=post, related=related[:3],
             )
             out.write_text(html, encoding="utf-8")
             sitemap.append(f"{site['site_url']}{url(path)}")

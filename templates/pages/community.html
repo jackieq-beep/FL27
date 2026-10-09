@@ -1,0 +1,48 @@
+{% extends "base.html" %}
+{% block title %}{{ t.community_page.meta_title }}{% endblock %}
+{% block description %}{{ t.community_page.meta_description }}{% endblock %}
+{% block content %}
+<section class="page-hero">
+  <div class="page-hero-bg">{{ img('stadiums.webp', '', '100vw', eager=True) }}</div>
+  <div class="container">
+    <p class="kicker">{{ t.community_page.kicker }}</p>
+    <h1 class="display display-xl">{{ t.community_page.title_1 }} <span class="accent-pink">{{ t.community_page.title_2 }}</span></h1>
+    <p class="lead">{{ t.community_page.text }}</p>
+  </div>
+</section>
+
+<section class="section community-page">
+  <div class="container">
+    {% if site.social.discord %}
+    <a class="discord-card" href="{{ site.social.discord }}" target="_blank" rel="noopener">
+      <span class="discord-icon">{{ icon('discord') }}</span>
+      <span class="discord-copy">
+        <b>{{ t.community_page.discord_title }}</b>
+        <span>{{ t.community_page.discord_text }}</span>
+      </span>
+      <span class="btn btn-primary">{{ t.community_page.discord_cta }} {{ icon('arrow-up-right') }}</span>
+    </a>
+    {% endif %}
+
+    <h2 class="display community-sub">{{ t.community_page.channels_title }}</h2>
+    <ul class="community-grid" role="list">
+      {% for k in site.social_list if k != 'discord' %}
+      <li>
+        <a class="community-card cc-{{ k }}" href="{{ site.social[k] }}" target="_blank" rel="noopener">
+          {{ icon(k, 'icon cc-icon') }}
+          <span><b>{{ k | capitalize if k != 'x' else 'X' }}</b><small>{{ t.community_page.channels[k] }}</small></span>
+          {{ icon('arrow-up-right', 'icon cc-arrow') }}
+        </a>
+      </li>
+      {% endfor %}
+    </ul>
+
+    <h2 class="display community-sub">{{ t.community_page.topics_title }}</h2>
+    <ul class="topic-grid" role="list">
+      {% for tp in t.community_page.topics %}
+      <li><span class="topic-num">{{ loop.index }}</span><h3>{{ tp.title }}</h3><p>{{ tp.text }}</p></li>
+      {% endfor %}
+    </ul>
+  </div>
+</section>
+{% endblock %}

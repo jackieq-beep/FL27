@@ -1,0 +1,57 @@
+{% extends "base.html" %}
+{% from "partials/macros.html" import news_card %}
+{% block title %}{{ t.news.meta_title }}{% endblock %}
+{% block description %}{{ t.news.meta_description }}{% endblock %}
+{% block content %}
+<section class="page-hero">
+  <div class="page-hero-bg">{{ img('goal-attempt.webp', '', '100vw', eager=True) }}</div>
+  <div class="container">
+    <p class="kicker">{{ t.news.kicker }}</p>
+    <h1 class="display display-xl">{{ t.news.title_1 }} <span class="accent-pink">{{ t.news.title_2 }}</span></h1>
+    <p class="lead">{{ t.news.text }}</p>
+  </div>
+</section>
+
+<section class="news-page">
+  <div class="container">
+    <nav class="news-tabs" aria-label="{{ t.nav.news }}" data-news-tabs>
+      <a href="#all" data-filter="all" aria-current="true">{{ t.news.all }} <span>{{ news | length }}</span></a>
+      {% for key in site.news_sections %}
+      {% set count = news | selectattr('section', 'equalto', key) | list | length %}
+      {% if count %}
+      <a href="#{{ key }}" data-filter="{{ key }}">{{ t.news.sections[key] }} <span>{{ count }}</span></a>
+      {% endif %}
+      {% endfor %}
+    </nav>
+
+    <ul class="news-list" role="list" data-news-list>
+      {% for post in news %}
+      {{ news_card(post, t, url, img, icon, big=loop.first) }}
+      {% endfor %}
+    </ul>
+    <p class="news-empty" data-news-empty hidden>{{ t.news.empty }}</p>
+  </div>
+</section>
+
+<script>
+  (function () {
+    var tabs = document.querySelectorAll("[data-news-tabs] [data-filter]");
+    var cards = document.querySelectorAll("[data-news-list] > li");
+    var empty = document.querySelector("[data-news-empty]");
+    function apply() {
+      var key = (location.hash || "#all").slice(1);
+      if (!document.querySelector('[data-filter="' + key + '"]')) key = "all";
+      tabs.forEach(function (t) { t.toggleAttribute("aria-current", t.dataset.filter === key); });
+      var shown = 0, first = true;
+      cards.forEach(function (c) {
+        var on = key === "all" || c.dataset.section === key;
+        c.hidden = !on; if (on) { shown++; c.classList.toggle("news-card-big", first); first = false; }
+      });
+      empty.hidden = shown > 0;
+    }
+    tabs.forEach(function (t) { t.addEventListener("click", function (e) { e.preventDefault(); history.replaceState(null, "", "#" + t.dataset.filter); apply(); }); });
+    window.addEventListener("hashchange", apply);
+    apply();
+  })();
+</script>
+{% endblock %}

@@ -121,11 +121,18 @@ languages:
   - { code: ar, label: العربية, short: AR, dir: rtl, enabled: false }
   - { code: ja, label: 日本語, short: JA, dir: ltr, enabled: false }
 
+# Pages that exist but are not in the main menu (linked from the footer).
+extra_pages:
+  - { key: media, path: media/ }
+
+# News sections, in the order the tabs appear. A post picks one with "section:" in its file.
+news_sections: [announcements, updates, events, licenses]
+
 # Main menu: page key, icon, and path.
 nav:
   - { key: home, icon: home, path: "" }
   - { key: game, icon: gamepad, path: game/ }
   - { key: news, icon: news, path: news/ }
   - { key: shop, icon: bag, path: shop/ }
-  - { key: media, icon: megaphone, path: media/ }
+  - { key: community, icon: users, path: community/ }
   - { key: contact, icon: mail, path: contact/ }

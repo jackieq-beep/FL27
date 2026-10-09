@@ -10,6 +10,7 @@ nav:
   news: News
   shop: Shop
   media: Media
+  community: Community
   contact: Contact
   play_now: Play Now
   menu: Menu
@@ -181,6 +182,50 @@ cookies:
   marketing_text: "Lets ad partners (Google) measure campaigns and show relevant ads."
   policy: Cookie Policy
   always_on: Always on
+
+news:
+  meta_title: "News & Updates – Football League 2026"
+  meta_description: "Game updates, live events, new club licenses and announcements from Football League 2026."
+  kicker: "News & updates"
+  title_1: Latest
+  title_2: from the pitch.
+  text: "Game updates, live events, new club licenses and announcements."
+  all: All
+  sections:
+    announcements: Announcements
+    updates: Game Updates
+    events: Events
+    licenses: "Clubs & Licenses"
+  empty: "No posts in this section yet."
+  back: All news
+  related: More news
+  share: Share
+  copy_link: Copy link
+  copied: Link copied
+  featured: Latest
+
+community_page:
+  meta_title: "Community – Football League 2026"
+  meta_description: "Join the Football League 2026 community on Discord, Instagram and Facebook: highlights, team builds, events and live chat with players."
+  kicker: "Community"
+  title_1: Join the
+  title_2: home end.
+  text: "Highlights, rivals and live chats, all in one place. Find your people and talk football with players from around the world."
+  discord_title: "Join our Discord"
+  discord_text: "Matchmaking, dev Q&A, player tips and live tactics talk."
+  discord_cta: Join the server
+  channels_title: Follow us
+  channels:
+    instagram: "Goal montages, kit drops and behind-the-scenes art."
+    facebook: "Big announcements, trailers and patch notes in one feed."
+    youtube: "Trailers, guides and match highlights."
+    x: "Live updates and quick news."
+    tiktok: "Short clips and skills."
+  topics_title: What we talk about
+  topics:
+    - { title: "Match Highlights", text: "Share your best goals, saves and last-minute winners." }
+    - { title: "Team Builds", text: "Swap formations, tactics styles and squad ideas." }
+    - { title: "Exclusive Events", text: "Community challenges, giveaways and early news." }
 
 coming:
   kicker: "Coming soon"

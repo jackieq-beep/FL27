@@ -20,16 +20,17 @@ Create a new file in `content/news/`, for example `summer-cup.md`:
 ```markdown
 ---
 title: Summer Cup is live
-tag: Event          # Official, Event or Feature
+section: events    # announcements, updates, events or licenses
 image: live-event.webp   # a file in static/img/
 summary: One or two sentences shown on the card.
-date: 2026-10-15
+date: 2026-10-15     # newest dates show first
 ---
 
 The full post text goes here.
 ```
 
-Commit it to `main` and the site updates in a minute or two.
+Commit it to `main` and the site updates in a minute or two. The post gets its own page at `/news/summer-cup/`
+and appears under its section tab on the News page.
 
 ## Preview locally
 
