@@ -251,7 +251,7 @@ button { font: inherit; color: inherit; background: none; border: 0; cursor: poi
 [dir="rtl"] .points li { padding: 28px 0 0 28px; }
 [dir="rtl"] .points li + li { padding-inline-start: 28px; }
 .point-num { font-size: 13px; font-weight: 700; color: var(--pink); letter-spacing: .08em; }
-.points h3 { margin: 10px 0 10px; font-size: 20px; font-weight: 700; }
+.points h3 { margin: 0 0 10px; font-size: 20px; font-weight: 700; }
 .points p { color: var(--muted); font-size: 15px; }
 
 /* modes */
