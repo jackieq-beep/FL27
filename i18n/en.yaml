@@ -132,6 +132,30 @@ shop:
     women: Women
     kids: "Kids & Babies"
     accessories: Accessories
+  nav:
+    all: All products
+    men: Men
+    women: Women
+    kids: "Kids & Babies"
+    accessories: Accessories
+    home: "Home & Living"
+    stickers: Stickers
+    sub_all: All
+    tshirts: T-Shirts
+    hoodies: "Hoodies & Sweatshirts"
+    zips: "Zip Hoodies & Jackets"
+    longsleeve: Long Sleeve Shirts
+    polos: Polo Shirts
+    tanks: Tank Tops
+    sportswear: Sportswear
+    bottoms: Bottoms
+    kidshirts: "Kids' Shirts"
+    baby: Baby Products
+    accessories_sub: Accessories
+    caps: "Caps & Hats"
+    bags: "Bags & Backpacks"
+    aprons: Aprons
+    socks: Socks
   choose: "Shop by category"
   all_products: All products
   stickers: Stickers

@@ -42,6 +42,31 @@
 <section class="shop-section" id="shop-area">
   <div class="container">
     <a class="shop-back" href="#!/" data-shop-route="">{{ icon('arrow-right', 'icon back-arrow') }} {{ t.shop.back }}</a>
+    <nav class="shop-nav" aria-label="{{ t.nav.shop }}" data-shop-nav>
+      <ul class="shop-nav-main" role="list">
+        {% for c in site.shop_nav %}
+        <li class="sn-item{% if c.sub %} has-sub{% endif %}" data-cat="{{ c.slug }}">
+          <a href="#!/{{ c.slug }}" data-shop-route="!/{{ c.slug }}">{{ t.shop.nav[c.key] }}{% if c.sub %}{{ icon('chevron-down', 'icon sn-chev') }}{% endif %}</a>
+          {% if c.sub %}
+          <ul class="sn-drop" role="list">
+            <li><a href="#!/{{ c.slug }}" data-shop-route="!/{{ c.slug }}">{{ t.shop.nav.sub_all }}</a></li>
+            {% for s in c.sub %}
+            <li><a href="#!/{{ s.slug }}" data-shop-route="!/{{ s.slug }}">{{ t.shop.nav[s.key ~ ('_sub' if s.key == 'accessories' else '')] }}</a></li>
+            {% endfor %}
+          </ul>
+          {% endif %}
+        </li>
+        {% endfor %}
+      </ul>
+      {% for c in site.shop_nav if c.sub %}
+      <ul class="sn-chips" role="list" data-chips="{{ c.slug }}" hidden>
+        <li><a href="#!/{{ c.slug }}" data-shop-route="!/{{ c.slug }}">{{ t.shop.nav.sub_all }}</a></li>
+        {% for s in c.sub %}
+        <li><a href="#!/{{ s.slug }}" data-shop-route="!/{{ s.slug }}">{{ t.shop.nav[s.key ~ ('_sub' if s.key == 'accessories' else '')] }}</a></li>
+        {% endfor %}
+      </ul>
+      {% endfor %}
+    </nav>
     <div id="shop" class="shop-embed">
       <div class="shop-loading" aria-live="polite">
         <span class="spinner" aria-hidden="true"></span>
@@ -75,8 +100,24 @@
       var h = location.hash.replace(/^#/, "");
       return h !== "" && h !== "!" && h !== "!/";
     }
+    function markActive() {
+      var path = decodeURIComponent(location.hash.replace(/^#!?\/?/, ""));
+      var top = path.split("/")[0], full = path.split("?")[0];
+      document.querySelectorAll("[data-shop-nav] .sn-item").forEach(function (li) {
+        li.classList.toggle("is-active", decodeURIComponent(li.getAttribute("data-cat")) === top);
+      });
+      document.querySelectorAll("[data-shop-nav] a[data-shop-route]").forEach(function (a) {
+        var r = decodeURIComponent(a.getAttribute("data-shop-route").replace(/^!\//, ""));
+        a.classList.toggle("is-current", r === full);
+      });
+      document.querySelectorAll("[data-chips]").forEach(function (ul) {
+        ul.hidden = decodeURIComponent(ul.getAttribute("data-chips")) !== top;
+      });
+    }
     function update(scroll) {
       var on = inShop();
+      markActive();
+      document.querySelectorAll(".sn-item.is-open").forEach(function (li) { li.classList.remove("is-open"); });
       page.classList.toggle("shop-open", on);
       if (on && scroll) {
         var area = document.getElementById("shop-area");
@@ -94,6 +135,19 @@
           if (cats) window.scrollTo({ top: cats.getBoundingClientRect().top + window.scrollY - 80, behavior: "smooth" });
         }
       });
+    });
+    document.querySelectorAll("[data-shop-nav] .has-sub > a").forEach(function (a) {
+      a.addEventListener("click", function (e) {
+        var li = a.parentElement;
+        if (window.matchMedia("(hover: none)").matches && !li.classList.contains("is-open") && window.innerWidth > 900) {
+          e.preventDefault(); e.stopImmediatePropagation();
+          document.querySelectorAll(".sn-item.is-open").forEach(function (o) { o.classList.remove("is-open"); });
+          li.classList.add("is-open");
+        }
+      }, true);
+    });
+    document.addEventListener("click", function (e) {
+      if (!e.target.closest(".sn-item")) document.querySelectorAll(".sn-item.is-open").forEach(function (o) { o.classList.remove("is-open"); });
     });
     window.addEventListener("hashchange", function () { update(true); });
     window.addEventListener("popstate", function () { update(false); });

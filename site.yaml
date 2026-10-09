@@ -26,6 +26,49 @@ shop_categories:
   - { key: kids, slug: "kids+%26+babies", image: live-event.webp, position: "45% 40%" }
   - { key: accessories, slug: accessories, image: "", position: "50% 50%" }
 
+# Category bar above the shop (matches the categories in your Spreadshop).
+shop_nav:
+  - { key: all, slug: all }
+  - key: men
+    slug: men
+    sub:
+      - { key: tshirts, slug: men/t-shirts }
+      - { key: hoodies, slug: "men/hoodies+%26+sweatshirts" }
+      - { key: zips, slug: "men/zip+hoodies+%26+jackets" }
+      - { key: longsleeve, slug: "men/long+sleeve+shirts" }
+      - { key: polos, slug: "men/polo+shirts" }
+      - { key: tanks, slug: "men/tank+tops" }
+      - { key: sportswear, slug: men/sportswear }
+      - { key: bottoms, slug: men/bottoms }
+  - key: women
+    slug: women
+    sub:
+      - { key: tshirts, slug: women/t-shirts }
+      - { key: hoodies, slug: "women/hoodies+%26+sweatshirts" }
+      - { key: zips, slug: "women/zip+hoodies+%26+jackets" }
+      - { key: longsleeve, slug: "women/long+sleeve+shirts" }
+      - { key: polos, slug: "women/polo+shirts" }
+      - { key: tanks, slug: women/tanks }
+      - { key: sportswear, slug: women/sportswear }
+      - { key: bottoms, slug: women/bottoms }
+  - key: kids
+    slug: "kids+%26+babies"
+    sub:
+      - { key: kidshirts, slug: "kids+%26+babies/kids'+shirts" }
+      - { key: hoodies, slug: "kids+%26+babies/hoodies+%26+sweatshirts" }
+      - { key: longsleeve, slug: "kids+%26+babies/long+sleeve+shirts" }
+      - { key: baby, slug: "kids+%26+babies/baby+products" }
+      - { key: accessories, slug: "kids+%26+babies/accessories" }
+  - key: accessories
+    slug: accessories
+    sub:
+      - { key: caps, slug: "accessories/caps+%26+hats" }
+      - { key: bags, slug: "accessories/bags+%26+backpacks" }
+      - { key: aprons, slug: accessories/aprons }
+      - { key: socks, slug: accessories/socks }
+  - { key: home, slug: "home+%26+living" }
+  - { key: stickers, slug: stickers }
+
 # Leave empty so Shop buttons open the Shop page on this site.
 shop_url: ""
 
