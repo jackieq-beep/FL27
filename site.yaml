@@ -18,6 +18,14 @@ spreadshop:
   name: football-league-fan-shop
   url: https://football-league-fan-shop.myspreadshop.com
 
+# Category tiles on the Shop page. "slug" is the Spreadshop category address;
+# "image" is a file in static/img/ (swap in your own product photos any time).
+shop_categories:
+  - { key: men, slug: men, image: hero.png, position: "65% 25%" }
+  - { key: women, slug: women, image: cups.jpg, position: "50% 50%" }
+  - { key: kids, slug: "kids+%26+babies", image: live-event.webp, position: "45% 40%" }
+  - { key: accessories, slug: accessories, image: "", position: "50% 50%" }
+
 # Leave empty so Shop buttons open the Shop page on this site.
 shop_url: ""
 

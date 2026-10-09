@@ -18,8 +18,30 @@
   </div>
 </section>
 
-<section class="shop-section">
+<section class="shop-cats" id="shop-categories" aria-labelledby="cats-title">
   <div class="container">
+    <h2 class="kicker" id="cats-title">{{ t.shop.choose }}</h2>
+    <ul class="cat-grid" role="list">
+      {% for c in site.shop_categories %}
+      <li>
+        <a class="cat-tile cat-{{ c.key }}" href="#!/{{ c.slug }}" data-shop-route="!/{{ c.slug }}">
+          {% if c.image %}{{ img(c.image, '', '(min-width: 900px) 620px, 100vw', 'cat-img', style='object-position:' ~ c.position) }}
+          {% else %}<span class="cat-art" aria-hidden="true"><img src="{{ site.base }}/img/logo-mark.png" alt="" width="385" height="371" loading="lazy"></span>{% endif %}
+          <span class="cat-label">{{ t.shop.categories[c.key] }}</span>
+        </a>
+      </li>
+      {% endfor %}
+    </ul>
+    <div class="cat-more">
+      <a class="btn btn-primary" href="#!/all" data-shop-route="!/all">{{ t.shop.all_products }} {{ icon('arrow-right') }}</a>
+      <a class="btn btn-outline" href="#!/stickers" data-shop-route="!/stickers">{{ t.shop.stickers }}</a>
+    </div>
+  </div>
+</section>
+
+<section class="shop-section" id="shop-area">
+  <div class="container">
+    <a class="shop-back" href="#!/" data-shop-route="">{{ icon('arrow-right', 'icon back-arrow') }} {{ t.shop.back }}</a>
     <div id="shop" class="shop-embed">
       <div class="shop-loading" aria-live="polite">
         <span class="spinner" aria-hidden="true"></span>
@@ -45,6 +67,39 @@
   };
 </script>
 <script src="{{ site.spreadshop.url }}/js/shopclient.nocache.js" defer></script>
+<script>
+  // Category landing: show the tiles when no shop page is open, show the shop once a category is chosen.
+  (function () {
+    var page = document.body;
+    function inShop() {
+      var h = location.hash.replace(/^#/, "");
+      return h !== "" && h !== "!" && h !== "!/";
+    }
+    function update(scroll) {
+      var on = inShop();
+      page.classList.toggle("shop-open", on);
+      if (on && scroll) {
+        var area = document.getElementById("shop-area");
+        if (area) window.scrollTo({ top: area.getBoundingClientRect().top + window.scrollY - 80, behavior: "smooth" });
+      }
+    }
+    document.querySelectorAll("[data-shop-route]").forEach(function (a) {
+      a.addEventListener("click", function (e) {
+        e.preventDefault();
+        var route = a.getAttribute("data-shop-route");
+        if (route) { location.hash = route; } else {
+          history.pushState(null, "", location.pathname + location.search);
+          update(false);
+          var cats = document.getElementById("shop-categories");
+          if (cats) window.scrollTo({ top: cats.getBoundingClientRect().top + window.scrollY - 80, behavior: "smooth" });
+        }
+      });
+    });
+    window.addEventListener("hashchange", function () { update(true); });
+    window.addEventListener("popstate", function () { update(false); });
+    update(false);
+  })();
+</script>
 <script>
   // Hide Spreadshop's own "Open your own shop" promo bar inside the embedded shop.
   (function () {

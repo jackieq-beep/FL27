@@ -118,6 +118,15 @@ shop:
     - { icon: bag, text: "Made to order" }
     - { icon: check, text: "Secure checkout" }
     - { icon: check, text: "Adult, kids' & baby sizes" }
+  categories:
+    men: Men
+    women: Women
+    kids: "Kids & Babies"
+    accessories: Accessories
+  choose: "Shop by category"
+  all_products: All products
+  stickers: Stickers
+  back: All categories
   loading: "Loading the shop…"
   fallback: "Shop not loading?"
   fallback_link: "Open it in a new tab"
