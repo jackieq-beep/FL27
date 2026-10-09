@@ -201,6 +201,18 @@
         if (cartEl) cartEl.classList.add("fl-cart-el");
       }
       btn.classList.toggle("is-ready", !!cartEl);
+      // Tag the little count bubble on Spreadshop's basket icon so we can style it clearly
+      if (cartEl) {
+        var badge = null;
+        cartEl.querySelectorAll("*").forEach(function (el) {
+          if (badge || el.tagName.toLowerCase() === "svg" || el.closest("svg")) return;
+          var own = Array.prototype.filter.call(el.childNodes, function (n) { return n.nodeType === 3; }).map(function (n) { return n.textContent; }).join("").trim();
+          if (/^\d+$/.test(own)) { badge = el; return; }
+          var r = el.getBoundingClientRect(), cs = getComputedStyle(el);
+          if (r.width > 4 && r.width < 32 && Math.abs(r.width - r.height) < 6 && parseFloat(cs.borderRadius) >= r.width / 3) badge = el;
+        });
+        if (badge) badge.classList.add("fl-cart-badge");
+      }
       if (cartEl) {
         var m = (cartEl.textContent || "").match(/\d+/);
         var c = m && m[0] !== "0" ? m[0] : "";
