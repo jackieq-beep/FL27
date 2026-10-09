@@ -135,7 +135,30 @@
     </div>
     <div class="merch-art" aria-hidden="true">
       <span class="merch-word">FL2026</span>
-      <img src="{{ site.base }}/img/logo-mark.png" alt="" width="385" height="371" loading="lazy">
+      <svg class="garment garment-hoodie" viewBox="0 0 200 220">
+        <defs>
+          <linearGradient id="hoodieFill" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#2a2a31"/><stop offset="1" stop-color="#101013"/></linearGradient>
+        </defs>
+        <path d="M60 52 Q100 40 140 52 L170 70 L190 158 L168 166 L152 106 L151 194 Q100 204 49 194 L48 106 L32 166 L10 158 L30 70 Z" fill="url(#hoodieFill)" stroke="rgba(255,255,255,.1)"/>
+        <path d="M68 56 Q62 12 100 8 Q138 12 132 56 Q100 70 68 56 Z" fill="#1c1c21" stroke="rgba(255,255,255,.1)"/>
+        <path d="M80 54 Q100 26 120 54 Q100 62 80 54 Z" fill="#0b0b0d"/>
+        <path d="M93 60 L91 92 M107 60 L109 92" stroke="#e4e4e7" stroke-width="2" stroke-linecap="round"/>
+        <circle cx="91" cy="93" r="2.2" fill="#ff0055"/><circle cx="109" cy="93" r="2.2" fill="#ff0055"/>
+        <path d="M68 150 L132 150 L140 182 L60 182 Z" fill="none" stroke="rgba(255,255,255,.12)"/>
+        <path d="M49 188 Q100 198 151 188" stroke="rgba(255,255,255,.12)" fill="none"/>
+        <image href="{{ site.base }}/img/logo-mark.png" x="78" y="100" width="44" height="42"/>
+      </svg>
+      <svg class="garment garment-tee" viewBox="0 0 200 190">
+        <defs>
+          <linearGradient id="teeFill" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#d4d4da"/></linearGradient>
+          <filter id="toBlack"><feColorMatrix type="matrix" values="0 0 0 0 0.07  0 0 0 0 0.07  0 0 0 0 0.08  0 0 0 1 0"/></filter>
+        </defs>
+        <path d="M62 24 L82 16 Q100 30 118 16 L138 24 L178 50 L162 84 L142 74 L142 176 Q100 184 58 176 L58 74 L38 84 L22 50 Z" fill="url(#teeFill)"/>
+        <path d="M82 16 Q100 36 118 16" fill="none" stroke="#b8b8c0" stroke-width="3"/>
+        <path d="M58 74 L58 80 M142 74 L142 80" stroke="#c4c4cc"/>
+        <image href="{{ site.base }}/img/logo-mark.png" x="80" y="62" width="40" height="38" filter="url(#toBlack)"/>
+      </svg>
+      <img class="merch-crest" src="{{ site.base }}/img/logo-mark.png" alt="" width="385" height="371" loading="lazy">
     </div>
   </div>
 </section>

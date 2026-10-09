@@ -308,7 +308,14 @@ button { font: inherit; color: inherit; background: none; border: 0; cursor: poi
 .merch-copy { position: relative; z-index: 1; }
 .merch-copy .lead { margin: 22px 0 30px; max-width: 40ch; }
 .merch-art { position: relative; display: grid; place-items: center; min-height: 260px; }
-.merch-art img { position: relative; width: min(260px, 60%); filter: drop-shadow(0 20px 40px rgba(255, 0, 85, .5)); transform: rotate(-8deg); }
+.merch-art { min-height: 360px; }
+.garment { position: absolute; filter: drop-shadow(0 30px 40px rgba(0, 0, 0, .55)); }
+.garment-hoodie { width: min(300px, 52%); left: 8%; top: 4%; z-index: 1; animation: float-a 7s ease-in-out infinite; }
+.garment-tee { width: min(250px, 44%); right: 6%; bottom: 0; z-index: 2; animation: float-b 6s ease-in-out infinite -2s; }
+.merch-crest { position: absolute; width: 64px; right: 14%; top: 8%; z-index: 3; opacity: .9; filter: drop-shadow(0 8px 20px rgba(255, 0, 85, .8)); animation: float-c 5s ease-in-out infinite -1s; }
+@keyframes float-a { 0%, 100% { transform: translateY(0) rotate(-10deg); } 50% { transform: translateY(-18px) rotate(-6deg); } }
+@keyframes float-b { 0%, 100% { transform: translateY(0) rotate(9deg); } 50% { transform: translateY(-22px) rotate(5deg); } }
+@keyframes float-c { 0%, 100% { transform: translateY(0) rotate(12deg) scale(1); } 50% { transform: translateY(-12px) rotate(20deg) scale(1.08); } }
 .merch-word {
   position: absolute; font-family: var(--font-display); font-weight: 900; font-style: italic;
   font-size: clamp(80px, 12vw, 170px); letter-spacing: -.04em; line-height: 1;
@@ -387,7 +394,7 @@ button { font: inherit; color: inherit; background: none; border: 0; cursor: poi
   .news-grid li:nth-child(3) { display: none; }
   .points { grid-template-columns: 1fr; border-top: 0; }
   .points li, .points li + li, [dir="rtl"] .points li { padding: 22px 0; border-inline-start: 0; border-top: 1px solid var(--line); }
-  .merch-art { min-height: 200px; order: -1; }
+  .merch-art { min-height: 300px; order: -1; }
   .footer-grid { grid-template-columns: 1fr 1fr; }
   .footer-brand { grid-column: 1 / -1; }
 }
@@ -542,7 +549,6 @@ button { font: inherit; color: inherit; background: none; border: 0; cursor: poi
 [dir="rtl"] .ticker-track { animation-direction: reverse; }
 
 /* gentle float on the merch crest */
-.merch-art img { animation: float 6s ease-in-out infinite; }
 @keyframes float { 0%, 100% { transform: rotate(-8deg) translateY(0); } 50% { transform: rotate(-5deg) translateY(-14px); } }
 
 /* cards lift with a soft glow */
