@@ -109,7 +109,7 @@ footer:
 
 shop:
   meta_title: "Official Shop – Football League 2026 Merchandise"
-  meta_description: "Official Football League 2026 shirts, hoodies, jackets, kids' wear and stickers. Secure checkout by Spreadshop."
+  meta_description: "Official Football League 2026 shirts, hoodies, jackets, kids' wear and stickers."
   kicker: "Official merchandise"
   title_1: Wear
   title_2: the game.
@@ -121,7 +121,6 @@ shop:
   loading: "Loading the shop…"
   fallback: "Shop not loading?"
   fallback_link: "Open it in a new tab"
-  powered: "Orders, payment and delivery are handled by Spreadshop."
 
 coming:
   kicker: "Coming soon"

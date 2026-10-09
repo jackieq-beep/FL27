@@ -454,7 +454,7 @@ button { font: inherit; color: inherit; background: none; border: 0; cursor: poi
 .shop-skeleton i + i { width: 40%; }
 .shop-skeleton span, .shop-skeleton i { animation: shimmer 1.4s ease-in-out infinite; }
 @keyframes shimmer { 50% { opacity: .5; } }
-.shop-foot { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 8px 24px; margin-top: 40px; padding-top: 20px; border-top: 1px solid var(--line); font-size: 14px; color: var(--dim); }
+.shop-foot { display: flex; flex-wrap: wrap; justify-content: flex-end; gap: 8px 24px; margin-top: 40px; padding-top: 20px; border-top: 1px solid var(--line); font-size: 14px; color: var(--dim); }
 .shop-foot a { display: inline-flex; align-items: center; gap: 4px; color: var(--text); font-weight: 500; }
 .shop-foot a:hover { color: var(--pink); }
 .shop-foot .icon { width: 15px; height: 15px; }
