@@ -412,7 +412,7 @@ button { font: inherit; color: inherit; background: none; border: 0; cursor: poi
   .hero-inner { padding-top: 38vh; }
   .hero-body { display: none; }
   .hero-ctas { margin-top: 26px; }
-  .hero-stats { display: grid; grid-template-columns: repeat(4, auto); justify-content: space-between; margin-top: 32px; padding-top: 18px; border-top: 1px solid rgba(255, 255, 255, .12); }
+  .hero-stats { display: grid; grid-template-columns: repeat(3, auto); justify-content: space-between; margin-top: 32px; padding-top: 18px; border-top: 1px solid rgba(255, 255, 255, .12); }
   .hero-stats li { padding-inline: 10px; }
   .hero-stats b { font-size: 15px; }
   .hero-stats span { font-size: 11px; }
@@ -795,3 +795,4 @@ button { font: inherit; color: inherit; background: none; border: 0; cursor: poi
   .discord-card .btn { grid-column: 1 / -1; }
   .topic-grid { grid-template-columns: minmax(0, 1fr); }
 }
+.clubs-media figure:first-child figcaption { top: 14px; bottom: auto; inset-inline-start: auto; inset-inline-end: 14px; }
