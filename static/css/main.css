@@ -461,3 +461,7 @@ button { font: inherit; color: inherit; background: none; border: 0; cursor: poi
 @media (max-width: 900px) { .shop-skeleton { grid-template-columns: repeat(2, 1fr); } }
 /* Hide Spreadshop's own "open a shop" promo links inside the embedded shop */
 #shop a[href*="spreadshop.com?affiliateid"], #shop a[href*="spreadshop.com/?affiliateid"], #shop .fl-hidden-promo { display: none !important; }
+
+/* Spreadshop leaves its section headings black; make them readable on the dark shop */
+#shop h1, #shop h2, #shop h3, #shop h1 a, #shop h2 a, #shop h3 a { color: var(--text) !important; }
+#shop h2 a:hover, #shop h3 a:hover { color: var(--pink) !important; }
