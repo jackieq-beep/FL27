@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% block title %}{{ doc.title }} – {{ site.name }}{% endblock %}
+{% block description %}{{ doc.description }}{% endblock %}
+{% block content %}
+<section class="legal-hero">
+  <div class="container">
+    <p class="kicker">{{ t.footer.col_legal }}</p>
+    <h1 class="display">{{ doc.title }}</h1>
+    <p class="legal-updated">Last updated: {{ doc.updated.strftime('%d %B %Y') if doc.updated.strftime is defined else doc.updated }}</p>
+  </div>
+</section>
+<section class="legal-body">
+  <div class="container legal-grid">
+    <nav class="legal-nav" aria-label="{{ t.footer.col_legal }}">
+      <a href="{{ url('privacy/') }}"{% if page_key == 'privacy' %} aria-current="page"{% endif %}>{{ t.footer.privacy }}</a>
+      <a href="{{ url('terms/') }}"{% if page_key == 'terms' %} aria-current="page"{% endif %}>{{ t.footer.terms }}</a>
+      <a href="{{ url('cookies/') }}"{% if page_key == 'cookies' %} aria-current="page"{% endif %}>{{ t.footer.cookie_policy }}</a>
+      <button type="button" data-cookie-settings>{{ t.footer.cookies }}</button>
+    </nav>
+    <article class="prose">{{ body }}</article>
+  </div>
+</section>
+{% endblock %}

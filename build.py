@@ -184,6 +184,25 @@ def main():
             out.write_text(html, encoding="utf-8")
             sitemap.append(f"{site['site_url']}{url(path)}")
 
+        # Legal pages (English source in content/legal/; shared by all languages for now)
+        for doc in sorted((ROOT / "content" / "legal").glob("*.md")):
+            raw = doc.read_text(encoding="utf-8")
+            m = re.match(r"^---\n(.*?)\n---\n(.*)$", raw, re.S)
+            meta, body = yaml.safe_load(m.group(1)), m.group(2)
+            for k, v in {"company": site["company"], "legal_email": site.get("legal_email") or site["contact_email"], "base": base + prefix}.items():
+                body = body.replace("{{" + k + "}}", str(v))
+            path = f"{doc.stem}/"
+            out = DIST / prefix.strip("/") / path / "index.html"
+            out.parent.mkdir(parents=True, exist_ok=True)
+            html = env.get_template("pages/legal.html").render(
+                t=t, lang=lang, languages=languages, all_languages=site["languages"],
+                page_key=doc.stem, page_path=path, url=url, lang_url=lang_url, news=news,
+                canonical=f"{site['site_url']}{url(path)}",
+                doc=meta, body=Markup(markdown.markdown(body, extensions=["tables"])),
+            )
+            out.write_text(html, encoding="utf-8")
+            sitemap.append(f"{site['site_url']}{url(path)}")
+
         if code == "en":
             html = env.get_template("pages/404.html").render(
                 t=t, lang=lang, languages=languages, all_languages=site["languages"],

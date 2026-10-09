@@ -112,6 +112,7 @@ footer:
   privacy: Privacy Policy
   terms: Terms of Service
   cookies: Cookie Settings
+  cookie_policy: Cookie Policy
   contact: Contact us
   rights: "All rights reserved."
   disclaimer: "Club names, logos and kits are trademarks of their respective owners and are used under license."
@@ -164,6 +165,22 @@ shop:
   loading: "Loading the shop…"
   fallback: "Shop not loading?"
   fallback_link: "Open it in a new tab"
+
+cookies:
+  title: "We use cookies"
+  text: "We use essential cookies to make this site work. With your permission we'd also like to use analytics cookies to understand how visitors use the site, so we can improve it."
+  accept: Accept all
+  reject: Essential only
+  settings: Settings
+  save: Save choices
+  essential: Essential
+  essential_text: "Needed for the site and shop to work, and to remember your cookie choice. Always on."
+  analytics: Analytics
+  analytics_text: "Google Analytics: anonymous statistics such as page views, traffic sources and device types."
+  marketing: Marketing
+  marketing_text: "Lets ad partners (Google) measure campaigns and show relevant ads."
+  policy: Cookie Policy
+  always_on: Always on
 
 coming:
   kicker: "Coming soon"

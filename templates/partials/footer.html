@@ -30,6 +30,15 @@
         <li><a href="mailto:{{ site.contact_email }}">{{ site.contact_email }}</a></li>
       </ul>
     </div>
+    <div class="footer-col">
+      <h2>{{ t.footer.col_legal }}</h2>
+      <ul role="list">
+        <li><a href="{{ url('privacy/') }}">{{ t.footer.privacy }}</a></li>
+        <li><a href="{{ url('terms/') }}">{{ t.footer.terms }}</a></li>
+        <li><a href="{{ url('cookies/') }}">{{ t.footer.cookie_policy }}</a></li>
+        <li><button class="footer-link" type="button" data-cookie-settings>{{ t.footer.cookies }}</button></li>
+      </ul>
+    </div>
   </div>
   <div class="container footer-bottom">
     <p>© {{ year }} {{ site.company }}. {{ t.footer.rights }}</p>

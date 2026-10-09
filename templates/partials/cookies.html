@@ -1,0 +1,19 @@
+<div class="cookie-banner" data-cookie-banner hidden role="dialog" aria-modal="false" aria-labelledby="cookie-title">
+  <div class="cookie-inner">
+    <div class="cookie-copy">
+      <h2 id="cookie-title">{{ t.cookies.title }}</h2>
+      <p>{{ t.cookies.text }} <a href="{{ url('cookies/') }}">{{ t.cookies.policy }}</a></p>
+    </div>
+    <form class="cookie-prefs" data-cookie-prefs hidden>
+      <label class="cookie-row"><span><b>{{ t.cookies.essential }}</b><small>{{ t.cookies.essential_text }}</small></span><input type="checkbox" checked disabled><i class="switch" aria-hidden="true"></i></label>
+      <label class="cookie-row"><span><b>{{ t.cookies.analytics }}</b><small>{{ t.cookies.analytics_text }}</small></span><input type="checkbox" name="analytics"><i class="switch" aria-hidden="true"></i></label>
+      <label class="cookie-row"><span><b>{{ t.cookies.marketing }}</b><small>{{ t.cookies.marketing_text }}</small></span><input type="checkbox" name="marketing"><i class="switch" aria-hidden="true"></i></label>
+    </form>
+    <div class="cookie-actions">
+      <button class="btn btn-outline btn-sm" type="button" data-cookie="settings">{{ t.cookies.settings }}</button>
+      <button class="btn btn-outline btn-sm" type="button" data-cookie="save" hidden>{{ t.cookies.save }}</button>
+      <button class="btn btn-outline btn-sm" type="button" data-cookie="reject">{{ t.cookies.reject }}</button>
+      <button class="btn btn-primary btn-sm" type="button" data-cookie="accept">{{ t.cookies.accept }}</button>
+    </div>
+  </div>
+</div>

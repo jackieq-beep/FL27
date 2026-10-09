@@ -26,6 +26,20 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Chivo:ital,wght@0,700;0,900;1,900&family=Space+Grotesk:wght@400;500;700&display=swap">
   <link rel="stylesheet" href="{{ asset('main.css') }}">
   <script>document.documentElement.classList.add('js')</script>
+  <script>
+    // Google Consent Mode v2: everything is off until the visitor chooses.
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    (function () {
+      var c = null; try { c = JSON.parse(localStorage.getItem("fl_consent") || "null"); } catch (e) {}
+      var a = c && c.analytics ? "granted" : "denied", m = c && c.marketing ? "granted" : "denied";
+      gtag("consent", "default", { analytics_storage: a, ad_storage: m, ad_user_data: m, ad_personalization: m, functionality_storage: "granted", security_storage: "granted", wait_for_update: 500 });
+    })();
+  </script>
+  {% if site.ga_measurement_id %}
+  <script async src="https://www.googletagmanager.com/gtag/js?id={{ site.ga_measurement_id }}"></script>
+  <script>gtag("js", new Date()); gtag("config", {{ site.ga_measurement_id | tojson }});</script>
+  {% endif %}
   <script type="application/ld+json">
   {{ {
     "@context": "https://schema.org",
@@ -47,6 +61,7 @@
     {% block content %}{% endblock %}
   </main>
   {% include "partials/footer.html" %}
+  {% include "partials/cookies.html" %}
   <script src="{{ asset('main.js') }}" defer></script>
 </body>
 </html>

@@ -79,3 +79,41 @@
     frame();
   }
 })();
+
+// Cookie consent banner + Google Consent Mode
+(function () {
+  const banner = document.querySelector("[data-cookie-banner]");
+  if (!banner) return;
+  const prefs = banner.querySelector("[data-cookie-prefs]");
+  const btn = (k) => banner.querySelector(`[data-cookie="${k}"]`);
+  const read = () => { try { return JSON.parse(localStorage.getItem("fl_consent") || "null"); } catch (e) { return null; } };
+  const store = (c) => {
+    c.date = new Date().toISOString();
+    try { localStorage.setItem("fl_consent", JSON.stringify(c)); } catch (e) {}
+    const m = c.marketing ? "granted" : "denied";
+    if (window.gtag) gtag("consent", "update", { analytics_storage: c.analytics ? "granted" : "denied", ad_storage: m, ad_user_data: m, ad_personalization: m });
+    if (!c.analytics) document.cookie.split(";").forEach((ck) => {
+      const n = ck.split("=")[0].trim();
+      if (/^_ga/.test(n)) [location.hostname, "." + location.hostname.split(".").slice(-2).join(".")].forEach((d) => { document.cookie = `${n}=; Max-Age=0; path=/; domain=${d}`; });
+    });
+    hide();
+  };
+  const showPrefs = (on) => { prefs.hidden = !on; btn("save").hidden = !on; btn("settings").hidden = on; };
+  const show = (withPrefs) => {
+    const c = read() || {};
+    prefs.analytics.checked = !!c.analytics; prefs.marketing.checked = !!c.marketing;
+    showPrefs(!!withPrefs); banner.hidden = false;
+    requestAnimationFrame(() => banner.classList.add("is-in"));
+  };
+  const hide = () => { banner.classList.remove("is-in"); setTimeout(() => { banner.hidden = true; }, 300); };
+
+  btn("accept").addEventListener("click", () => store({ analytics: true, marketing: true }));
+  btn("reject").addEventListener("click", () => store({ analytics: false, marketing: false }));
+  btn("settings").addEventListener("click", () => showPrefs(true));
+  btn("save").addEventListener("click", () => store({ analytics: prefs.analytics.checked, marketing: prefs.marketing.checked }));
+  document.querySelectorAll("[data-cookie-settings]").forEach((el) => el.addEventListener("click", () => show(true)));
+
+  const c = read();
+  const expired = c && c.date && (Date.now() - new Date(c.date).getTime()) > 365 * 864e5;
+  if (!c || expired) setTimeout(() => show(false), 600);
+})();

@@ -40,3 +40,13 @@ python -m http.server 8000 -d dist
 ```
 
 Then open http://localhost:8000.
+
+## Google Analytics
+
+Put your GA4 Measurement ID (looks like `G-XXXXXXXXXX`) in `site.yaml` under `ga_measurement_id`.
+Analytics only runs for visitors who accept analytics cookies (Google Consent Mode v2).
+
+## Legal pages
+
+Privacy Policy, Terms of Service and Cookie Policy are in `content/legal/*.md`.
+They are a starting point — have them reviewed for your company and the countries you sell in.

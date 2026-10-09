@@ -4,6 +4,11 @@ name: Football League 2026
 short_name: FL2026
 company: Mobile Soccer
 contact_email: partnerships@mobilesoccer.net
+legal_email: support@footballleaguegame.com
+
+# Google Analytics 4 "Measurement ID" (looks like G-XXXXXXXXXX). Leave empty to switch analytics off.
+# Analytics only runs after a visitor clicks "Accept all" in the cookie banner.
+ga_measurement_id: ""
 
 # Where the site lives. Leave base_path empty once a custom domain is set up.
 site_url: https://jackieq-beep.github.io
