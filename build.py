@@ -101,6 +101,7 @@ def main():
     base = "/" + base.strip("/") if base.strip("/") else ""
     site["base"] = base
     site["social_names"] = {"youtube": "YouTube", "instagram": "Instagram", "x": "X", "tiktok": "TikTok", "discord": "Discord", "facebook": "Facebook"}
+    site["social_handles"] = {k: "@" + v.rstrip("/").rsplit("/", 1)[-1].lstrip("@") for k, v in (site.get("social") or {}).items() if v and k != "discord"}
     site["social_list"] = [k for k in ("youtube", "instagram", "x", "tiktok", "discord", "facebook") if (site.get("social") or {}).get(k)]
 
     if DIST.exists():

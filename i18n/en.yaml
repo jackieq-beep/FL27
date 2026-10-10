@@ -266,16 +266,24 @@ community_page:
   title_1: Join the
   title_2: home end.
   text: "Highlights, rivals and live chats, all in one place. Find your people and talk football with players from around the world."
+  discord_kicker: "Official server"
   discord_title: "Join our Discord"
-  discord_text: "Matchmaking, dev Q&A, player tips and live tactics talk."
+  discord_text: "The home of the Football League community. Talk to the team, find rivals and be first to hear what's coming next."
+  discord_perks:
+    - "Find opponents for Local PvP"
+    - "Dev Q&A and early news"
+    - "Tips, tactics and squad builds"
+    - "Community events and giveaways"
   discord_cta: Join the server
   channels_title: Follow us
+  channels_text: "Clips, news and behind-the-scenes from the pitch, wherever you scroll."
+  follow: Follow
   channels:
     instagram: "Goal montages, kit drops and behind-the-scenes art."
     facebook: "Big announcements, trailers and patch notes in one feed."
     youtube: "Trailers, guides and match highlights."
     x: "Live updates and quick news."
-    tiktok: "Short clips and skills."
+    tiktok: "Quick clips, skill moves and match-day moments from the pitch."
 
 coming:
   kicker: "Coming soon"
