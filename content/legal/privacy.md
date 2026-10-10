@@ -12,6 +12,7 @@ We keep data collection to a minimum. We do **not** ask for or store your name, 
 
 - **Cookie choice.** We store your cookie preference in your browser so we don't ask again.
 - **Analytics (only if you accept).** If you click "Accept all" or turn on Analytics in the cookie settings, we use Google Analytics to collect anonymous usage statistics: pages viewed, how you arrived (for example from a search engine or social media), approximate country, device and browser type, and general error information. Google Analytics does not give us your name or contact details.
+- **Newsletter (only if you sign up).** If you enter your email address in the newsletter form, we store it with our email provider so we can send you news about Football League. You can unsubscribe at any time using the link in every email.
 - **Messages you send us.** If you email us, we receive your email address and whatever you include in your message.
 
 ## How we use information
@@ -19,13 +20,14 @@ We keep data collection to a minimum. We do **not** ask for or store your name, 
 - To keep the website working and secure.
 - To understand which pages and features are popular, so we can improve the site.
 - To measure how well our marketing for Football League is working.
+- To send you our newsletter, if you signed up for it.
 - To answer messages you send us.
 
 We do not sell your personal information.
 
 ## Legal basis (visitors in the EU, UK and similar regions)
 
-We use essential cookies because they are necessary to provide the website. We use analytics and marketing cookies **only with your consent**, which you can withdraw at any time using **Cookie Settings** in the footer.
+We use essential cookies because they are necessary to provide the website. We send the newsletter only to people who sign up for it (consent). We use analytics and marketing cookies **only with your consent**, which you can withdraw at any time using **Cookie Settings** in the footer.
 
 ## Cookies
 
@@ -36,6 +38,7 @@ See our [Cookie Policy]({{base}}/cookies/) for the full list of cookies and how 
 This website links to, or embeds, services run by other companies. Their own privacy policies apply when you use them:
 
 - **Online shop:** our merchandise shop is provided by Spreadshop (Spreadshirt). When you browse the shop, add items to your basket or check out, Spreadshirt processes your data as the seller. See [Spreadshirt's privacy policy](https://service.spreadshirt.com/hc/en-us/articles/115000978409).
+- **Newsletter:** our newsletter emails are sent through our email provider (Brevo or Mailchimp), which stores your email address on our behalf.
 - **Google Analytics:** see [Google's privacy policy](https://policies.google.com/privacy) and [how Google uses data from sites that use its services](https://policies.google.com/technologies/partner-sites).
 - **Google Play and the Apple App Store**, where you download the game.
 - **Social media** such as Discord, Instagram and Facebook, if you follow our links.

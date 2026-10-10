@@ -185,3 +185,35 @@
     modal.querySelector(".video-close").focus();
   }));
 })();
+
+// Newsletter sign-up (Brevo or Mailchimp) without leaving the page
+(function () {
+  const form = document.querySelector("[data-newsletter]");
+  if (!form) return;
+  const status = form.querySelector(".nl-status"), btn = form.querySelector("button"), email = form.querySelector('input[name="EMAIL"]');
+  const say = (msg, kind) => { status.textContent = msg; status.dataset.kind = kind || ""; };
+  form.addEventListener("submit", (e) => {
+    e.preventDefault();
+    if (form.querySelector('[name="email_address_check"]').value || form.querySelector('[name="b_trap"]').value) return;
+    if (!/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(email.value.trim())) { say(form.dataset.msgInvalid, "error"); email.focus(); return; }
+    btn.disabled = true; say(form.dataset.msgSending);
+    const done = (ok, msg) => {
+      btn.disabled = false;
+      if (ok) { form.reset(); say(form.dataset.msgSuccess, "ok"); if (window.gtag) gtag("event", "sign_up", { method: "newsletter" }); }
+      else say(msg || form.dataset.msgError, "error");
+    };
+    if (form.dataset.newsletter === "mailchimp") {
+      // Mailchimp answers through JSONP, so we can show the result here
+      const cb = "flmc" + Date.now(), s = document.createElement("script");
+      const q = new URLSearchParams({ EMAIL: email.value.trim(), c: cb });
+      window[cb] = (r) => { delete window[cb]; s.remove(); done(r && r.result === "success", r && r.result !== "success" && /already subscribed/i.test(r.msg || "") ? form.dataset.msgSuccess : null); };
+      s.onerror = () => { delete window[cb]; s.remove(); done(false); };
+      s.src = form.action.replace("/post?", "/post-json?") + "&" + q.toString();
+      document.body.appendChild(s);
+    } else {
+      // Brevo: send the form in the background
+      const data = new FormData(form); data.delete("b_trap");
+      fetch(form.action, { method: "POST", body: data, mode: "no-cors" }).then(() => done(true)).catch(() => done(false));
+    }
+  });
+})();

@@ -82,6 +82,7 @@
   <main id="main">
     {% block content %}{% endblock %}
   </main>
+  {% include "partials/newsletter.html" %}
   {% include "partials/footer.html" %}
   {% include "partials/cookies.html" %}
   <script src="{{ asset('main.js') }}" defer></script>

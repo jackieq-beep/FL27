@@ -1011,3 +1011,26 @@ a.contact-channel:hover b .icon { transform: translateX(4px); }
 :lang(ja) .hero-tagline, :lang(zh-cn) .hero-tagline, :lang(ja) .kicker, :lang(zh-cn) .kicker,
 :lang(ja) .contact-channel small, :lang(zh-cn) .contact-channel small, :lang(ja) .dev-credit, :lang(zh-cn) .dev-credit { letter-spacing: .06em; }
 :lang(ar) .hero-tagline { letter-spacing: 0; }
+
+/* ---------- newsletter ---------- */
+.newsletter { position: relative; overflow: hidden; padding-block: clamp(56px, 7vw, 96px); border-top: 1px solid var(--line);
+  background: radial-gradient(60% 120% at 100% 0%, rgba(255, 0, 85, .2), transparent 60%), radial-gradient(50% 100% at 0% 100%, rgba(0, 255, 102, .08), transparent 60%), var(--bg); }
+.nl-grid { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: clamp(28px, 5vw, 80px); align-items: center; }
+.nl-copy h2 { margin: 10px 0 14px; }
+.nl-copy p:last-child { color: var(--muted); max-width: 46ch; }
+.nl-row { display: flex; gap: 10px; }
+.nl-row input { flex: 1; min-width: 0; min-height: 52px; padding: 0 20px; border-radius: 999px; border: 1px solid var(--line); background: rgba(255, 255, 255, .05);
+  color: var(--text); font: inherit; font-size: 16px; transition: border-color .2s, background .2s; }
+.nl-row input::placeholder { color: var(--dim); }
+.nl-row input:focus { outline: none; border-color: var(--pink); background: rgba(255, 255, 255, .08); }
+.nl-row .btn { min-height: 52px; flex: none; }
+.nl-row .btn[disabled] { opacity: .6; cursor: wait; }
+.nl-trap { position: absolute; left: -9999px; width: 1px; height: 1px; overflow: hidden; }
+.nl-consent { margin-top: 14px; font-size: 13px; color: var(--dim); }
+.nl-consent a { color: var(--muted); text-decoration: underline; }
+.nl-status { margin-top: 10px; min-height: 1.4em; font-size: 15px; font-weight: 600; }
+.nl-status[data-kind="ok"] { color: var(--green); }
+.nl-status[data-kind="error"] { color: var(--pink-soft, #ff5c8a); }
+.sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0; }
+@media (max-width: 900px) { .nl-grid { grid-template-columns: minmax(0, 1fr); } }
+@media (max-width: 520px) { .nl-row { flex-direction: column; } .nl-row .btn { justify-content: center; } }

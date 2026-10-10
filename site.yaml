@@ -15,6 +15,12 @@ support_email: footballleague2023@gmail.com
 # Analytics only runs after a visitor clicks "Accept all" in the cookie banner.
 ga_measurement_id: ""
 
+# Newsletter sign-up (shown above the footer on every page once "action" is filled in).
+# provider: brevo or mailchimp. action: the form address from your Brevo / Mailchimp sign-up form.
+newsletter:
+  provider: brevo
+  action: ""
+
 # Google Search Console "HTML tag" verification code (only the content="..." part). Leave empty if not used.
 google_site_verification: ""
 

@@ -290,3 +290,16 @@ coming:
   kicker: "Segera hadir"
   text: "Halaman ini sedang dibangun. Cek lagi nanti, ya."
   back: "Kembali ke beranda"
+
+newsletter:
+  kicker: "Newsletter"
+  title: "Dapatkan kabar FL27 lebih dulu."
+  text: "Tanggal rilis, fitur baru, event, dan hadiah eksklusif, langsung ke email kamu."
+  placeholder: "Alamat email kamu"
+  button: "Daftar"
+  consent: "Dengan mendaftar, kamu setuju menerima email tentang Football League dari Mobile Soccer. Berhenti berlangganan kapan saja."
+  privacy: "Kebijakan Privasi"
+  success: "Berhasil! Cek email kamu untuk konfirmasi."
+  error: "Terjadi kesalahan. Silakan coba lagi."
+  invalid: "Masukkan alamat email yang valid."
+  sending: "Mengirim…"

@@ -290,3 +290,16 @@ coming:
   kicker: "Em breve"
   text: "Esta página está sendo construída. Volte em breve."
   back: Voltar ao início
+
+newsletter:
+  kicker: "Newsletter"
+  title: "Saiba tudo do FL27 primeiro."
+  text: "Datas de lançamento, novidades, eventos e recompensas exclusivas, direto no seu e-mail."
+  placeholder: "Seu e-mail"
+  button: "Inscrever-se"
+  consent: "Ao se inscrever, você concorda em receber e-mails da Mobile Soccer sobre o Football League. Cancele quando quiser."
+  privacy: "Política de Privacidade"
+  success: "Pronto! Confira seu e-mail para confirmar a inscrição."
+  error: "Algo deu errado. Tente novamente."
+  invalid: "Digite um e-mail válido."
+  sending: "Enviando…"

@@ -290,3 +290,16 @@ coming:
   kicker: "即将推出"
   text: "此页面正在建设中，敬请期待。"
   back: "返回首页"
+
+newsletter:
+  kicker: "订阅资讯"
+  title: "抢先获取 FL27 消息。"
+  text: "发布日期、新功能、活动与独家奖励，第一时间发送到你的邮箱。"
+  placeholder: "你的邮箱地址"
+  button: "订阅"
+  consent: "订阅即表示你同意接收 Mobile Soccer 发送的 Football League 相关邮件，可随时退订。"
+  privacy: "隐私政策"
+  success: "订阅成功！请查收邮件并确认你的邮箱。"
+  error: "出错了，请稍后再试。"
+  invalid: "请输入有效的邮箱地址。"
+  sending: "提交中…"
