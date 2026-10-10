@@ -10,6 +10,7 @@
     <p class="kicker">{{ t.game_page.kicker }}</p>
     <h1 class="display display-xl">{{ t.game_page.title_1 }} <span class="accent-pink">{{ t.game_page.title_2 }}</span></h1>
     <p class="lead">{{ t.game_page.text }}</p>
+    <div class="game-hero-stores">{{ store_buttons(t, site, icon) }}</div>
     <ul class="feature-jump" role="list" aria-label="{{ t.game_page.jump }}">
       {% for f in t.game_page.features %}<li><a href="#{{ f.key }}">{{ f.label }}</a></li>{% endfor %}
     </ul>
