@@ -1,0 +1,44 @@
+{% extends "base.html" %}
+{% from "partials/macros.html" import store_buttons %}
+{% block title %}{{ t.game_page.meta_title }}{% endblock %}
+{% block description %}{{ t.game_page.meta_description }}{% endblock %}
+{% block content %}
+<section class="page-hero game-hero">
+  <div class="page-hero-bg">{{ img('u27-stadium.jpg', '', '100vw', eager=True) }}</div>
+  <div class="container">
+    <p class="kicker">{{ t.game_page.kicker }}</p>
+    <h1 class="display display-xl">{{ t.game_page.title_1 }} <span class="accent-pink">{{ t.game_page.title_2 }}</span></h1>
+    <p class="lead">{{ t.game_page.text }}</p>
+    <ul class="feature-jump" role="list" aria-label="{{ t.game_page.jump }}">
+      {% for f in t.game_page.features %}<li><a href="#{{ f.key }}">{{ f.label }}</a></li>{% endfor %}
+    </ul>
+  </div>
+</section>
+
+<section class="game-features">
+  <div class="container">
+    {% for f in t.game_page.features %}
+    <article class="gf{% if loop.index is even %} gf-flip{% endif %}" id="{{ f.key }}">
+      <div class="gf-media{% if f.images | length > 1 %} gf-media-multi{% endif %}">
+        {% for im in f.images %}
+        {{ img(im, f.title, '(min-width: 1000px) 720px, 100vw' if loop.first else '(min-width: 1000px) 360px, 50vw') }}
+        {% endfor %}
+      </div>
+      <div class="gf-copy">
+        <p class="kicker"><span class="gf-num">{{ '%02d' % loop.index }}</span> {{ f.label }}</p>
+        <h2>{{ f.title }}</h2>
+        <p>{{ f.text }}</p>
+      </div>
+    </article>
+    {% endfor %}
+  </div>
+</section>
+
+<section class="section download game-cta">
+  <div class="container game-cta-inner">
+    <h2 class="display">{{ t.game_page.cta_title_1 }} <span class="accent-green">{{ t.game_page.cta_title_2 }}</span></h2>
+    <p class="lead">{{ t.game_page.cta_text }}</p>
+    {{ store_buttons(t, site, icon) }}
+  </div>
+</section>
+{% endblock %}

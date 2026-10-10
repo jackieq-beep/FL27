@@ -182,6 +182,49 @@ cookies:
   policy: Cookie Policy
   always_on: Always on
 
+game_page:
+  meta_title: "What's New in FL27 – Football League"
+  meta_description: "FL27 brings a refreshed home screen, a rebuilt Career Mode, upgraded match visuals, a brand-new stadium, daily challenges and Local PvP. Free on iOS and Android."
+  kicker: "Football League 2027"
+  title_1: The new season
+  title_2: starts here.
+  text: "FL27 is our biggest refresh yet: a cleaner look, a rebuilt Career Mode, upgraded match day visuals and new ways to play with friends."
+  jump: "What's new"
+  features:
+    - key: ui
+      label: "New look"
+      title: "A cleaner, faster home screen"
+      text: "FL27 brings a fully refreshed interface with a cleaner, more modern style. The redesigned home screen puts every mode within one tap, so it's quicker to find your next match, and the whole game looks and feels more premium."
+      images: [u27-main-menu.jpg]
+    - key: career
+      label: "Career Mode"
+      title: "Career Mode, rebuilt"
+      text: "Career Mode now has its own dedicated hub. Manage transfers and finances, hit your board's targets, follow the league table round by round and chase the title across a full season, with gameplay improvements that make the long game more rewarding."
+      images: [u27-career.jpg]
+    - key: visuals
+      label: "Match day"
+      title: "Every match looks sharper"
+      text: "Match day has been upgraded from kick-off to final whistle: a new pre-match screen, redesigned in-game buttons and HUD, and a brand-new Goal Moment that puts the scorer in the spotlight. It all adds up to a more polished, consistent experience."
+      images: [u27-gameplay.jpg, u27-goal.jpg, u27-friendly.jpg]
+    - key: stadium
+      label: "New stadium"
+      title: "A brand-new home ground"
+      text: "Every edition gets a new stadium, and FL27's is our most atmospheric yet: packed stands, bright lights, giant screens and fresh Football League branding that make every match feel like a big night."
+      images: [u27-stadium.jpg]
+    - key: challenges
+      label: "Daily challenges"
+      title: "Daily challenges, daily rewards"
+      text: "Short, skill-based football challenges arrive every day. Hit the targets, beat the keeper and collect gems and coins. They're perfect for a few minutes between matches."
+      images: [u27-penalty.jpg]
+    - key: pvp
+      label: "Local PvP"
+      title: "Play your friends, face to face"
+      text: "Challenge friends nearby and settle it on the pitch. Local PvP keeps getting better in FL27, making Football League more social than ever."
+      images: [u27-pvp.jpg]
+  cta_title_1: Ready for
+  cta_title_2: kick-off?
+  cta_text: "Football League is free to play on iOS and Android."
+
 news:
   meta_title: "News & Updates – Football League 2026"
   meta_description: "Game updates, live events, new club licenses and announcements from Football League 2026."
