@@ -2,39 +2,36 @@
 {% block title %}{{ t.contact_page.meta_title }}{% endblock %}
 {% block description %}{{ t.contact_page.meta_description }}{% endblock %}
 {% block content %}
-<section class="page-hero">
-  <div class="page-hero-bg">{{ img('u27-stadium.jpg', '', '100vw', eager=True) }}</div>
-  <div class="container">
-    <p class="kicker">{{ t.contact_page.kicker }}</p>
-    <h1 class="display display-xl">{{ t.contact_page.title_1 }} <span class="accent-pink">{{ t.contact_page.title_2 }}</span></h1>
-    <p class="lead">{{ t.contact_page.text }}</p>
-  </div>
-</section>
-<section class="section contact-page">
-  <div class="container">
-    <dl class="contact-list">
+<section class="contact-hero">
+  <div class="contact-hero-bg">{{ img('u27-stadium.jpg', '', '100vw', eager=True) }}</div>
+  <div class="container contact-hero-grid">
+    <div class="contact-intro">
+      <p class="kicker">{{ t.contact_page.kicker }}</p>
+      <h1 class="display display-xl">{{ t.contact_page.title_1 }} <span class="accent-pink">{{ t.contact_page.title_2 }}</span></h1>
+      <p class="lead">{{ t.contact_page.text }}</p>
+    </div>
+    <ul class="contact-channels" role="list">
       {% for c in t.contact_page.cards %}
-      <div class="contact-row">
-        <dt>
-          <h2>{{ c.title }}</h2>
-          <p>{{ c.text }}</p>
-        </dt>
-        <dd>
-          {% if c.key == 'partnerships' %}
-          <a class="contact-email" href="mailto:{{ site.contact_email }}">{{ site.contact_email }} {{ icon('arrow-right') }}</a>
-          {% elif c.key == 'support' %}
-          <a class="contact-email" href="mailto:{{ site.support_email }}">{{ site.support_email }} {{ icon('arrow-right') }}</a>
-          {% else %}
-          <ul class="contact-socials" role="list">
-            {% for k in site.social_list %}
-            <li><a class="fs-{{ k }}" href="{{ site.social[k] }}" target="_blank" rel="noopener"><span class="fs-tile">{{ icon(k) }}</span><span>{{ site.social_names[k] }}</span></a></li>
-            {% endfor %}
-          </ul>
-          {% endif %}
-        </dd>
-      </div>
+      {% if c.key == 'community' %}
+      <li class="contact-channel is-social">
+        <small>{{ c.title }}</small>
+        <ul class="contact-socials" role="list">
+          {% for k in site.social_list %}
+          <li><a class="fs-{{ k }}" href="{{ site.social[k] }}" target="_blank" rel="noopener" aria-label="{{ site.social_names[k] }}" title="{{ site.social_names[k] }}"><span class="fs-tile">{{ icon(k) }}</span></a></li>
+          {% endfor %}
+        </ul>
+      </li>
+      {% else %}
+      {% set em = site.contact_email if c.key == 'partnerships' else site.support_email %}
+      <li>
+        <a class="contact-channel" href="mailto:{{ em }}">
+          <small>{{ c.title }}</small>
+          <b>{{ em }} {{ icon('arrow-right') }}</b>
+        </a>
+      </li>
+      {% endif %}
       {% endfor %}
-    </dl>
+    </ul>
   </div>
 </section>
 {% endblock %}

@@ -222,7 +222,7 @@ contact_page:
   kicker: "Contact"
   title_1: Get in
   title_2: touch.
-  text: "Questions, ideas or business enquiries? Pick the right channel below and we'll get back to you."
+  text: "Questions, ideas or business enquiries? Reach the right team directly."
   cards:
     - { key: partnerships, icon: mail, title: "Partnerships & business", text: "Brand partnerships, licensing, advertising and media enquiries." }
     - { key: support, icon: gamepad, title: "Player support", text: "Help with the game, your account, purchases or privacy requests." }
