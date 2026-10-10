@@ -28,7 +28,7 @@
       <h2>{{ t.footer.col_follow }}</h2>
       <ul role="list">
         {% for k in site.social_list %}
-        <li><a href="{{ site.social[k] }}" target="_blank" rel="noopener">{{ icon(k) }}<span>{{ site.social_names[k] }}</span></a></li>
+        <li><a class="fs-{{ k }}" href="{{ site.social[k] }}" target="_blank" rel="noopener"><span class="fs-tile">{{ icon(k) }}</span><span>{{ site.social_names[k] }}</span></a></li>
         {% endfor %}
       </ul>
     </div>
