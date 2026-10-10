@@ -225,6 +225,19 @@ game_page:
   cta_title_2: kick-off?
   cta_text: "Football League is free to play on iOS and Android."
 
+contact_page:
+  meta_title: "Contact – Football League"
+  meta_description: "Get in touch with the Football League team for partnerships, player support or press."
+  kicker: "Contact"
+  title_1: Get in
+  title_2: touch.
+  text: "Questions, ideas or business enquiries? Pick the right channel below and we'll get back to you."
+  cards:
+    - { key: partnerships, icon: mail, title: "Partnerships & business", text: "Brand partnerships, licensing, advertising and media enquiries." }
+    - { key: support, icon: gamepad, title: "Player support", text: "Help with the game, your account, purchases or privacy requests." }
+    - { key: community, icon: discord, title: "Community", text: "Chat with other players and the team on our Discord server.", cta: "Join Discord" }
+  email_cta: Send an email
+
 news:
   meta_title: "News & Updates – Football League 2026"
   meta_description: "Game updates, live events, new club licenses and announcements from Football League 2026."

@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+{% block title %}{{ t.contact_page.meta_title }}{% endblock %}
+{% block description %}{{ t.contact_page.meta_description }}{% endblock %}
+{% block content %}
+<section class="page-hero">
+  <div class="page-hero-bg">{{ img('u27-stadium.jpg', '', '100vw', eager=True) }}</div>
+  <div class="container">
+    <p class="kicker">{{ t.contact_page.kicker }}</p>
+    <h1 class="display display-xl">{{ t.contact_page.title_1 }} <span class="accent-pink">{{ t.contact_page.title_2 }}</span></h1>
+    <p class="lead">{{ t.contact_page.text }}</p>
+  </div>
+</section>
+<section class="section contact-page">
+  <div class="container">
+    <ul class="contact-grid" role="list">
+      {% for c in t.contact_page.cards %}
+      {% if c.key == 'partnerships' %}{% set href = 'mailto:' ~ site.contact_email %}{% set label = site.contact_email %}
+      {% elif c.key == 'support' %}{% set href = 'mailto:' ~ site.legal_email %}{% set label = site.legal_email %}
+      {% else %}{% set href = site.social.discord %}{% set label = c.cta %}{% endif %}
+      {% if href %}
+      <li class="contact-card">
+        <span class="contact-icon">{{ icon(c.icon) }}</span>
+        <h2>{{ c.title }}</h2>
+        <p>{{ c.text }}</p>
+        <a class="contact-link" href="{{ href }}"{% if not href.startswith('mailto:') %} target="_blank" rel="noopener"{% endif %}>{{ label }} {{ icon('arrow-up-right' if not href.startswith('mailto:') else 'arrow-right') }}</a>
+      </li>
+      {% endif %}
+      {% endfor %}
+    </ul>
+  </div>
+</section>
+{% endblock %}
