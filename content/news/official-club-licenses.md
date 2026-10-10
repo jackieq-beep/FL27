@@ -3,7 +3,7 @@ title: Manchester City and AS Monaco arrive in Football League 2026
 section: licenses
 image: license-monaco.jpg
 summary: Official Manchester City kits and AS Monaco licenses are here. Authentic looks, elite football, and the season in true club colors.
-date: 2026-11-01
+date: 2025-11-01
 ---
 
 Official Manchester City kits and AS Monaco licenses have arrived in Football League 2026.
