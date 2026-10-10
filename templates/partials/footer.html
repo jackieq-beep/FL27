@@ -6,18 +6,12 @@
         {% if site.brand_year %}<span class="brand-year" style="--year:url({{ site.base }}/brand/y{{ site.brand_year }}.png)" role="img" aria-label="{{ site.brand_year }}"></span>{% endif %}
       </a>
       <p>{{ t.footer.about }}</p>
-      <ul class="social-row" role="list">
-        {% for k in site.social_list %}
-        <li><a href="{{ site.social[k] }}" target="_blank" rel="noopener" aria-label="{{ site.social_names[k] }}">{{ icon(k) }}</a></li>
-        {% endfor %}
-      </ul>
     </div>
     <div class="footer-col">
       <h2>{{ t.footer.col_game }}</h2>
       <ul role="list">
         <li><a href="{{ url('game/') }}">{{ t.nav.game }}</a></li>
         <li><a href="{{ url('news/') }}">{{ t.nav.news }}</a></li>
-        <li><a href="{{ url('community/') }}">{{ t.nav.community }}</a></li>
         <li><a href="{{ site.stores.google_play }}" target="_blank" rel="noopener">Google Play</a></li>
         <li><a href="{{ site.stores.app_store }}" target="_blank" rel="noopener">App Store</a></li>
       </ul>
@@ -28,6 +22,14 @@
         <li><a href="{{ url('shop/') }}">{{ t.nav.shop }}</a></li>
         <li><a href="{{ url('media/') }}">{{ t.nav.media }}</a></li>
         <li><a href="{{ url('contact/') }}">{{ t.footer.contact }}</a></li>
+      </ul>
+    </div>
+    <div class="footer-col footer-follow">
+      <h2>{{ t.footer.col_follow }}</h2>
+      <ul role="list">
+        {% for k in site.social_list %}
+        <li><a href="{{ site.social[k] }}" target="_blank" rel="noopener">{{ icon(k) }}<span>{{ site.social_names[k] }}</span></a></li>
+        {% endfor %}
       </ul>
     </div>
     <div class="footer-col">

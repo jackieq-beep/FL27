@@ -108,6 +108,7 @@ footer:
   about: "Football League 2026 is a free mobile football game for iOS and Android, made by Mobile Soccer for players everywhere."
   col_game: Game
   col_company: Company
+  col_follow: Follow us
   col_legal: Legal
   privacy: Privacy Policy
   terms: Terms of Service
@@ -258,32 +259,6 @@ news:
   copy_link: Copy link
   copied: Link copied
   featured: Latest
-
-community_page:
-  meta_title: "Community – Football League 2026"
-  meta_description: "Join the Football League 2026 community on Discord, Instagram and Facebook: highlights, team builds, events and live chat with players."
-  kicker: "Community"
-  title_1: Join the
-  title_2: home end.
-  text: "Highlights, rivals and live chats, all in one place. Find your people and talk football with players from around the world."
-  discord_kicker: "Official server"
-  discord_title: "Join our Discord"
-  discord_text: "The home of the Football League community. Talk to the team, find rivals and be first to hear what's coming next."
-  discord_perks:
-    - "Find opponents for Local PvP"
-    - "Dev Q&A and early news"
-    - "Tips, tactics and squad builds"
-    - "Community events and giveaways"
-  discord_cta: Join the server
-  channels_title: Follow us
-  channels_text: "Clips, news and behind-the-scenes from the pitch, wherever you scroll."
-  follow: Follow
-  channels:
-    instagram: "Goal montages, kit drops and behind-the-scenes art."
-    facebook: "Big announcements, trailers and patch notes in one feed."
-    youtube: "Trailers, guides and match highlights."
-    x: "Live updates and quick news."
-    tiktok: "Quick clips, skill moves and match-day moments from the pitch."
 
 coming:
   kicker: "Coming soon"

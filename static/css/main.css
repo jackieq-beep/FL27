@@ -693,7 +693,11 @@ button { font: inherit; color: inherit; background: none; border: 0; cursor: poi
   .legal-nav a, .legal-nav button { border: 1px solid var(--line); padding: 8px 12px; font-size: 14px; }
   .legal-nav a[aria-current] { border-color: var(--pink); }
 }
-.footer-grid { grid-template-columns: 2fr 1fr 1fr 1fr; }
+.footer-grid { grid-template-columns: 1.6fr 1fr 1fr 1fr 1fr; }
+.footer-follow a { display: inline-flex; align-items: center; gap: 10px; }
+.footer-follow .icon { width: 18px; height: 18px; flex: none; color: var(--muted); transition: color .2s; }
+.footer-follow a:hover .icon { color: var(--pink); }
+@media (max-width: 1080px) { .footer-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); } .footer-brand { grid-column: 1 / -1; } }
 .footer-link { padding: 0; font-size: 15px; color: #d4d4d8; text-align: start; }
 .footer-link:hover { color: var(--pink); }
 @media (max-width: 900px) { .footer-grid { grid-template-columns: 1fr 1fr; } }

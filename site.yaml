@@ -143,5 +143,4 @@ nav:
   - { key: game, icon: gamepad, path: game/ }
   - { key: news, icon: news, path: news/ }
   - { key: shop, icon: bag, path: shop/ }
-  - { key: community, icon: users, path: community/ }
   - { key: contact, icon: mail, path: contact/ }
