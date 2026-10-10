@@ -796,3 +796,15 @@ button { font: inherit; color: inherit; background: none; border: 0; cursor: poi
   .topic-grid { grid-template-columns: minmax(0, 1fr); }
 }
 .clubs-media figure:first-child figcaption { top: 14px; bottom: auto; inset-inline-start: auto; inset-inline-end: 14px; }
+
+/* ---------- calm mode: everything below the hero and game description stays still ---------- */
+.ticker-track { animation: none; }
+.garment-hoodie, .garment-bottle, .merch-crest, .merch-art img { animation: none !important; }
+.garment-hoodie { transform: rotate(-4deg); }
+.garment-bottle { transform: rotate(10deg); }
+.merch-crest { transform: rotate(12deg); }
+.mode-card:hover, .news-card a:hover, .community-card:hover, .discord-card:hover { transform: none; box-shadow: none; }
+.mode-card:hover img, .news-card a:hover .news-img img { transform: none; }
+.cat-tile:hover .cat-product:first-child { transform: none; }
+.cat-tile:hover .cat-product + .cat-product { transform: translateY(6%) scale(.9); }
+.mode-card img, .news-img img, .cat-product { transition: none; }

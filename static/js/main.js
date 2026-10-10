@@ -48,8 +48,9 @@
 
   // Content slides in as it scrolls into view; grids animate their items one after another
   if ("IntersectionObserver" in window && !reduce) {
-    const singles = document.querySelectorAll(".split-head, .feature-shot, .clubs-copy, .clubs-media figure, .merch-card, .download-copy, .download-media, .cat-more");
-    const groups = document.querySelectorAll(".points, .mode-grid, .news-grid, .community-grid, .cat-grid, .hero-stats");
+    // Only the hero and the game description section animate; the rest of the site stays still.
+    const singles = document.querySelectorAll(".engine .split-head, .engine .feature-shot");
+    const groups = document.querySelectorAll(".engine .points, .hero-stats");
     const io = new IntersectionObserver((entries) => {
       entries.forEach((en) => { if (en.isIntersecting) { en.target.classList.add("is-in"); io.unobserve(en.target); } });
     }, { rootMargin: "0px 0px -10% 0px" });
@@ -61,8 +62,8 @@
 
   // Parallax depth: hero image and big pictures drift slower than the page
   if (!reduce) {
-    const heroMedia = document.querySelector(".hero-media, .shop-hero-bg, .coming-bg");
-    const drifters = [...document.querySelectorAll(".feature-shot img, .clubs-media img")];
+    const heroMedia = document.querySelector(".hero-media");
+    const drifters = [...document.querySelectorAll(".engine .feature-shot img")];
     let ticking = false;
     const frame = () => {
       const y = window.scrollY, vh = window.innerHeight;
