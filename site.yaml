@@ -34,23 +34,23 @@ shop_categories:
   - key: men
     slug: men
     products:
-      - { img: "https://image.spreadshirtmedia.com/image-server/v1/products/T210A1PA4301PT17X41Y37D1058835926W25000H25000/views/1/Football%20League%20Crest.png" }   # Men's T-Shirt
-      - { img: "https://image.spreadshirtmedia.com/image-server/v1/products/T111A1PA4247PT17X70Y22D1058835926W20844H20844/views/1/Football%20League%20Crest.png" }   # Men's Hoodie
+      - { img: "https://image.spreadshirtmedia.com/image-server/v1/products/T111A5PA4247PT17X70Y22D1058835926W20844H20844/views/1/Football%20League%20Crest.png", color: 5 }     # Men's Hoodie – red
+      - { img: "https://image.spreadshirtmedia.com/image-server/v1/products/T23A4PA3989PT17X47Y43D1058835926W21791H21791/views/1/Football%20League%20Crest.png", color: 4 }      # Men's Long Sleeve T-Shirt – navy
   - key: women
     slug: women
     products:
-      - { img: "https://image.spreadshirtmedia.com/image-server/v1/products/T405A1PA4081PT17X57Y21D1058835926W19538H19538/views/1/Football%20League%20Crest.png" }   # Women's Hoodie
-      - { img: "https://image.spreadshirtmedia.com/image-server/v1/products/T491A1123PA4308PT17X40Y37D1058835926W25000H25000/views/1/Football%20League%20Crest.png", color: 1123 }   # Tie Dye T-Shirt
+      - { img: "https://image.spreadshirtmedia.com/image-server/v1/products/T1007A289PA4906PT17X55Y22D1058835926W20765H20765/views/1/Football%20League%20Crest.png", color: 289 }  # Contrast Hoodie – sky blue/white
+      - { img: "https://image.spreadshirtmedia.com/image-server/v1/products/T943A1264PA3084PT17X43Y40D1058835926W20237H20237/views/1/Football%20League%20Crest.png", color: 1264 } # Roll Up Sleeve T-Shirt – burgundy
   - key: kids
     slug: "kids+%26+babies"
     products:
-      - { img: "https://image.spreadshirtmedia.com/image-server/v1/products/T48A1PA4545PT17X37Y31D1058835926W17341H17341/views/1/Football%20League%20Crest.png" }    # Kid's T-Shirt
-      - { img: "https://image.spreadshirtmedia.com/image-server/v1/products/T877A1PA5115PT17X17Y21D1058835926W8000H8000/views/1/Football%20League%20Crest.png" }     # Toddler Long Sleeve
+      - { img: "https://image.spreadshirtmedia.com/image-server/v1/products/T3284A251PA4804PT17X66Y13D1058835926W11995H11995/views/1/Football%20League%20Crest.png", color: 251 }  # Champion Youth Hoodie – heather grey
+      - { img: "https://image.spreadshirtmedia.com/image-server/v1/products/T3024A1244PA4705PT32X30Y26D1058835926W14227H14227/views/1/Football%20League%20Crest.png", color: 1244 } # Kid's 5 Star Print T-Shirt – red star
   - key: accessories
     slug: accessories
     products:
-      - { img: "https://image.spreadshirtmedia.com/image-server/v1/products/T842A1PA3667PT17X38Y31D1058835926W17574H17574/views/1/Football%20League%20Crest.png" }   # Tote Bag
-      - { img: "https://image.spreadshirtmedia.com/image-server/v1/products/T4554A1PA5179PT10X10Y5D1058835926W4895H4895/views/3/Football%20League%20Crest.png" }     # Tennis Socks
+      - { img: "https://image.spreadshirtmedia.com/image-server/v1/products/T842A4PA3667PT17X38Y31D1058835926W17574H17574/views/1/Football%20League%20Crest.png", color: 4 }       # Tote Bag – navy
+      - { img: "https://image.spreadshirtmedia.com/image-server/v1/products/T4554A1PA5179PT10X10Y5D1058835926W4895H4895/views/3/Football%20League%20Crest.png" }                    # Tennis Socks – white
 
 # Background colour painted behind the product photos (no #). Matches the tiles.
 shop_photo_bg: "16161a"
@@ -101,8 +101,8 @@ shop_nav:
 # Leave empty so Shop buttons open the Shop page on this site.
 shop_url: ""
 
-# A YouTube link to the trailer. When set, a "Watch Trailer" button appears on the home page.
-trailer_url: ""
+# A YouTube link to the trailer. When set, the "See the game" button on the home page opens it.
+trailer_url: https://www.youtube.com/watch?v=Usgq1V4RpOc
 
 # Only filled-in links are shown.
 social:

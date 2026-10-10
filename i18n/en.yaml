@@ -28,7 +28,7 @@ hero:
   tagline: A global game for everyone.
   body: "Create your ultimate squad, take on global rivals, and dive into the full match-day rush of Football League 2026."
   cta_primary: Play Now
-  cta_trailer: Watch Trailer
+  cta_trailer: See the game
   cta_explore: See the game
   stats:
     - { value: "100M+", label: "players" }
