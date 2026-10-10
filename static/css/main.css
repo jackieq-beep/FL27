@@ -507,7 +507,7 @@ button { font: inherit; color: inherit; background: none; border: 0; cursor: poi
 /* ---------- motion ---------- */
 /* hero: slow zoom on the picture, text arrives line by line */
 .hero-media, .shop-hero-bg, .coming-bg { will-change: transform; }
-.hero-img { animation: hero-zoom 14s cubic-bezier(.2,.6,.2,1) both; }
+.hero-img { animation: none; }
 @keyframes hero-zoom { from { transform: scale(1.14); } to { transform: scale(1); } }
 [dir="rtl"] .hero-img { animation-name: hero-zoom-rtl; }
 @keyframes hero-zoom-rtl { from { transform: scaleX(-1) scale(1.14); } to { transform: scaleX(-1) scale(1); } }
@@ -830,3 +830,20 @@ button { font: inherit; color: inherit; background: none; border: 0; cursor: poi
   .gf, .gf-flip { grid-template-columns: minmax(0, 1fr); }
   .gf-flip .gf-media { order: 0; }
 }
+
+/* ---------- hero slideshow ---------- */
+.hero-slide { position: absolute; inset: 0; object-position: var(--pos, 50% 50%); opacity: 0; transition: opacity 1.4s ease; }
+.hero-slide.is-active { opacity: 1; animation: hero-zoom 7s ease-out both; }
+[dir="rtl"] .hero-slide.is-active { animation-name: hero-zoom-rtl; }
+.hero-dots { position: absolute; z-index: 3; inset-inline-end: var(--gutter); bottom: clamp(40px, 6vw, 72px); display: flex; gap: 6px; }
+.hero-dots button { width: 36px; height: 20px; display: grid; align-items: center; }
+.hero-dots i { display: block; height: 3px; background: rgba(255, 255, 255, .3); position: relative; overflow: hidden; }
+.hero-dots i::after { content: ""; position: absolute; inset: 0; background: var(--pink); transform: scaleX(0); transform-origin: left; }
+.hero-dots [aria-current] i::after { animation: dot-fill var(--slide-ms, 6000ms) linear forwards; }
+.hero-dots.is-paused [aria-current] i::after { animation: none; transform: scaleX(1); }
+@keyframes dot-fill { to { transform: scaleX(1); } }
+@media (max-width: 640px) {
+  .hero-slide { object-position: var(--pos-m, var(--pos, 50% 50%)); }
+  .hero-dots { bottom: auto; top: calc(var(--header-h) + 12px); }
+}
+@media (prefers-reduced-motion: reduce) { .hero-slide { transition: none; } }

@@ -121,6 +121,13 @@ languages:
   - { code: ar, label: العربية, short: AR, dir: rtl, enabled: false }
   - { code: ja, label: 日本語, short: JA, dir: ltr, enabled: false }
 
+# Hero slideshow on the homepage (first image shows first). "position" = which part of the picture to keep in view.
+hero_slides:
+  - { img: hero.png, position: "70% 30%", mobile: "64% 20%" }
+  - { img: u27-main-menu.jpg, position: "55% 40%", mobile: "50% 40%" }
+  - { img: u27-gameplay.jpg, position: "60% 50%", mobile: "55% 50%" }
+  - { img: u27-stadium.jpg, position: "50% 40%", mobile: "50% 40%" }
+
 # Pages that exist but are not in the main menu (linked from the footer).
 extra_pages:
   - { key: media, path: media/ }

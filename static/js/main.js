@@ -60,6 +60,27 @@
     });
   }
 
+  // Hero slideshow: crossfade through game images
+  const slidesWrap = document.querySelector("[data-hero-slides]");
+  if (slidesWrap) {
+    const slides = [...slidesWrap.querySelectorAll(".hero-slide")];
+    const dotsWrap = document.querySelector(".hero-dots");
+    const dots = dotsWrap ? [...dotsWrap.querySelectorAll("[data-slide]")] : [];
+    const MS = 6000; let i = 0, timer = null;
+    if (dotsWrap) dotsWrap.style.setProperty("--slide-ms", MS + "ms");
+    const show = (n) => {
+      i = (n + slides.length) % slides.length;
+      slides.forEach((s, k) => s.classList.toggle("is-active", k === i));
+      dots.forEach((d, k) => { if (k === i) { d.setAttribute("aria-current", "true"); const b = d.firstElementChild; b.style.animation = "none"; void b.offsetWidth; b.style.animation = ""; } else d.removeAttribute("aria-current"); });
+      const next = slides[(i + 1) % slides.length]; if (next && next.loading === "lazy") next.loading = "eager";
+    };
+    const start = () => { stop(); if (!reduce && slides.length > 1) timer = setInterval(() => show(i + 1), MS); if (dotsWrap) dotsWrap.classList.toggle("is-paused", reduce); };
+    const stop = () => { clearInterval(timer); timer = null; };
+    dots.forEach((d) => d.addEventListener("click", () => { show(+d.dataset.slide); start(); }));
+    document.addEventListener("visibilitychange", () => (document.hidden ? stop() : start()));
+    show(0); start();
+  }
+
   // Parallax depth: hero image and big pictures drift slower than the page
   if (!reduce) {
     const heroMedia = document.querySelector(".hero-media");

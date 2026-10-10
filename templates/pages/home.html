@@ -3,9 +3,16 @@
 
 {% block content %}
 <section class="hero">
-  <div class="hero-media">
-    {{ img('hero.png', '', '100vw', 'hero-img', eager=True) }}
+  <div class="hero-media" data-hero-slides>
+    {% for sl in site.hero_slides %}
+    {{ img(sl.img, '', '100vw', 'hero-img hero-slide' ~ (' is-active' if loop.first else ''), eager=loop.first, style='--pos:' ~ sl.position ~ ';--pos-m:' ~ sl.mobile) }}
+    {% endfor %}
   </div>
+  {% if site.hero_slides | length > 1 %}
+  <div class="hero-dots" role="group" aria-label="Game images">
+    {% for sl in site.hero_slides %}<button type="button" aria-label="Image {{ loop.index }}"{% if loop.first %} aria-current="true"{% endif %} data-slide="{{ loop.index0 }}"><i></i></button>{% endfor %}
+  </div>
+  {% endif %}
   <div class="container hero-inner">
     <p class="kicker hero-kicker"><span class="live-dot"></span>{{ t.hero.eyebrow }}</p>
     <h1 class="hero-title">
