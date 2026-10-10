@@ -23,7 +23,6 @@
 
     <a class="brand" href="{{ url() }}" aria-label="{{ site.name }} – {{ t.nav.home }}">
       <img class="brand-logo" src="{{ site.base }}/brand/wordmark-white.png" alt="Football League" width="582" height="180">
-      {% if site.brand_year %}<span class="brand-year" style="--year:url({{ site.base }}/brand/y{{ site.brand_year }}.png)" role="img" aria-label="{{ site.brand_year }}"></span>{% endif %}
     </a>
 
     <nav class="main-nav" aria-label="Main">
@@ -53,7 +52,6 @@
     <div class="mobile-top">
       <a class="brand" href="{{ url() }}">
         <img class="brand-logo" src="{{ site.base }}/brand/wordmark-white.png" alt="Football League" width="582" height="180">
-        {% if site.brand_year %}<span class="brand-year" style="--year:url({{ site.base }}/brand/y{{ site.brand_year }}.png)" role="img" aria-label="{{ site.brand_year }}"></span>{% endif %}
       </a>
       <button class="icon-btn" type="button" aria-label="{{ t.nav.close }}" data-menu-close>{{ icon('close') }}</button>
     </div>

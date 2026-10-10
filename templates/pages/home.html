@@ -14,7 +14,7 @@
   </div>
   {% endif %}
   <div class="container hero-inner">
-    <p class="kicker hero-kicker"><span class="live-dot"></span>{{ t.hero.eyebrow }}</p>
+    <p class="kicker hero-kicker">{% if site.brand_year %}<span class="hero-kicker-year" style="--year:url({{ site.base }}/brand/y{{ site.brand_year }}.png)" role="img" aria-label="{{ site.brand_year }}"></span>{% else %}<span class="live-dot"></span>{% endif %}<span class="hk-text">{% if t.hero.eyebrow_brand %}<span>{{ t.hero.eyebrow_brand }}</span><span class="hk-sep"> · </span>{% endif %}<span>{{ t.hero.eyebrow }}</span></span></p>
     <h1 class="hero-title">
       <span>{{ t.hero.title_1 }}</span>
       <span><em>{{ t.hero.title_2a }}</em> {{ t.hero.title_2b }}</span>

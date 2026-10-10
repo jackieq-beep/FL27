@@ -116,6 +116,18 @@ button { font: inherit; color: inherit; background: none; border: 0; cursor: poi
 .brand-year { display: block; height: calc(var(--logo-h) * .4); aspect-ratio: 339 / 120; background: var(--green);
   -webkit-mask: var(--year) center / contain no-repeat; mask: var(--year) center / contain no-repeat; }
 .footer-brand .brand { --logo-h: 52px; }
+.hero-kicker:has(.hero-kicker-year) { display: flex; align-items: center; gap: 18px; }
+.hero-kicker-year { flex: none; display: block; height: clamp(32px, 3.4vw, 46px); aspect-ratio: 339 / 120; background: var(--green);
+  -webkit-mask: var(--year) center / contain no-repeat; mask: var(--year) center / contain no-repeat; }
+@media (max-width: 640px) {
+  .hero-kicker:has(.hero-kicker-year) { gap: 14px; letter-spacing: .2em; }
+  .hk-text > span:not(.hk-sep) { display: block; }
+  .hk-sep { display: none; }
+}
+@media (max-width: 359px) {
+  .hero-kicker:has(.hero-kicker-year) { gap: 10px; letter-spacing: .12em; font-size: 10px; }
+  .hero-kicker-year { height: 26px; }
+}
 @media (min-width: 1081px) { .site-header .brand { --logo-h: 44px; } }
 .hero-year { display: block; height: clamp(44px, 7vw, 84px); aspect-ratio: 339 / 120; margin-bottom: 18px; background: var(--green);
   -webkit-mask: var(--year) left center / contain no-repeat; mask: var(--year) left center / contain no-repeat; }

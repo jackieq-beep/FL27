@@ -20,7 +20,8 @@ nav:
   skip: Skip to content
 
 hero:
-  eyebrow: "New season · Out now"
+  eyebrow_brand: "Football League"
+  eyebrow: "New season out now"
   title_1: Football
   title_2a: Lives
   title_2b: Here
