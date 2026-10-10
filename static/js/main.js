@@ -60,6 +60,25 @@
     });
   }
 
+  // Merch: hoodie and bottle fly in, then drift with the mouse
+  const merchArt = document.querySelector(".merch-art");
+  if (merchArt && !reduce) {
+    if ("IntersectionObserver" in window) {
+      const mio = new IntersectionObserver((es) => es.forEach((e) => { if (e.isIntersecting) { merchArt.classList.add("is-in"); mio.disconnect(); } }), { rootMargin: "0px 0px -15% 0px" });
+      mio.observe(merchArt);
+    } else merchArt.classList.add("is-in");
+    const card = merchArt.closest(".merch-card") || merchArt;
+    if (window.matchMedia("(hover: hover) and (pointer: fine)").matches) {
+      card.addEventListener("pointermove", (e) => {
+        const r = card.getBoundingClientRect();
+        merchArt.classList.add("is-tracking");
+        merchArt.style.setProperty("--mx", (((e.clientX - r.left) / r.width) * 2 - 1).toFixed(3));
+        merchArt.style.setProperty("--my", (((e.clientY - r.top) / r.height) * 2 - 1).toFixed(3));
+      });
+      card.addEventListener("pointerleave", () => { merchArt.style.setProperty("--mx", 0); merchArt.style.setProperty("--my", 0); });
+    }
+  } else if (merchArt) merchArt.classList.add("is-in");
+
   // Hero slideshow: crossfade through game images
   const slidesWrap = document.querySelector("[data-hero-slides]");
   if (slidesWrap) {
