@@ -48,7 +48,7 @@ engine:
   title_1: Realistic football.
   title_2: Tactical depth.
   intro: "Smart AI, responsive controls and fluid animations make Football League a mobile football game that plays like the real thing, on any phone."
-  caption: "New in the 2027 update"
+  caption: "In-game footage"
   points:
     - { num: "01", title: "Dynamic Match Engine", text: "Smart AI, responsive controls and fluid animations power every match, from the first touch to the final whistle." }
     - { num: "02", title: "Tactics Style", text: "New tactical styles with their own playing instructions, so your team plays the way you think." }
