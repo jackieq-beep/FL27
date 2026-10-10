@@ -89,13 +89,15 @@ download:
   title_1: Join 100M+
   title_2: players.
   text: "Download Football League, the free soccer game for iOS and Android, and make your mark this season."
+  developer: "Developed by Mobile Soccer"
   gp_small: Get it on
   gp_big: Google Play
   as_small: Download on the
   as_big: App Store
 
 footer:
-  about: "Football League is a free mobile football and soccer game for iOS and Android, made by Mobile Soccer for players everywhere."
+  about: "Football League is a free mobile football and soccer game for iOS and Android, developed and published by Mobile Soccer."
+  developer: "Developed by"
   col_game: Game
   col_company: Company
   col_follow: Follow us
@@ -264,6 +266,8 @@ faq:
       a: "Career Mode, Local PvP against friends nearby, friendlies with any two clubs, daily skill challenges, live events, and leagues and cups from around the world."
     - q: "Does Football League have real clubs?"
       a: "Yes. Manchester City is officially licensed in Football League, with authentic kits and the official club badge."
+    - q: "Who makes Football League?"
+      a: "Football League is developed and published by Mobile Soccer, an independent mobile game studio making free football games for players everywhere."
     - q: "When is Football League 2027 coming out?"
       a: "Football League 2027 (FL27) is coming soon, with a refreshed look, a rebuilt Career Mode and a brand-new stadium. Follow our News page and socials to hear first."
 

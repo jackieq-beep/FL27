@@ -990,3 +990,9 @@ a.contact-channel:hover b .icon { transform: translateX(4px); }
 .faq-item summary:hover { color: var(--pink); }
 .faq-item p { padding: 0 40px 24px 0; color: var(--muted); font-size: 16px; max-width: 64ch; }
 @media (max-width: 900px) { .faq-grid { grid-template-columns: minmax(0, 1fr); } }
+
+.footer-dev { margin-inline-start: 10px; padding-inline-start: 10px; border-inline-start: 1px solid var(--line); }
+.footer-dev b { color: var(--text); font-weight: 600; }
+.dev-credit { margin-top: 16px; font-size: 13px; letter-spacing: .16em; text-transform: uppercase; color: var(--muted); }
+.footer-dev { white-space: nowrap; }
+@media (max-width: 640px) { .footer-dev { display: block; margin: 6px 0 0; padding: 0; border: 0; } }
