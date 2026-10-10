@@ -12,21 +12,29 @@
 </section>
 <section class="section contact-page">
   <div class="container">
-    <ul class="contact-grid" role="list">
+    <dl class="contact-list">
       {% for c in t.contact_page.cards %}
-      {% if c.key == 'partnerships' %}{% set href = 'mailto:' ~ site.contact_email %}{% set label = site.contact_email %}
-      {% elif c.key == 'support' %}{% set href = 'mailto:' ~ site.legal_email %}{% set label = site.legal_email %}
-      {% else %}{% set href = site.social.discord %}{% set label = c.cta %}{% endif %}
-      {% if href %}
-      <li class="contact-card">
-        <span class="contact-icon">{{ icon(c.icon) }}</span>
-        <h2>{{ c.title }}</h2>
-        <p>{{ c.text }}</p>
-        <a class="contact-link" href="{{ href }}"{% if not href.startswith('mailto:') %} target="_blank" rel="noopener"{% endif %}>{{ label }} {{ icon('arrow-up-right' if not href.startswith('mailto:') else 'arrow-right') }}</a>
-      </li>
-      {% endif %}
+      <div class="contact-row">
+        <dt>
+          <h2>{{ c.title }}</h2>
+          <p>{{ c.text }}</p>
+        </dt>
+        <dd>
+          {% if c.key == 'partnerships' %}
+          <a class="contact-email" href="mailto:{{ site.contact_email }}">{{ site.contact_email }} {{ icon('arrow-right') }}</a>
+          {% elif c.key == 'support' %}
+          <a class="contact-email" href="mailto:{{ site.support_email }}">{{ site.support_email }} {{ icon('arrow-right') }}</a>
+          {% else %}
+          <ul class="contact-socials" role="list">
+            {% for k in site.social_list %}
+            <li><a class="fs-{{ k }}" href="{{ site.social[k] }}" target="_blank" rel="noopener"><span class="fs-tile">{{ icon(k) }}</span><span>{{ site.social_names[k] }}</span></a></li>
+            {% endfor %}
+          </ul>
+          {% endif %}
+        </dd>
+      </div>
       {% endfor %}
-    </ul>
+    </dl>
   </div>
 </section>
 {% endblock %}

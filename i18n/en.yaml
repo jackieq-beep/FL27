@@ -226,7 +226,7 @@ contact_page:
   cards:
     - { key: partnerships, icon: mail, title: "Partnerships & business", text: "Brand partnerships, licensing, advertising and media enquiries." }
     - { key: support, icon: gamepad, title: "Player support", text: "Help with the game, your account, purchases or privacy requests." }
-    - { key: community, icon: discord, title: "Community", text: "Chat with other players and the team on our Discord server.", cta: "Join Discord" }
+    - { key: community, icon: users, title: "Community", text: "Follow us for news and clips, or chat with players and the team on Discord." }
   email_cta: Send an email
 
 news:
