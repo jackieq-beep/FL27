@@ -976,3 +976,4 @@ a.contact-channel:hover b .icon { transform: translateX(4px); }
 .video-close:hover { background: var(--pink); }
 
 .game-hero-stores { margin: 28px 0 8px; }
+.ticker li:first-child { color: #0b0b0d; }

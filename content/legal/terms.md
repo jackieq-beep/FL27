@@ -12,11 +12,11 @@ Don't misuse the site: no attempts at unauthorised access, no interfering with h
 
 ## Intellectual property
 
-All content on this website, including images, renders, logos, gameplay footage, user-interface artwork and text, is owned by {{company}} or used under licence from partners such as Manchester City and AS Monaco. You may not reuse it without written permission.
+All content on this website, including images, renders, logos, gameplay footage, user-interface artwork and text, is owned by {{company}} or used under licence from partners such as Manchester City. You may not reuse it without written permission.
 
 ## Licensing and trademarks
 
-Football League 2026 may include official Manchester City and AS Monaco kits and certain licensed national-team elements. All trademarks, club names, crests, player likenesses and logos belong to their respective owners.
+Football League 2026 may include official Manchester City kits and certain licensed national-team elements. All trademarks, club names, crests, player likenesses and logos belong to their respective owners.
 
 Unless explicitly stated, Football League 2026 is not affiliated with or endorsed by FIFA, UEFA, CONMEBOL, CONCACAF, the Premier League or any other football governing body.
 

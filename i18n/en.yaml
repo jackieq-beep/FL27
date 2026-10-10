@@ -2,7 +2,7 @@
 
 meta:
   home_title: "Football League 2026 – Free Mobile Football Game for iOS & Android"
-  home_description: "Build your ultimate squad, play official clubs like Manchester City and AS Monaco, and take on rivals worldwide. Football League 2026 is free to play on iOS and Android."
+  home_description: "Build your ultimate squad, play officially licensed Manchester City, and take on rivals worldwide. Football League 2026 is free to play on iOS and Android."
 
 nav:
   home: Home
@@ -35,9 +35,9 @@ hero:
     - { value: "Online + Offline", label: "playable anywhere" }
 
 ticker:
+  - Football League 2027 · Coming soon
   - Free to play
   - Official Manchester City license
-  - Official AS Monaco license
   - Online + offline
   - Live events every week
   - Leagues & cups
@@ -65,10 +65,10 @@ modes:
     - { img: u27-penalty.jpg, title: "Challenges & Rewards", text: "Hit the targets in skill challenges to win gems and coins." }
 
 clubs:
-  kicker: "Official licenses"
-  title_1: Official clubs.
+  kicker: "Official license"
+  title_1: Official club.
   title_2: True colors.
-  text: "Official Manchester City and AS Monaco licenses are in Football League 2026. Authentic kits, elite football, and the whole season in true club colors."
+  text: "Manchester City is officially licensed in Football League. Authentic kits, the official badge, elite football and the whole season in sky blue."
   cta: Read the announcement
 
 updates:
