@@ -708,6 +708,12 @@ button { font: inherit; color: inherit; background: none; border: 0; cursor: poi
 .fs-facebook { --fs-bg: #1877f2; --fs-glow: rgba(24, 119, 242, .8); }
 .fs-youtube { --fs-bg: #ff0000; --fs-glow: rgba(255, 0, 0, .6); }
 .fs-x { --fs-bg: #000; --fs-glow: rgba(255, 255, 255, .3); }
+.mobile-follow { margin-top: auto; padding-top: 28px; }
+.mobile-follow p { margin-bottom: 12px; font-size: 12px; letter-spacing: .2em; text-transform: uppercase; color: var(--dim); }
+.mobile-follow ul { display: flex; flex-wrap: wrap; gap: 12px; }
+.mobile-follow .fs-tile { width: 46px; height: 46px; border-radius: 12px; }
+.mobile-follow .fs-tile .icon { width: 22px; height: 22px; }
+@media (max-width: 359px) { .mobile-follow ul { gap: 8px; } .mobile-follow .fs-tile { width: 40px; height: 40px; } .mobile-follow .fs-tile .icon { width: 20px; height: 20px; } }
 .fs-tiktok .fs-tile, .fs-x .fs-tile { box-shadow: inset 0 0 0 1px rgba(255, 255, 255, .18), 0 6px 16px -6px var(--fs-glow); }
 @media (max-width: 1080px) { .footer-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); } .footer-brand { grid-column: 1 / -1; } }
 .footer-link { padding: 0; font-size: 15px; color: #d4d4d8; text-align: start; }

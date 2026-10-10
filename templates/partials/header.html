@@ -67,11 +67,14 @@
       {{ lang_options('lang-list') }}
     </details>
     <a class="btn btn-primary mobile-cta" href="{{ url() }}#download" data-menu-link>{{ t.nav.play_now }} {{ icon('arrow-right') }}</a>
-    <ul class="social-row" role="list">
-      {% for k in site.social_list %}
-      <li><a href="{{ site.social[k] }}" target="_blank" rel="noopener" aria-label="{{ site.social_names[k] }}">{{ icon(k) }}</a></li>
-      {% endfor %}
-    </ul>
+    <div class="mobile-follow">
+      <p>{{ t.footer.col_follow }}</p>
+      <ul role="list">
+        {% for k in site.social_list %}
+        <li><a class="fs-{{ k }}" href="{{ site.social[k] }}" target="_blank" rel="noopener" aria-label="{{ site.social_names[k] }}"><span class="fs-tile">{{ icon(k) }}</span></a></li>
+        {% endfor %}
+      </ul>
+    </div>
   </div>
   <div class="mobile-backdrop" data-menu-close></div>
 </div>
