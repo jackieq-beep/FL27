@@ -803,7 +803,8 @@ button { font: inherit; color: inherit; background: none; border: 0; cursor: poi
 .post-title { margin-top: 18px; font-size: clamp(34px, 5vw, 64px); }
 .post-hero .lead { margin-top: 18px; }
 .post-layout { max-width: calc(900px + var(--gutter) * 2); padding-bottom: var(--section-y); }
-.post-figure img { width: 100%; aspect-ratio: 16 / 9; object-fit: cover; border: 1px solid var(--line); }
+.post-figure { display: flex; justify-content: center; background: var(--surface); border: 1px solid var(--line); }
+.post-figure img { display: block; width: auto; max-width: 100%; height: auto; max-height: min(80vh, 820px); }
 .post-body { margin-top: 36px; font-size: 18px; }
 .post-share { display: flex; align-items: center; gap: 10px; margin-top: 40px; padding-top: 24px; border-top: 1px solid var(--line); color: var(--muted); font-size: 14px; }
 .post-share a, .post-share button { display: inline-flex; align-items: center; gap: 8px; height: 40px; padding: 0 12px; border: 1px solid var(--line); color: #d4d4d8; font-size: 14px; }
