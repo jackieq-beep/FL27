@@ -31,8 +31,7 @@ hero:
   cta_trailer: Watch Trailer
   cta_explore: See the game
   stats:
-    - { value: "100+", label: "players" }
-    - { value: "Football", label: "for everyone" }
+    - { value: "100M+", label: "players" }
     - { value: "Online + Offline", label: "playable anywhere" }
 
 ticker:
