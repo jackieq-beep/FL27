@@ -15,6 +15,9 @@ support_email: footballleague2023@gmail.com
 # Analytics only runs after a visitor clicks "Accept all" in the cookie banner.
 ga_measurement_id: ""
 
+# Google Search Console "HTML tag" verification code (only the content="..." part). Leave empty if not used.
+google_site_verification: ""
+
 # Where the site lives. Leave base_path empty once a custom domain is set up.
 site_url: https://jackieq-beep.github.io
 base_path: /FL27
