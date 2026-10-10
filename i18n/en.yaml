@@ -276,11 +276,6 @@ community_page:
     youtube: "Trailers, guides and match highlights."
     x: "Live updates and quick news."
     tiktok: "Short clips and skills."
-  topics_title: What we talk about
-  topics:
-    - { title: "Match Highlights", text: "Share your best goals, saves and last-minute winners." }
-    - { title: "Team Builds", text: "Swap formations, tactics styles and squad ideas." }
-    - { title: "Exclusive Events", text: "Community challenges, giveaways and early news." }
 
 coming:
   kicker: "Coming soon"

@@ -36,13 +36,6 @@
       </li>
       {% endfor %}
     </ul>
-
-    <h2 class="display community-sub">{{ t.community_page.topics_title }}</h2>
-    <ul class="topic-grid" role="list">
-      {% for tp in t.community_page.topics %}
-      <li><span class="topic-num">{{ loop.index }}</span><h3>{{ tp.title }}</h3><p>{{ tp.text }}</p></li>
-      {% endfor %}
-    </ul>
   </div>
 </section>
 {% endblock %}
