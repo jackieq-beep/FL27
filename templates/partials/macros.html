@@ -16,14 +16,14 @@
 <h2 class="display">{{ title_1 }}<br><span class="accent-{{ accent }}">{{ title_2 }}</span></h2>
 {% endmacro %}
 
-{% macro news_date(post) %}{% if post.date %}<time datetime="{{ post.date }}">{{ post.date.strftime('%d %b %Y') }}</time>{% endif %}{% endmacro %}
+{% macro news_date(post, t) %}{% if post.date %}<time datetime="{{ post.date }}">{{ t.news.date_format | replace('D', post.date.day | string) | replace('M', t.news.months[post.date.month - 1]) | replace('Y', post.date.year | string) }}</time>{% endif %}{% endmacro %}
 
 {% macro news_card(post, t, url, img, icon, big=False) %}
 <li class="news-card{% if big %} news-card-big{% endif %}" data-section="{{ post.section }}">
   <a href="{{ url('news/' ~ post.slug ~ '/') }}">
     <div class="news-img">{{ img(post.image, post.title, '(min-width: 1000px) 800px, 100vw' if big else '(min-width: 1000px) 400px, 100vw') }}</div>
     <div class="news-body">
-      <div class="news-meta"><span class="tag tag-{{ post.section }}">{{ t.news.sections[post.section] }}</span>{{ news_date(post) }}</div>
+      <div class="news-meta"><span class="tag tag-{{ post.section }}">{{ t.news.sections[post.section] }}</span>{{ news_date(post, t) }}</div>
       <h3>{{ post.title }}</h3>
       <p>{{ post.summary }}</p>
       <span class="more">{{ t.updates.read }} {{ icon('arrow-right') }}</span>

@@ -1,0 +1,292 @@
+# 网站简体中文文本
+
+meta:
+  home_title: "Football League – 免费手机足球游戏 | iOS & Android"
+  home_description: "Football League 是一款适用于 iPhone 和 Android 的免费手机足球游戏。组建你的阵容，畅玩生涯模式、本地 PvP，还有官方授权的 Manchester City，在线离线都能踢。Football League 2027 即将登场。"
+
+nav:
+  home: "首页"
+  game: "游戏"
+  news: "新闻"
+  shop: "商城"
+  media: "媒体"
+  community: "社区"
+  contact: "联系"
+  play_now: "立即开玩"
+  menu: "菜单"
+  close: "关闭菜单"
+  language: "语言"
+  soon: "即将推出"
+  skip: "跳到正文"
+
+hero:
+  eyebrow_brand: "Football League"
+  eyebrow: "新赛季现已上线"
+  title_1: "足球"
+  title_2a: "就在"
+  title_2b: "这里"
+  tagline: "属于每个人的全球足球游戏。"
+  body: "Football League 是为全世界球迷打造的免费手机足球游戏。组建你的梦之队，在线挑战对手，或随时随地离线开踢。"
+  cta_primary: "立即开玩"
+  cta_trailer: "了解游戏"
+  cta_explore: "了解游戏"
+  stats:
+    - { value: "1亿+", label: "玩家" }
+    - { value: "在线 + 离线", label: "随时随地畅玩" }
+
+ticker:
+  - "Football League 2027 · 即将登场"
+  - "免费畅玩"
+  - "Manchester City 官方授权"
+  - "在线 + 离线"
+  - "每周实时活动"
+  - "联赛与杯赛"
+  - "为比赛日而生"
+
+engine:
+  kicker: "次世代手机足球"
+  title_1: "真实足球。"
+  title_2: "战术深度。"
+  intro: "聪明的 AI、灵敏的操控和流畅的动画，让 Football League 在任何手机上都能踢出真实比赛的感觉。"
+  caption: "游戏实机画面"
+  points:
+    - { num: "01", title: "动态比赛引擎", text: "聪明的 AI、灵敏的操控和流畅的动画贯穿每场比赛，从第一脚触球到终场哨响。" }
+    - { num: "02", title: "战术风格", text: "全新战术风格，各有专属比赛指令，让球队按你的思路去踢。" }
+    - { num: "03", title: "定位球升级", text: "任意球更具挑战、更加真实，点球重新平衡。每一次死球都是机会。" }
+
+modes:
+  kicker: "2027 全新内容"
+  title_1: "每一场比赛。"
+  title_2: "每一个舞台。"
+  items:
+    - { img: u27-career.jpg, title: "球队生涯", text: "执掌俱乐部：转会、财务、董事会目标，外加完整的联赛赛季。" }
+    - { img: u27-pvp.jpg, title: "本地 PvP", text: "和好友正面对决，球场上见真章。" }
+    - { img: u27-friendly.jpg, title: "友谊赛", text: "任选两支球队，挑好球衣和球场，即刻开球。" }
+    - { img: u27-penalty.jpg, title: "挑战与奖励", text: "完成技巧挑战目标，赢取宝石和金币。" }
+
+clubs:
+  kicker: "官方授权"
+  title_1: "官方俱乐部。"
+  title_2: "本色出战。"
+  text: "Manchester City 已正式授权入驻 Football League。正版球衣、官方队徽、顶级足球，整个赛季尽染天空蓝。"
+  cta: "阅读公告"
+  badge: "官方授权"
+
+updates:
+  kicker: "最新动态"
+  title: "新鲜内容"
+  all: "全部新闻"
+  read: "阅读更多"
+
+merch:
+  kicker: "周边商品"
+  title_1: "穿上"
+  title_2: "这款游戏。"
+  text: "Football League 官方球衣、卫衣和配饰。看台、街头、球场，统统适合。"
+  cta: "逛逛商城"
+
+download:
+  kicker: "iOS & Android 免费下载"
+  title_1: "加入 1亿+"
+  title_2: "玩家行列。"
+  text: "下载 Football League，这款 iOS 和 Android 免费足球游戏，本赛季由你书写传奇。"
+  developer: "由 Mobile Soccer 开发"
+  gp_small: "立即获取"
+  gp_big: "Google Play"
+  as_small: "下载自"
+  as_big: "App Store"
+
+footer:
+  about: "Football League 是一款适用于 iOS 和 Android 的免费手机足球游戏，由 Mobile Soccer 开发并发行。"
+  developer: "开发商"
+  col_game: "游戏"
+  col_company: "公司"
+  col_follow: "关注我们"
+  col_legal: "法律信息"
+  privacy: "隐私政策"
+  terms: "服务条款"
+  cookies: "Cookie 设置"
+  cookie_policy: "Cookie 政策"
+  contact: "联系我们"
+  rights: "保留所有权利。"
+  disclaimer: "俱乐部名称、标志和球衣均为其各自所有者的商标，经授权使用。"
+
+shop:
+  meta_title: "官方商城 – Football League 周边商品"
+  meta_description: "Football League 官方足球衫、卫衣、夹克、童装和配饰。按需定制，全球配送。"
+  kicker: "官方周边"
+  title_1: "穿上"
+  title_2: "这款游戏。"
+  text: "印有 Football League 队徽的 T 恤、卫衣、夹克、童装和贴纸。按需定制，送货上门。"
+  perks:
+    - { icon: bag, text: "按需定制" }
+    - { icon: check, text: "安全结账" }
+    - { icon: check, text: "成人、儿童及婴儿尺码" }
+  categories:
+    men: "男士"
+    women: "女士"
+    kids: "儿童与婴儿"
+    accessories: "配饰"
+  nav:
+    all: "全部商品"
+    men: "男士"
+    women: "女士"
+    kids: "儿童与婴儿"
+    accessories: "配饰"
+    home: "家居生活"
+    stickers: "贴纸"
+    sub_all: "全部"
+    tshirts: "T 恤"
+    hoodies: "连帽衫与卫衣"
+    zips: "拉链卫衣与夹克"
+    longsleeve: "长袖衫"
+    polos: "Polo 衫"
+    tanks: "背心"
+    sportswear: "运动服"
+    bottoms: "下装"
+    kidshirts: "儿童上衣"
+    baby: "婴儿用品"
+    accessories_sub: "配饰"
+    caps: "帽子"
+    bags: "包袋与背包"
+    aprons: "围裙"
+    socks: "袜子"
+  choose: "按分类选购"
+  all_products: "全部商品"
+  stickers: "贴纸"
+  back: "全部分类"
+  basket: "购物车"
+  loading: "商城加载中…"
+  fallback: "商城无法加载？"
+  fallback_link: "在新标签页中打开"
+
+cookies:
+  title: "我们使用 Cookie"
+  text: "我们使用必要 Cookie 来保证网站正常运行。经你同意后，我们还希望使用分析 Cookie 来了解访客如何使用本站，以便持续改进。"
+  accept: "全部接受"
+  reject: "仅必要"
+  settings: "设置"
+  save: "保存选择"
+  essential: "必要"
+  essential_text: "网站和商城正常运行以及记住你的 Cookie 选择所必需。始终开启。"
+  analytics: "分析"
+  analytics_text: "Google Analytics：页面浏览量、流量来源和设备类型等匿名统计数据。"
+  marketing: "营销"
+  marketing_text: "允许广告合作伙伴（Google）衡量广告效果并展示相关广告。"
+  policy: "Cookie 政策"
+  always_on: "始终开启"
+
+game_page:
+  meta_title: "Football League 2027 (FL27) – 手机足球游戏全新内容"
+  meta_description: "FL27 带来焕新主界面、重制生涯模式、升级比赛画面、全新球场、每日挑战和本地 PvP。iOS 和 Android 免费畅玩。"
+  kicker: "本赛季新内容"
+  title_1: "新赛季"
+  title_2: "从这里开始。"
+  text: "FL27 是我们迄今最大的一次焕新：更简洁的外观、重制的生涯模式、升级的比赛日画面，以及和好友一起玩的新方式。"
+  jump: "新内容一览"
+  features:
+    - key: ui
+      label: "全新外观"
+      title: "更简洁、更快速的主界面"
+      text: "FL27 全面焕新界面，风格更简洁、更现代。重新设计的主界面让所有模式一键直达，更快找到下一场比赛，整个游戏的观感和手感都更高级。"
+      images: [u27-main-menu.jpg]
+    - key: career
+      label: "生涯模式"
+      title: "生涯模式，全面重制"
+      text: "生涯模式现在拥有专属中心。管理转会和财务，完成董事会目标，逐轮关注积分榜，在完整赛季中冲击冠军，玩法改进让长线经营更有成就感。"
+      images: [u27-career.jpg]
+    - key: visuals
+      label: "比赛日"
+      title: "每场比赛都更清晰"
+      text: "比赛日从开球到终场全面升级：全新赛前界面、重新设计的游戏内按钮和 HUD，以及让进球者成为焦点的全新进球时刻。整体体验更精致、更统一。"
+      images: [u27-gameplay.jpg, u27-goal.jpg, u27-friendly.jpg]
+    - key: stadium
+      label: "全新球场"
+      title: "全新主场"
+      text: "每一代都有新球场，而 FL27 的球场是我们氛围感最强的一座：座无虚席的看台、璀璨的灯光、巨型大屏和全新的 Football League 品牌元素，让每场比赛都像焦点之夜。"
+      images: [u27-stadium.jpg]
+    - key: challenges
+      label: "每日挑战"
+      title: "每日挑战，每日奖励"
+      text: "简短的足球技巧挑战每天上新。完成目标、攻破门将，收集宝石和金币。比赛间隙玩几分钟正合适。"
+      images: [u27-penalty.jpg]
+    - key: pvp
+      label: "本地 PvP"
+      title: "和好友面对面较量"
+      text: "挑战身边的好友，球场上见分晓。本地 PvP 在 FL27 中持续进化，让 Football League 比以往更有社交乐趣。"
+      images: [u27-pvp.jpg]
+  cta_title_1: "准备好"
+  cta_title_2: "开球了吗？"
+  cta_text: "Football League 在 iOS 和 Android 上免费畅玩。"
+
+contact_page:
+  meta_title: "联系我们 – Football League"
+  meta_description: "联系 Football League 团队，洽谈合作、获取玩家支持或媒体咨询。"
+  kicker: "联系"
+  title_1: "联系"
+  title_2: "我们。"
+  text: "有问题、想法或商务咨询？直接联系对应团队。"
+  cards:
+    - { key: partnerships, icon: mail, title: "合作与商务", text: "品牌合作、授权、广告及媒体咨询。" }
+    - { key: support, icon: gamepad, title: "玩家支持", text: "游戏、账号、购买或隐私请求相关帮助。" }
+    - { key: community, icon: users, title: "社区", text: "关注我们获取新闻和精彩片段，或在 Discord 上与玩家和团队畅聊。" }
+  email_cta: "发送邮件"
+
+news:
+  meta_title: "新闻与更新 – Football League"
+  meta_description: "Football League 手机足球游戏的版本更新、实时活动、新俱乐部授权及官方公告。"
+  kicker: "新闻与更新"
+  title_1: "来自球场的"
+  title_2: "最新消息。"
+  text: "版本更新、实时活动、新俱乐部授权和官方公告。"
+  all: "全部"
+  sections:
+    announcements: "公告"
+    updates: "版本更新"
+    events: "活动"
+    licenses: "俱乐部与授权"
+  empty: "此栏目暂无内容。"
+  back: "全部新闻"
+  related: "更多新闻"
+  share: "分享"
+  copy_link: "复制链接"
+  copied: "链接已复制"
+  featured: "最新"
+  # 日期格式：D = 日，M = 月份，Y = 年
+  date_format: "Y年MD日"
+  months: ["1月", "2月", "3月", "4月", "5月", "6月", "7月", "8月", "9月", "10月", "11月", "12月"]
+
+faq:
+  kicker: "常见问题"
+  title: "你问，我答。"
+  items:
+    - q: "Football League 是免费的吗？"
+      a: "是的。Football League 可在 Android 手机和平板（Google Play）以及 iPhone 和 iPad（App Store）上免费下载和游玩。"
+    - q: "Football League 可以离线玩吗？"
+      a: "可以。没有 Wi-Fi 也能离线畅玩 Football League，联网还能参加实时活动和挑战。这是一款随时随地都能玩的足球游戏。"
+    - q: "Football League 是 soccer 游戏还是 football 游戏？"
+      a: "都是！Football League 是一款手机足球游戏。世界上大多数地方把这项运动叫 football，在美国则叫 soccer。同一款游戏，同一项美丽运动。"
+    - q: "Football League 里能玩什么？"
+      a: "生涯模式、与身边好友对战的本地 PvP、任选两队的友谊赛、每日技巧挑战、实时活动，以及来自世界各地的联赛和杯赛。"
+    - q: "Football League 有真实俱乐部吗？"
+      a: "有。Manchester City 已正式授权入驻 Football League，拥有正版球衣和官方俱乐部队徽。"
+    - q: "Football League 是谁开发的？"
+      a: "Football League 由 Mobile Soccer 开发并发行，这是一家独立手游工作室，致力于为全球玩家打造免费足球游戏。"
+    - q: "Football League 2027 什么时候推出？"
+      a: "Football League 2027（FL27）即将登场，带来焕新外观、重制生涯模式和全新球场。关注我们的新闻页面和社交媒体，第一时间获取消息。"
+
+alts:
+  slides: "游戏截图"
+  engine: "Football League 比赛引擎实机画面，带屏幕操控按钮"
+  goal: "Haaland 在 Football League 中为 Manchester City 破门"
+  mancity: "Football League 中的 Manchester City 球员"
+  menu: "Football League 主菜单，展示 Manchester City 球员"
+
+notfound:
+  title: "越位了！"
+  text: "此页面不存在。"
+
+coming:
+  kicker: "即将推出"
+  text: "此页面正在建设中，敬请期待。"
+  back: "返回首页"

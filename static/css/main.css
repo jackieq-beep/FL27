@@ -951,13 +951,13 @@ button { font: inherit; color: inherit; background: none; border: 0; cursor: poi
 .contact-intro h1 { margin: 10px 0 18px; }
 .contact-channels { display: grid; gap: 14px; }
 .contact-channel { display: block; padding: 22px 26px; background: rgba(18, 18, 22, .72); -webkit-backdrop-filter: blur(10px); backdrop-filter: blur(10px);
-  border-left: 3px solid var(--pink); transition: background .2s; }
+  border-inline-start: 3px solid var(--pink); transition: background .2s; }
 a.contact-channel:hover { background: rgba(30, 30, 36, .85); }
 .contact-channel small { display: block; margin-bottom: 6px; font-size: 12px; letter-spacing: .2em; text-transform: uppercase; color: var(--muted); }
 .contact-channel b { display: flex; align-items: center; gap: 10px; font-size: clamp(17px, 1.7vw, 21px); overflow-wrap: anywhere; }
 .contact-channel b .icon { flex: none; width: 20px; height: 20px; color: var(--pink); transition: transform .2s; }
 a.contact-channel:hover b .icon { transform: translateX(4px); }
-.contact-channel.is-social { border-left-color: var(--green); }
+.contact-channel.is-social { border-inline-start-color: var(--green); }
 .contact-socials { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 6px; }
 .contact-socials .fs-tile { width: 48px; height: 48px; border-radius: 12px; }
 .contact-socials .fs-tile .icon { width: 24px; height: 24px; }
@@ -996,3 +996,18 @@ a.contact-channel:hover b .icon { transform: translateX(4px); }
 .dev-credit { margin-top: 16px; font-size: 13px; letter-spacing: .16em; text-transform: uppercase; color: var(--muted); }
 .footer-dev { white-space: nowrap; }
 @media (max-width: 640px) { .footer-dev { display: block; margin: 6px 0 0; padding: 0; border: 0; } }
+
+/* ---------- languages with their own scripts ---------- */
+:root:lang(ar) { --font-display: "Chivo", "Noto Kufi Arabic", sans-serif; --font-body: "Space Grotesk", "Noto Sans Arabic", sans-serif; }
+:root:lang(ja) { --font-display: "Chivo", "Noto Sans JP", sans-serif; --font-body: "Space Grotesk", "Noto Sans JP", sans-serif; }
+:root:lang(zh-cn) { --font-display: "Chivo", "Noto Sans SC", sans-serif; --font-body: "Space Grotesk", "Noto Sans SC", sans-serif; }
+/* Arabic and CJK have no capitals or italics; give tall headlines a little more room */
+:lang(ar) .display, :lang(ja) .display, :lang(zh-cn) .display, :lang(ar) .hero-title, :lang(ja) .hero-title, :lang(zh-cn) .hero-title { line-height: 1.15; letter-spacing: 0; font-style: normal; }
+:lang(ar) .kicker, :lang(ar) .ticker li, :lang(ar) .dev-credit, :lang(ar) .contact-channel small { letter-spacing: 0; }
+:lang(ar) .ticker li, :lang(ja) .ticker li, :lang(zh-cn) .ticker li { font-style: normal; }
+:lang(ja) .hero-title, :lang(zh-cn) .hero-title { font-size: clamp(44px, 7vw, 96px); }
+:lang(ja) .hero-title, :lang(zh-cn) .hero-title, :lang(ja) .display, :lang(zh-cn) .display { word-break: keep-all; overflow-wrap: anywhere; }
+:lang(ja) .display-xl, :lang(zh-cn) .display-xl { font-size: clamp(40px, 6.4vw, 88px); }
+:lang(ja) .hero-tagline, :lang(zh-cn) .hero-tagline, :lang(ja) .kicker, :lang(zh-cn) .kicker,
+:lang(ja) .contact-channel small, :lang(zh-cn) .contact-channel small, :lang(ja) .dev-credit, :lang(zh-cn) .dev-credit { letter-spacing: .06em; }
+:lang(ar) .hero-tagline { letter-spacing: 0; }

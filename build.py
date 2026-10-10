@@ -81,6 +81,16 @@ def load_news(lang):
         m = re.match(r"^---\n(.*?)\n---\n(.*)$", raw, re.S)
         meta, body = (yaml.safe_load(m.group(1)), m.group(2)) if m else ({}, raw)
         meta["slug"] = path.stem
+        # A translated copy in content/news/<lang>/<slug>.md replaces the title, summary and text
+        tr = ROOT / "content" / "news" / lang / path.name
+        if lang != "en" and tr.exists():
+            tm = re.match(r"^---\n(.*?)\n---\n(.*)$", tr.read_text(encoding="utf-8"), re.S)
+            if tm:
+                tmeta = yaml.safe_load(tm.group(1)) or {}
+                for k in ("title", "summary"):
+                    if tmeta.get(k):
+                        meta[k] = tmeta[k]
+                body = tm.group(2)
         meta["section"] = meta.get("section") or "announcements"
         meta["html"] = Markup(markdown.markdown(body))
         posts.append(meta)

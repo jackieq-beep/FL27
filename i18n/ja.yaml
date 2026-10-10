@@ -1,0 +1,292 @@
+# ウェブサイトの日本語テキスト
+
+meta:
+  home_title: "Football League – 無料モバイルサッカーゲーム | iOS & Android"
+  home_description: "Football Leagueは、iPhoneとAndroidで遊べる無料のモバイルサッカーゲーム。最強チームを作り、キャリアモードやローカルPvP、公式ライセンスのマンチェスター・シティをオンラインでもオフラインでも楽しめます。Football League 2027、まもなく登場！"
+
+nav:
+  home: ホーム
+  game: ゲーム
+  news: ニュース
+  shop: ショップ
+  media: メディア
+  community: コミュニティ
+  contact: お問い合わせ
+  play_now: 今すぐプレイ
+  menu: メニュー
+  close: メニューを閉じる
+  language: 言語
+  soon: 近日公開
+  skip: 本文へスキップ
+
+hero:
+  eyebrow_brand: "Football League"
+  eyebrow: "新シーズン配信中"
+  title_1: サッカーの
+  title_2a: すべてが、
+  title_2b: ここに。
+  tagline: 世界中の、すべての人のサッカー。
+  body: "Football Leagueは、世界中のサッカーファンに贈る無料モバイルサッカーゲーム。最強チームを作り上げ、オンラインでライバルに挑むもよし、オフラインでいつでもどこでも遊ぶもよし。"
+  cta_primary: 今すぐプレイ
+  cta_trailer: ゲームを見る
+  cta_explore: ゲームを見る
+  stats:
+    - { value: "1億+", label: "プレイヤー" }
+    - { value: "オンライン + オフライン", label: "どこでもプレイ" }
+
+ticker:
+  - Football League 2027 · まもなく登場
+  - 基本プレイ無料
+  - マンチェスター・シティ公式ライセンス
+  - オンライン + オフライン
+  - 毎週ライブイベント開催
+  - リーグ & カップ戦
+  - 試合の日のために
+
+engine:
+  kicker: "次世代モバイルサッカー"
+  title_1: リアルなサッカー。
+  title_2: 奥深い戦術。
+  intro: "賢いAI、レスポンスの良い操作、なめらかなアニメーション。Football Leagueは、どんなスマホでも本物さながらのプレイが楽しめるモバイルサッカーゲームです。"
+  caption: "ゲーム内映像"
+  points:
+    - { num: "01", title: "ダイナミックな試合エンジン", text: "賢いAI、レスポンスの良い操作、なめらかなアニメーションが、ファーストタッチから試合終了の笛まで全試合を支えます。" }
+    - { num: "02", title: "戦術スタイル", text: "独自の指示を持つ新たな戦術スタイルが登場。あなたの考えるとおりにチームが動きます。" }
+    - { num: "03", title: "セットプレーが進化", text: "より手ごわく、よりリアルになったフリーキックと、バランス調整されたPK。すべてのセットプレーがチャンスです。" }
+
+modes:
+  kicker: "2027の新要素"
+  title_1: すべての試合を。
+  title_2: すべての舞台で。
+  items:
+    - { img: u27-career.jpg, title: "チームキャリア", text: "移籍、財務、フロントの目標、そしてリーグ戦のフルシーズン。クラブ運営はあなた次第。" }
+    - { img: u27-pvp.jpg, title: "ローカルPvP", text: "友だちと直接対決。決着はピッチの上で。" }
+    - { img: u27-friendly.jpg, title: "フレンドリーマッチ", text: "好きな2クラブを選び、ユニフォームとスタジアムを決めたらキックオフ。" }
+    - { img: u27-penalty.jpg, title: "チャレンジ & 報酬", text: "スキルチャレンジで目標を達成して、ジェムとコインをゲットしよう。" }
+
+clubs:
+  kicker: "公式ライセンス"
+  title_1: 公式クラブ。
+  title_2: 本物のカラー。
+  text: "マンチェスター・シティがFootball Leagueに公式ライセンスで登場。本物のユニフォーム、公式エンブレム、トップレベルのサッカー。スカイブルーに染まるシーズンを丸ごと楽しもう。"
+  cta: 発表を読む
+  badge: 公式ライセンス
+
+updates:
+  kicker: "最新アップデート"
+  title: 最新情報
+  all: すべてのニュース
+  read: 続きを読む
+
+merch:
+  kicker: "グッズ"
+  title_1: ゲームを
+  title_2: 身にまとえ。
+  text: "Football League公式のシャツ、パーカー、アクセサリー。スタンドでも、街でも、ピッチでも映えるデザインです。"
+  cta: ショップへ
+
+download:
+  kicker: "iOS & Androidで無料"
+  title_1: 1億+の
+  title_2: プレイヤーに加わろう。
+  text: "iOSとAndroid対応の無料サッカーゲーム、Football Leagueをダウンロードして、今シーズンに名を刻もう。"
+  developer: "開発：Mobile Soccer"
+  gp_small: 今すぐ入手
+  gp_big: Google Play
+  as_small: ダウンロード
+  as_big: App Store
+
+footer:
+  about: "Football Leagueは、Mobile Soccerが開発・配信するiOS・Android向けの無料モバイルサッカーゲームです。"
+  developer: "開発"
+  col_game: ゲーム
+  col_company: 会社情報
+  col_follow: フォローする
+  col_legal: 規約
+  privacy: プライバシーポリシー
+  terms: 利用規約
+  cookies: Cookie設定
+  cookie_policy: Cookieポリシー
+  contact: お問い合わせ
+  rights: "All rights reserved."
+  disclaimer: "クラブ名、ロゴ、ユニフォームは各所有者の商標であり、ライセンスに基づいて使用しています。"
+
+shop:
+  meta_title: "公式ショップ – Football League グッズ"
+  meta_description: "Football League公式のサッカーシャツ、パーカー、ジャケット、キッズウェア、アクセサリー。受注生産で世界中へお届けします。"
+  kicker: "公式グッズ"
+  title_1: ゲームを
+  title_2: 身にまとえ。
+  text: "Football Leagueのエンブレム入りシャツ、パーカー、ジャケット、キッズウェア、ステッカー。受注生産でご自宅までお届けします。"
+  perks:
+    - { icon: bag, text: "受注生産" }
+    - { icon: check, text: "安全な決済" }
+    - { icon: check, text: "大人・キッズ・ベビーサイズ" }
+  categories:
+    men: メンズ
+    women: レディース
+    kids: "キッズ & ベビー"
+    accessories: アクセサリー
+  nav:
+    all: すべての商品
+    men: メンズ
+    women: レディース
+    kids: "キッズ & ベビー"
+    accessories: アクセサリー
+    home: "ホーム & リビング"
+    stickers: ステッカー
+    sub_all: すべて
+    tshirts: Tシャツ
+    hoodies: "パーカー & スウェット"
+    zips: "ジップパーカー & ジャケット"
+    longsleeve: 長袖シャツ
+    polos: ポロシャツ
+    tanks: タンクトップ
+    sportswear: スポーツウェア
+    bottoms: ボトムス
+    kidshirts: "キッズシャツ"
+    baby: ベビー用品
+    accessories_sub: アクセサリー
+    caps: "キャップ & ハット"
+    bags: "バッグ & リュック"
+    aprons: エプロン
+    socks: ソックス
+  choose: "カテゴリーから探す"
+  all_products: すべての商品
+  stickers: ステッカー
+  back: すべてのカテゴリー
+  basket: カート
+  loading: "ショップを読み込み中…"
+  fallback: "ショップが表示されませんか？"
+  fallback_link: "新しいタブで開く"
+
+cookies:
+  title: "Cookieを使用しています"
+  text: "当サイトでは、サイトの動作に必要なCookieを使用しています。また、同意いただける場合は、サイト改善のため訪問者の利用状況を把握する分析用Cookieも使用させていただきます。"
+  accept: すべて許可
+  reject: 必須のみ
+  settings: 設定
+  save: 選択を保存
+  essential: 必須
+  essential_text: "サイトとショップの動作、およびCookie設定の保存に必要です。常に有効です。"
+  analytics: 分析
+  analytics_text: "Google Analytics：ページビュー、流入元、デバイスの種類などの匿名統計情報。"
+  marketing: マーケティング
+  marketing_text: "広告パートナー（Google）がキャンペーン効果を測定し、関連性の高い広告を表示できるようにします。"
+  policy: Cookieポリシー
+  always_on: 常に有効
+
+game_page:
+  meta_title: "Football League 2027 (FL27) – モバイルサッカーゲームの新要素"
+  meta_description: "FL27では、ホーム画面を一新し、キャリアモードを再構築。試合のビジュアル強化、新スタジアム、デイリーチャレンジ、ローカルPvPも登場。iOS・Androidで無料。"
+  kicker: "今シーズンの新要素"
+  title_1: 新シーズンは
+  title_2: ここから始まる。
+  text: "FL27は過去最大のリニューアル。よりスッキリしたデザイン、再構築されたキャリアモード、パワーアップした試合のビジュアル、そして友だちと遊べる新しい楽しみ方が登場します。"
+  jump: "新要素を見る"
+  features:
+    - key: ui
+      label: "新デザイン"
+      title: "スッキリ、サクサクのホーム画面"
+      text: "FL27では、よりスッキリとモダンなスタイルにインターフェースを全面リニューアル。新しいホーム画面ではすべてのモードにワンタップでアクセスでき、次の試合をすぐに見つけられます。ゲーム全体の見た目も手ざわりも、より上質に。"
+      images: [u27-main-menu.jpg]
+    - key: career
+      label: "キャリアモード"
+      title: "キャリアモード、再構築"
+      text: "キャリアモードに専用ハブが登場。移籍と財務を管理し、フロントの目標を達成し、節ごとにリーグ順位表を追いながら、フルシーズンで優勝を目指そう。ゲームプレイの改善で、長いシーズンを戦い抜く達成感もさらにアップしました。"
+      images: [u27-career.jpg]
+    - key: visuals
+      label: "試合演出"
+      title: "すべての試合がより鮮明に"
+      text: "キックオフから試合終了まで、試合演出をアップグレード。新しい試合前画面、デザインを一新したゲーム内ボタンとHUD、そしてゴールを決めた選手にスポットライトを当てる新演出「ゴールモーメント」。より洗練され、統一感のある体験を実現しました。"
+      images: [u27-gameplay.jpg, u27-goal.jpg, u27-friendly.jpg]
+    - key: stadium
+      label: "新スタジアム"
+      title: "まったく新しいホームスタジアム"
+      text: "毎作新たなスタジアムが登場しますが、FL27のスタジアムは過去最高の臨場感。満員のスタンド、まばゆい照明、巨大スクリーン、そして新しいFootball Leagueのブランディングが、すべての試合をビッグマッチの夜に変えます。"
+      images: [u27-stadium.jpg]
+    - key: challenges
+      label: "デイリーチャレンジ"
+      title: "毎日のチャレンジで、毎日報酬"
+      text: "スキルを試す短いサッカーチャレンジが毎日登場。目標を達成し、キーパーを打ち破って、ジェムとコインを集めよう。試合の合間の数分にぴったりです。"
+      images: [u27-penalty.jpg]
+    - key: pvp
+      label: "ローカルPvP"
+      title: "友だちと、顔を合わせて対戦"
+      text: "近くの友だちに挑戦して、ピッチで決着をつけよう。FL27でローカルPvPはさらに進化し、Football Leagueはこれまで以上にみんなで楽しめるゲームになりました。"
+      images: [u27-pvp.jpg]
+  cta_title_1: キックオフの
+  cta_title_2: 準備はいい？
+  cta_text: "Football LeagueはiOSとAndroidで無料でプレイできます。"
+
+contact_page:
+  meta_title: "お問い合わせ – Football League"
+  meta_description: "提携、プレイヤーサポート、報道関係のお問い合わせはFootball Leagueチームまで。"
+  kicker: "お問い合わせ"
+  title_1: お気軽に
+  title_2: ご連絡ください。
+  text: "ご質問、アイデア、ビジネスのご相談は、担当チームまで直接ご連絡ください。"
+  cards:
+    - { key: partnerships, icon: mail, title: "提携 & ビジネス", text: "ブランド提携、ライセンス、広告、メディアに関するお問い合わせ。" }
+    - { key: support, icon: gamepad, title: "プレイヤーサポート", text: "ゲーム、アカウント、購入、プライバシーに関するご相談。" }
+    - { key: community, icon: users, title: "コミュニティ", text: "フォローしてニュースや動画をチェック。Discordではプレイヤーや開発チームと交流できます。" }
+  email_cta: メールを送る
+
+news:
+  meta_title: "ニュース & アップデート – Football League"
+  meta_description: "モバイルサッカーゲームFootball Leagueのアップデート、ライブイベント、新クラブライセンス、お知らせ。"
+  kicker: "ニュース & アップデート"
+  title_1: ピッチから
+  title_2: 最新情報。
+  text: "ゲームアップデート、ライブイベント、新クラブライセンス、お知らせをお届けします。"
+  all: すべて
+  sections:
+    announcements: お知らせ
+    updates: アップデート
+    events: イベント
+    licenses: "クラブ & ライセンス"
+  empty: "このカテゴリーにはまだ投稿がありません。"
+  back: すべてのニュース
+  related: その他のニュース
+  share: シェア
+  copy_link: リンクをコピー
+  copied: コピーしました
+  featured: 最新
+  # 日付の表記：D = 日、M = 月名、Y = 年
+  date_format: "Y年MD日"
+  months: ["1月", "2月", "3月", "4月", "5月", "6月", "7月", "8月", "9月", "10月", "11月", "12月"]
+
+faq:
+  kicker: "FAQ"
+  title: よくある質問
+  items:
+    - q: "Football Leagueは無料で遊べますか？"
+      a: "はい。Football Leagueは、Androidのスマホ・タブレット（Google Play）とiPhone・iPad（App Store）で、無料でダウンロードしてプレイできます。"
+    - q: "Football Leagueはオフラインでも遊べますか？"
+      a: "はい。Wi-Fiがなくてもオフラインでプレイできます。オンラインならライブイベントやチャレンジにも参加可能。どこでも遊べるサッカーゲームです。"
+    - q: "Football Leagueは「サッカー」のゲーム？それとも「フットボール」のゲーム？"
+      a: "どちらも正解！Football Leagueはモバイルサッカーゲームです。世界の多くの国ではこのスポーツを「フットボール」と呼び、アメリカや日本では「サッカー」と呼びます。同じゲーム、同じ美しいスポーツです。"
+    - q: "Football Leagueでは何ができますか？"
+      a: "キャリアモード、近くの友だちと対戦できるローカルPvP、好きな2クラブで戦うフレンドリーマッチ、デイリースキルチャレンジ、ライブイベント、そして世界中のリーグやカップ戦が楽しめます。"
+    - q: "Football Leagueには実在のクラブは登場しますか？"
+      a: "はい。マンチェスター・シティが公式ライセンスで登場し、本物のユニフォームと公式クラブエンブレムを使用できます。"
+    - q: "Football Leagueを開発しているのは？"
+      a: "Football Leagueは、世界中のプレイヤーに向けて無料のサッカーゲームを作るインディーモバイルゲームスタジオ、Mobile Soccerが開発・配信しています。"
+    - q: "Football League 2027はいつリリースされますか？"
+      a: "Football League 2027（FL27）はまもなく登場予定です。デザインの一新、再構築されたキャリアモード、新スタジアムを搭載。最新情報はニュースページと公式SNSでいち早くお届けします。"
+
+alts:
+  slides: ゲーム画像
+  engine: "画面上の操作ボタンとFootball Leagueの試合エンジンによるゲームプレイ"
+  goal: "Football Leagueでマンチェスター・シティのハーランドがゴール"
+  mancity: "Football Leagueのマンチェスター・シティの選手たち"
+  menu: "マンチェスター・シティの選手が映るFootball Leagueのメインメニュー"
+
+notfound:
+  title: オフサイド！
+  text: "このページは存在しません。"
+
+coming:
+  kicker: "近日公開"
+  text: "このページは現在準備中です。もうしばらくお待ちください。"
+  back: ホームに戻る

@@ -118,16 +118,16 @@ social:
   x: ""
   tiktok: https://www.tiktok.com/@footballleague.official
 
-# Languages. Set enabled: true once a language's file in i18n/ is translated.
+# Languages. Each one has its text in i18n/<code>.yaml and translated news in content/news/<code>/. Set enabled: false to hide one.
 languages:
   - { code: en, label: English, short: EN, dir: ltr, enabled: true }
-  - { code: zh-cn, label: 简体中文, short: 中文, dir: ltr, enabled: false }
-  - { code: es, label: Español, short: ES, dir: ltr, enabled: false }
-  - { code: pt, label: Português, short: PT, dir: ltr, enabled: false }
-  - { code: id, label: Bahasa Indonesia, short: ID, dir: ltr, enabled: false }
-  - { code: fr, label: Français, short: FR, dir: ltr, enabled: false }
-  - { code: ar, label: العربية, short: AR, dir: rtl, enabled: false }
-  - { code: ja, label: 日本語, short: JA, dir: ltr, enabled: false }
+  - { code: zh-cn, label: 简体中文, short: 中文, dir: ltr, enabled: true }
+  - { code: es, label: Español, short: ES, dir: ltr, enabled: true }
+  - { code: pt, label: Português, short: PT, dir: ltr, enabled: true }
+  - { code: id, label: Bahasa Indonesia, short: ID, dir: ltr, enabled: true }
+  - { code: fr, label: Français, short: FR, dir: ltr, enabled: true }
+  - { code: ar, label: العربية, short: AR, dir: rtl, enabled: true }
+  - { code: ja, label: 日本語, short: JA, dir: ltr, enabled: true }
 
 # Hero slideshow on the homepage (first image shows first). "position" = which part of the picture to keep in view.
 hero_slides:

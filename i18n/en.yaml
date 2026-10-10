@@ -70,6 +70,7 @@ clubs:
   title_2: True colors.
   text: "Manchester City is officially licensed in Football League. Authentic kits, the official badge, elite football and the whole season in sky blue."
   cta: Read the announcement
+  badge: Official license
 
 updates:
   kicker: "Latest updates"
@@ -251,6 +252,9 @@ news:
   copy_link: Copy link
   copied: Link copied
   featured: Latest
+  # How dates are written: D = day, M = month name, Y = year
+  date_format: "D M Y"
+  months: [Jan, Feb, Mar, Apr, May, Jun, Jul, Aug, Sep, Oct, Nov, Dec]
 
 faq:
   kicker: "FAQ"
@@ -270,6 +274,17 @@ faq:
       a: "Football League is developed and published by Mobile Soccer, an independent mobile game studio making free football games for players everywhere."
     - q: "When is Football League 2027 coming out?"
       a: "Football League 2027 (FL27) is coming soon, with a refreshed look, a rebuilt Career Mode and a brand-new stadium. Follow our News page and socials to hear first."
+
+alts:
+  slides: Game images
+  engine: "Football League match engine gameplay with on-screen controls"
+  goal: "Haaland scores for Manchester City in Football League"
+  mancity: "Manchester City players in Football League"
+  menu: "Football League main menu with Manchester City players"
+
+notfound:
+  title: Offside!
+  text: "This page doesn't exist."
 
 coming:
   kicker: "Coming soon"

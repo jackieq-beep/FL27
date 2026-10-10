@@ -9,7 +9,7 @@
     {% endfor %}
   </div>
   {% if site.hero_slides | length > 1 %}
-  <div class="hero-dots" role="group" aria-label="Game images">
+  <div class="hero-dots" role="group" aria-label="{{ t.alts.slides }}">
     {% for sl in site.hero_slides %}<button type="button" aria-label="Image {{ loop.index }}"{% if loop.first %} aria-current="true"{% endif %} data-slide="{{ loop.index0 }}"><i></i></button>{% endfor %}
   </div>
   {% endif %}
@@ -54,7 +54,7 @@
       <p class="lead">{{ t.engine.intro }}</p>
     </div>
     <figure class="feature-shot">
-      {{ img('match-engine.webp', 'Football League match engine gameplay with on-screen controls', '(min-width: 1240px) 1200px, 100vw') }}
+      {{ img('match-engine.webp', t.alts.engine, '(min-width: 1240px) 1200px, 100vw') }}
       <figcaption><span class="tag-dot"></span>{{ t.engine.caption }}</figcaption>
     </figure>
     <ol class="points" role="list">
@@ -96,8 +96,8 @@
       <a class="btn btn-outline" href="{{ url('news/official-club-licenses/') }}">{{ t.clubs.cta }} {{ icon('arrow-right') }}</a>
     </div>
     <div class="clubs-media">
-      <figure>{{ img('u27-goal.jpg', 'Haaland scores for Manchester City in Football League', '(min-width: 1000px) 560px, 100vw') }}<figcaption>Manchester City</figcaption></figure>
-      <figure>{{ img('license-mancity.jpg', 'Manchester City players in Football League', '(min-width: 1000px) 560px, 100vw') }}<figcaption>Official license</figcaption></figure>
+      <figure>{{ img('u27-goal.jpg', t.alts.goal, '(min-width: 1000px) 560px, 100vw') }}<figcaption>Manchester City</figcaption></figure>
+      <figure>{{ img('license-mancity.jpg', t.alts.mancity, '(min-width: 1000px) 560px, 100vw') }}<figcaption>{{ t.clubs.badge }}</figcaption></figure>
     </div>
   </div>
 </section>
@@ -170,7 +170,7 @@
       <p class="dev-credit">{{ t.download.developer }}</p>
     </div>
     <div class="download-media">
-      {{ img('u27-main-menu.jpg', 'Football League main menu with Manchester City players', '(min-width: 1000px) 640px, 100vw') }}
+      {{ img('u27-main-menu.jpg', t.alts.menu, '(min-width: 1000px) 640px, 100vw') }}
     </div>
   </div>
 </section>

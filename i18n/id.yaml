@@ -1,0 +1,292 @@
+# Teks bahasa Indonesia untuk situs web.
+
+meta:
+  home_title: "Football League – Game Sepak Bola Mobile Gratis | iOS & Android"
+  home_description: "Football League adalah game sepak bola mobile gratis untuk iPhone dan Android. Bangun skuad, mainkan Mode Karier, Local PvP, dan Manchester City resmi, online maupun offline. Football League 2027 segera hadir."
+
+nav:
+  home: "Beranda"
+  game: "Game"
+  news: "Berita"
+  shop: "Toko"
+  media: "Media"
+  community: "Komunitas"
+  contact: "Kontak"
+  play_now: "Main Sekarang"
+  menu: "Menu"
+  close: "Tutup menu"
+  language: "Bahasa"
+  soon: "Segera"
+  skip: "Langsung ke konten"
+
+hero:
+  eyebrow_brand: "Football League"
+  eyebrow: "Musim baru sudah rilis"
+  title_1: "Sepak bola"
+  title_2a: "Hidup"
+  title_2b: "Di Sini"
+  tagline: "Game global untuk semua."
+  body: "Football League adalah game sepak bola mobile gratis untuk para fan di mana saja. Bangun skuad terbaikmu, tantang rival secara online, atau main offline, kapan pun dan di mana pun."
+  cta_primary: "Main Sekarang"
+  cta_trailer: "Lihat gamenya"
+  cta_explore: "Lihat gamenya"
+  stats:
+    - { value: "100 Jt+", label: "pemain" }
+    - { value: "Online + Offline", label: "main di mana saja" }
+
+ticker:
+  - "Football League 2027 · Segera hadir"
+  - "Gratis dimainkan"
+  - "Lisensi resmi Manchester City"
+  - "Online + offline"
+  - "Event live setiap minggu"
+  - "Liga & piala"
+  - "Dibuat untuk hari pertandingan"
+
+engine:
+  kicker: "Sepak bola mobile generasi baru"
+  title_1: "Sepak bola realistis."
+  title_2: "Taktik mendalam."
+  intro: "AI cerdas, kontrol responsif, dan animasi mulus membuat Football League terasa seperti sepak bola sungguhan, di HP apa pun."
+  caption: "Cuplikan dalam game"
+  points:
+    - { num: "01", title: "Mesin Pertandingan Dinamis", text: "AI cerdas, kontrol responsif, dan animasi mulus menghidupkan setiap laga, dari sentuhan pertama hingga peluit akhir." }
+    - { num: "02", title: "Gaya Taktik", text: "Gaya taktik baru dengan instruksi bermain masing-masing, jadi timmu bermain sesuai caramu berpikir." }
+    - { num: "03", title: "Bola Mati yang Lebih Baik", text: "Tendangan bebas yang lebih menantang dan realistis, plus penalti yang diseimbangkan ulang. Setiap bola mati adalah peluang." }
+
+modes:
+  kicker: "Baru di 2027"
+  title_1: "Setiap laga."
+  title_2: "Setiap panggung."
+  items:
+    - { img: u27-career.jpg, title: "Karier Tim", text: "Kelola klub: transfer, keuangan, target direksi, dan satu musim liga penuh." }
+    - { img: u27-pvp.jpg, title: "Local PvP", text: "Duel langsung dengan teman dan buktikan siapa terbaik di lapangan." }
+    - { img: u27-friendly.jpg, title: "Laga Persahabatan", text: "Pilih dua klub mana saja, tentukan jersey dan stadion, lalu kick-off." }
+    - { img: u27-penalty.jpg, title: "Tantangan & Hadiah", text: "Capai target di tantangan skill untuk memenangkan permata dan koin." }
+
+clubs:
+  kicker: "Lisensi resmi"
+  title_1: "Klub resmi."
+  title_2: "Warna asli."
+  text: "Manchester City berlisensi resmi di Football League. Jersey autentik, lambang resmi, sepak bola elite, dan satu musim penuh dalam balutan biru langit."
+  cta: "Baca pengumumannya"
+  badge: "Lisensi resmi"
+
+updates:
+  kicker: "Update terbaru"
+  title: "Apa yang baru"
+  all: "Semua berita"
+  read: "Selengkapnya"
+
+merch:
+  kicker: "Merchandise"
+  title_1: "Kenakan"
+  title_2: "gamenya."
+  text: "Kaus, hoodie, dan aksesori resmi Football League. Dirancang untuk tribun, jalanan, dan lapangan."
+  cta: "Kunjungi toko"
+
+download:
+  kicker: "Gratis di iOS & Android"
+  title_1: "Gabung bersama 100 Jt+"
+  title_2: "pemain."
+  text: "Unduh Football League, game sepak bola gratis untuk iOS dan Android, dan tunjukkan kehebatanmu musim ini."
+  developer: "Dikembangkan oleh Mobile Soccer"
+  gp_small: "Dapatkan di"
+  gp_big: "Google Play"
+  as_small: "Unduh di"
+  as_big: "App Store"
+
+footer:
+  about: "Football League adalah game sepak bola mobile gratis untuk iOS dan Android, dikembangkan dan diterbitkan oleh Mobile Soccer."
+  developer: "Dikembangkan oleh"
+  col_game: "Game"
+  col_company: "Perusahaan"
+  col_follow: "Ikuti kami"
+  col_legal: "Legal"
+  privacy: "Kebijakan Privasi"
+  terms: "Ketentuan Layanan"
+  cookies: "Pengaturan Cookie"
+  cookie_policy: "Kebijakan Cookie"
+  contact: "Hubungi kami"
+  rights: "Hak cipta dilindungi undang-undang."
+  disclaimer: "Nama, logo, dan jersey klub adalah merek dagang milik pemiliknya masing-masing dan digunakan di bawah lisensi."
+
+shop:
+  meta_title: "Toko Resmi – Merchandise Football League"
+  meta_description: "Kaus sepak bola, hoodie, jaket, pakaian anak, dan aksesori resmi Football League. Dibuat sesuai pesanan dan dikirim ke seluruh dunia."
+  kicker: "Merchandise resmi"
+  title_1: "Kenakan"
+  title_2: "gamenya."
+  text: "Kaus, hoodie, jaket, pakaian anak, dan stiker berlambang Football League. Dibuat sesuai pesanan dan dikirim sampai ke depan pintumu."
+  perks:
+    - { icon: bag, text: "Dibuat sesuai pesanan" }
+    - { icon: check, text: "Pembayaran aman" }
+    - { icon: check, text: "Ukuran dewasa, anak & bayi" }
+  categories:
+    men: "Pria"
+    women: "Wanita"
+    kids: "Anak & Bayi"
+    accessories: "Aksesori"
+  nav:
+    all: "Semua produk"
+    men: "Pria"
+    women: "Wanita"
+    kids: "Anak & Bayi"
+    accessories: "Aksesori"
+    home: "Rumah & Gaya Hidup"
+    stickers: "Stiker"
+    sub_all: "Semua"
+    tshirts: "Kaus"
+    hoodies: "Hoodie & Sweater"
+    zips: "Hoodie Ritsleting & Jaket"
+    longsleeve: "Kaus Lengan Panjang"
+    polos: "Kaus Polo"
+    tanks: "Kaus Tanpa Lengan"
+    sportswear: "Pakaian Olahraga"
+    bottoms: "Bawahan"
+    kidshirts: "Kaus Anak"
+    baby: "Produk Bayi"
+    accessories_sub: "Aksesori"
+    caps: "Topi"
+    bags: "Tas & Ransel"
+    aprons: "Celemek"
+    socks: "Kaus Kaki"
+  choose: "Belanja per kategori"
+  all_products: "Semua produk"
+  stickers: "Stiker"
+  back: "Semua kategori"
+  basket: "Keranjang"
+  loading: "Memuat toko…"
+  fallback: "Toko tidak terbuka?"
+  fallback_link: "Buka di tab baru"
+
+cookies:
+  title: "Kami menggunakan cookie"
+  text: "Kami menggunakan cookie esensial agar situs ini berfungsi. Dengan izinmu, kami juga ingin menggunakan cookie analitik untuk memahami cara pengunjung memakai situs ini, agar kami bisa terus memperbaikinya."
+  accept: "Terima semua"
+  reject: "Hanya esensial"
+  settings: "Pengaturan"
+  save: "Simpan pilihan"
+  essential: "Esensial"
+  essential_text: "Diperlukan agar situs dan toko berfungsi, serta untuk mengingat pilihan cookie-mu. Selalu aktif."
+  analytics: "Analitik"
+  analytics_text: "Google Analytics: statistik anonim seperti tampilan halaman, sumber trafik, dan jenis perangkat."
+  marketing: "Pemasaran"
+  marketing_text: "Memungkinkan mitra iklan (Google) mengukur kampanye dan menampilkan iklan yang relevan."
+  policy: "Kebijakan Cookie"
+  always_on: "Selalu aktif"
+
+game_page:
+  meta_title: "Football League 2027 (FL27) – Fitur Baru di Game Sepak Bola Mobile"
+  meta_description: "FL27 hadir dengan layar utama baru, Mode Karier yang dirombak, visual pertandingan yang ditingkatkan, stadion baru, tantangan harian, dan Local PvP. Gratis di iOS dan Android."
+  kicker: "Yang baru musim ini"
+  title_1: "Musim baru"
+  title_2: "dimulai di sini."
+  text: "FL27 adalah penyegaran terbesar kami: tampilan lebih bersih, Mode Karier yang dirombak, visual hari pertandingan yang ditingkatkan, dan cara baru bermain bersama teman."
+  jump: "Apa yang baru"
+  features:
+    - key: ui
+      label: "Tampilan baru"
+      title: "Layar utama lebih bersih dan cepat"
+      text: "FL27 menghadirkan antarmuka yang sepenuhnya diperbarui dengan gaya yang lebih bersih dan modern. Layar utama yang didesain ulang menempatkan setiap mode hanya sekali ketuk, jadi kamu lebih cepat menemukan laga berikutnya, dan seluruh game terlihat serta terasa lebih premium."
+      images: [u27-main-menu.jpg]
+    - key: career
+      label: "Mode Karier"
+      title: "Mode Karier, dirombak total"
+      text: "Mode Karier kini punya hub khusus. Kelola transfer dan keuangan, capai target direksi, pantau klasemen liga dari pekan ke pekan, dan kejar gelar sepanjang satu musim penuh, dengan peningkatan gameplay yang membuat perjalanan panjang jadi lebih memuaskan."
+      images: [u27-career.jpg]
+    - key: visuals
+      label: "Hari pertandingan"
+      title: "Setiap laga tampil lebih tajam"
+      text: "Hari pertandingan ditingkatkan dari kick-off hingga peluit akhir: layar pra-pertandingan baru, tombol dan HUD dalam game yang didesain ulang, serta Momen Gol baru yang menyorot sang pencetak gol. Hasilnya, pengalaman yang lebih rapi dan konsisten."
+      images: [u27-gameplay.jpg, u27-goal.jpg, u27-friendly.jpg]
+    - key: stadium
+      label: "Stadion baru"
+      title: "Kandang yang benar-benar baru"
+      text: "Setiap edisi mendapat stadion baru, dan stadion FL27 adalah yang paling meriah sejauh ini: tribun penuh, lampu terang, layar raksasa, dan branding Football League yang segar, membuat setiap laga terasa seperti malam besar."
+      images: [u27-stadium.jpg]
+    - key: challenges
+      label: "Tantangan harian"
+      title: "Tantangan harian, hadiah harian"
+      text: "Tantangan sepak bola singkat berbasis skill hadir setiap hari. Capai target, kalahkan kiper, dan kumpulkan permata serta koin. Pas banget untuk beberapa menit di sela pertandingan."
+      images: [u27-penalty.jpg]
+    - key: pvp
+      label: "Local PvP"
+      title: "Lawan temanmu, tatap muka"
+      text: "Tantang teman di dekatmu dan buktikan di lapangan. Local PvP makin seru di FL27, membuat Football League lebih sosial dari sebelumnya."
+      images: [u27-pvp.jpg]
+  cta_title_1: "Siap untuk"
+  cta_title_2: "kick-off?"
+  cta_text: "Football League gratis dimainkan di iOS dan Android."
+
+contact_page:
+  meta_title: "Kontak – Football League"
+  meta_description: "Hubungi tim Football League untuk kemitraan, dukungan pemain, atau media."
+  kicker: "Kontak"
+  title_1: "Hubungi"
+  title_2: "kami."
+  text: "Punya pertanyaan, ide, atau urusan bisnis? Langsung hubungi tim yang tepat."
+  cards:
+    - { key: partnerships, icon: mail, title: "Kemitraan & bisnis", text: "Kemitraan merek, lisensi, iklan, dan pertanyaan media." }
+    - { key: support, icon: gamepad, title: "Dukungan pemain", text: "Bantuan terkait game, akun, pembelian, atau permintaan privasi." }
+    - { key: community, icon: users, title: "Komunitas", text: "Ikuti kami untuk berita dan klip, atau ngobrol dengan pemain dan tim di Discord." }
+  email_cta: "Kirim email"
+
+news:
+  meta_title: "Berita & Update – Football League"
+  meta_description: "Update game, event live, lisensi klub baru, dan pengumuman dari game sepak bola mobile Football League."
+  kicker: "Berita & update"
+  title_1: "Kabar terbaru"
+  title_2: "dari lapangan."
+  text: "Update game, event live, lisensi klub baru, dan pengumuman."
+  all: "Semua"
+  sections:
+    announcements: "Pengumuman"
+    updates: "Update Game"
+    events: "Event"
+    licenses: "Klub & Lisensi"
+  empty: "Belum ada postingan di bagian ini."
+  back: "Semua berita"
+  related: "Berita lainnya"
+  share: "Bagikan"
+  copy_link: "Salin tautan"
+  copied: "Tautan disalin"
+  featured: "Terbaru"
+  # Format tanggal: D = hari, M = nama bulan, Y = tahun
+  date_format: "D M Y"
+  months: ["Jan", "Feb", "Mar", "Apr", "Mei", "Jun", "Jul", "Agu", "Sep", "Okt", "Nov", "Des"]
+
+faq:
+  kicker: "FAQ"
+  title: "Pertanyaan, terjawab."
+  items:
+    - q: "Apakah Football League gratis dimainkan?"
+      a: "Ya. Football League gratis diunduh dan dimainkan di ponsel dan tablet Android (Google Play) serta di iPhone dan iPad (App Store)."
+    - q: "Bisakah saya memainkan Football League secara offline?"
+      a: "Bisa. Kamu bisa main Football League offline tanpa Wi-Fi, atau online untuk event live dan tantangan. Ini game sepak bola yang bisa dimainkan di mana saja."
+    - q: "Football League itu game soccer atau game football?"
+      a: "Dua-duanya! Football League adalah game sepak bola mobile. Sebagian besar dunia menyebut olahraga ini football, sementara di AS disebut soccer. Game yang sama, olahraga indah yang sama."
+    - q: "Apa saja yang bisa dimainkan di Football League?"
+      a: "Mode Karier, Local PvP melawan teman di dekatmu, laga persahabatan dengan dua klub mana saja, tantangan skill harian, event live, serta liga dan piala dari seluruh dunia."
+    - q: "Apakah Football League punya klub asli?"
+      a: "Ya. Manchester City berlisensi resmi di Football League, lengkap dengan jersey autentik dan lambang resmi klub."
+    - q: "Siapa pembuat Football League?"
+      a: "Football League dikembangkan dan diterbitkan oleh Mobile Soccer, studio game mobile independen yang membuat game sepak bola gratis untuk pemain di mana saja."
+    - q: "Kapan Football League 2027 dirilis?"
+      a: "Football League 2027 (FL27) segera hadir, dengan tampilan baru, Mode Karier yang dirombak, dan stadion yang benar-benar baru. Ikuti halaman Berita dan media sosial kami agar jadi yang pertama tahu."
+
+alts:
+  slides: "Gambar game"
+  engine: "Gameplay mesin pertandingan Football League dengan kontrol di layar"
+  goal: "Haaland mencetak gol untuk Manchester City di Football League"
+  mancity: "Pemain Manchester City di Football League"
+  menu: "Menu utama Football League dengan pemain Manchester City"
+
+notfound:
+  title: "Offside!"
+  text: "Halaman ini tidak ada."
+
+coming:
+  kicker: "Segera hadir"
+  text: "Halaman ini sedang dibangun. Cek lagi nanti, ya."
+  back: "Kembali ke beranda"

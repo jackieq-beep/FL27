@@ -8,7 +8,7 @@
     <div class="post-hero-bg">{{ img(post.image, '', '100vw', eager=True) }}</div>
     <div class="container post-hero-inner">
       <a class="shop-back" href="{{ url('news/') }}">{{ icon('arrow-right', 'icon back-arrow') }} {{ t.news.back }}</a>
-      <div class="news-meta"><a class="tag tag-{{ post.section }}" href="{{ url('news/') }}#{{ post.section }}">{{ t.news.sections[post.section] }}</a>{{ news_date(post) }}</div>
+      <div class="news-meta"><a class="tag tag-{{ post.section }}" href="{{ url('news/') }}#{{ post.section }}">{{ t.news.sections[post.section] }}</a>{{ news_date(post, t) }}</div>
       <h1 class="display post-title">{{ post.title }}</h1>
       <p class="lead">{{ post.summary }}</p>
     </div>
