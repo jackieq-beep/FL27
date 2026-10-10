@@ -44,7 +44,7 @@ ticker:
   - Made for match day
 
 engine:
-  kicker: "01 / Next-gen mobile football"
+  kicker: "Next-gen mobile football"
   title_1: Realistic football.
   title_2: Tactical depth.
   intro: "Smart AI, responsive controls and fluid animations, with stylized visuals built for players all over the world."
@@ -55,7 +55,7 @@ engine:
     - { num: "03", title: "Improved Set Pieces", text: "More challenging, more realistic free kicks and rebalanced penalties. Every dead ball is a chance." }
 
 modes:
-  kicker: "02 / New in 2027"
+  kicker: "New in 2027"
   title_1: Every match.
   title_2: Every stage.
   items:
@@ -65,20 +65,20 @@ modes:
     - { img: u27-penalty.jpg, title: "Challenges & Rewards", text: "Hit the targets in skill challenges to win gems and coins." }
 
 clubs:
-  kicker: "03 / Official licenses"
+  kicker: "Official licenses"
   title_1: Official clubs.
   title_2: True colors.
   text: "Official Manchester City and AS Monaco licenses are in Football League 2026. Authentic kits, elite football, and the whole season in true club colors."
   cta: Read the announcement
 
 updates:
-  kicker: "04 / Latest updates"
+  kicker: "Latest updates"
   title: What's new
   all: All news
   read: Read more
 
 merch:
-  kicker: "05 / Merchandise"
+  kicker: "Merchandise"
   title_1: Wear
   title_2: the game.
   text: "Official Football League 2026 shirts, hoodies and accessories. Designed for the stands, the street and the pitch."
