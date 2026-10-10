@@ -151,24 +151,4 @@
     </div>
   </div>
 </section>
-
-<section class="section community">
-  <div class="container">
-    <div class="split-head">
-      <h2 class="display">{{ t.community.title }}</h2>
-      <p class="lead">{{ t.community.text }}</p>
-    </div>
-    <ul class="community-grid" role="list">
-      {% for k in site.social_list %}
-      <li>
-        <a class="community-card cc-{{ k }}" href="{{ site.social[k] }}" target="_blank" rel="noopener">
-          {{ icon(k, 'icon cc-icon') }}
-          <span><b>{{ site.social_names[k] }}</b><small>{{ t.community[k] }}</small></span>
-          {{ icon('arrow-up-right', 'icon cc-arrow') }}
-        </a>
-      </li>
-      {% endfor %}
-    </ul>
-  </div>
-</section>
 {% endblock %}
