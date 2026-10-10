@@ -24,7 +24,7 @@
     <div class="hero-ctas">
       <a class="btn btn-primary btn-lg" href="#download">{{ t.hero.cta_primary }} {{ icon('arrow-right') }}</a>
       {% if site.trailer_url %}
-      <a class="play-link" href="{{ site.trailer_url }}" target="_blank" rel="noopener"><span class="play-circle">{{ icon('play') }}</span>{{ t.hero.cta_trailer }}</a>
+      <a class="play-link" href="{{ site.trailer_url }}" target="_blank" rel="noopener" data-video="{{ site.trailer_url }}"><span class="play-circle">{{ icon('play') }}</span>{{ t.hero.cta_trailer }}</a>
       {% else %}
       <a class="play-link" href="#highlights"><span class="play-circle">{{ icon('play') }}</span>{{ t.hero.cta_explore }}</a>
       {% endif %}

@@ -158,3 +158,30 @@
   const expired = c && c.date && (Date.now() - new Date(c.date).getTime()) > 365 * 864e5;
   if (!c || expired) setTimeout(() => show(false), 600);
 })();
+
+// Trailer: play YouTube in a pop-up player instead of leaving the site
+(function () {
+  const links = document.querySelectorAll("[data-video]");
+  if (!links.length) return;
+  const idOf = (u) => { const m = u.match(/(?:v=|youtu\.be\/|embed\/|shorts\/)([\w-]{11})/); return m && m[1]; };
+  let modal, frame, lastFocus;
+  const close = () => { if (!modal) return; modal.hidden = true; frame.src = "about:blank"; document.body.style.overflow = ""; lastFocus && lastFocus.focus(); };
+  const build = () => {
+    modal = document.createElement("div");
+    modal.className = "video-modal"; modal.hidden = true;
+    modal.setAttribute("role", "dialog"); modal.setAttribute("aria-modal", "true"); modal.setAttribute("aria-label", "Trailer");
+    modal.innerHTML = '<div class="video-backdrop" data-close></div><div class="video-box"><button class="video-close" type="button" aria-label="Close" data-close>&times;</button><div class="video-frame"><iframe title="Football League trailer" allow="autoplay; encrypted-media; picture-in-picture; fullscreen" allowfullscreen></iframe></div></div>';
+    document.body.appendChild(modal);
+    frame = modal.querySelector("iframe");
+    modal.querySelectorAll("[data-close]").forEach((el) => el.addEventListener("click", close));
+    document.addEventListener("keydown", (e) => { if (e.key === "Escape" && !modal.hidden) close(); });
+  };
+  links.forEach((a) => a.addEventListener("click", (e) => {
+    const id = idOf(a.dataset.video); if (!id) return;
+    e.preventDefault(); if (!modal) build();
+    lastFocus = a;
+    frame.src = "https://www.youtube-nocookie.com/embed/" + id + "?autoplay=1&rel=0&playsinline=1";
+    modal.hidden = false; document.body.style.overflow = "hidden";
+    modal.querySelector(".video-close").focus();
+  }));
+})();

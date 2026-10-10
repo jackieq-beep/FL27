@@ -963,3 +963,13 @@ a.contact-channel:hover b .icon { transform: translateX(4px); }
 .contact-socials a:hover .fs-tile { transform: translateY(-2px); box-shadow: 0 10px 22px -6px var(--fs-glow, transparent); }
 @media (max-width: 900px) { .contact-hero { min-height: 0; } .contact-hero-grid { grid-template-columns: minmax(0, 1fr); } }
 @media (max-width: 359px) { .contact-channel { padding: 18px; } .contact-channel b { font-size: 15px; } .contact-channel small { letter-spacing: .14em; } .contact-socials { gap: 8px; } .contact-socials .fs-tile { width: 42px; height: 42px; } }
+
+/* ---------- trailer pop-up ---------- */
+.video-modal { position: fixed; inset: 0; z-index: 1200; display: grid; place-items: center; padding: 16px; }
+.video-modal[hidden] { display: none !important; }
+.video-backdrop { position: absolute; inset: 0; background: rgba(5, 5, 7, .88); -webkit-backdrop-filter: blur(6px); backdrop-filter: blur(6px); animation: fade .25s ease; }
+.video-box { position: relative; width: min(1100px, 100%); animation: fade .3s ease; }
+.video-frame { position: relative; aspect-ratio: 16 / 9; background: #000; box-shadow: 0 30px 80px rgba(0, 0, 0, .6); }
+.video-frame iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
+.video-close { position: absolute; top: -48px; right: 0; width: 40px; height: 40px; border-radius: 50%; background: rgba(255, 255, 255, .12); color: #fff; font-size: 26px; line-height: 1; }
+.video-close:hover { background: var(--pink); }
