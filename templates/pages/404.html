@@ -1,5 +1,6 @@
 {% extends "base.html" %}
-{% block title %}404 – {{ site.name }}{% endblock %}
+{% block robots %}<meta name="robots" content="noindex">{% endblock %}
+{% block title %}404 – {{ site.brand }}{% endblock %}
 {% block content %}
 <section class="coming">
   <div class="coming-bg">{{ img('u27-stadium.jpg', '', '100vw') }}</div>

@@ -1,7 +1,7 @@
 ---
 title: Terms of Service
 updated: 2026-10-09
-description: The terms for using the Football League 2026 website.
+description: The terms for using the Football League website.
 ---
 
 By using this website you agree to these terms. If you don't agree, please don't use the site.
@@ -16,9 +16,9 @@ All content on this website, including images, renders, logos, gameplay footage,
 
 ## Licensing and trademarks
 
-Football League 2026 may include official Manchester City kits and certain licensed national-team elements. All trademarks, club names, crests, player likenesses and logos belong to their respective owners.
+Football League may include official Manchester City kits and certain licensed national-team elements. All trademarks, club names, crests, player likenesses and logos belong to their respective owners.
 
-Unless explicitly stated, Football League 2026 is not affiliated with or endorsed by FIFA, UEFA, CONMEBOL, CONCACAF, the Premier League or any other football governing body.
+Unless explicitly stated, Football League is not affiliated with or endorsed by FIFA, UEFA, CONMEBOL, CONCACAF, the Premier League or any other football governing body.
 
 ## Fan content
 

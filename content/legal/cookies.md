@@ -1,7 +1,7 @@
 ---
 title: Cookie Policy
 updated: 2026-10-09
-description: Which cookies the Football League 2026 website uses and how to change your choices.
+description: Which cookies the Football League website uses and how to change your choices.
 ---
 
 Cookies are small files a website stores in your browser. We use as few as possible, and we only use non-essential cookies if you agree.

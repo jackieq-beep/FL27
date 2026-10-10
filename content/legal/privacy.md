@@ -1,10 +1,10 @@
 ---
 title: Privacy Policy
 updated: 2026-10-09
-description: How Football League 2026 collects, uses and protects information when you visit this website.
+description: How Football League collects, uses and protects information when you visit this website.
 ---
 
-This Privacy Policy explains what information {{company}} ("we", "us") collects when you visit this website, how we use it, and the choices you have. It applies to this website only. The Football League 2026 game, the app stores and our online shop have their own policies (see "Third-party services" below).
+This Privacy Policy explains what information {{company}} ("we", "us") collects when you visit this website, how we use it, and the choices you have. It applies to this website only. The Football League game, the app stores and our online shop have their own policies (see "Third-party services" below).
 
 ## Information we collect
 
@@ -18,7 +18,7 @@ We keep data collection to a minimum. We do **not** ask for or store your name, 
 
 - To keep the website working and secure.
 - To understand which pages and features are popular, so we can improve the site.
-- To measure how well our marketing for Football League 2026 is working.
+- To measure how well our marketing for Football League is working.
 - To answer messages you send us.
 
 We do not sell your personal information.

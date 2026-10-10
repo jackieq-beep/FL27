@@ -1,7 +1,9 @@
 # Site-wide settings. Edit these values and the site rebuilds automatically.
 
-name: Football League 2026
-short_name: FL2026
+name: Football League 2027
+short_name: FL27
+# The brand used in page titles and search results.
+brand: Football League
 # Year shown next to the logo in the official numeral style (2025, 2026 or 2027). Leave empty to hide.
 brand_year: 2027
 company: Mobile Soccer

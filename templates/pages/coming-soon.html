@@ -1,5 +1,6 @@
 {% extends "base.html" %}
-{% block title %}{{ t.nav[page_key] }} – {{ site.name }}{% endblock %}
+{% block title %}{{ t.nav[page_key] }} – {{ site.brand }}{% endblock %}
+{% block robots %}<meta name="robots" content="noindex, follow">{% endblock %}
 {% block description %}{{ t.meta.home_description }}{% endblock %}
 {% block content %}
 <section class="coming">

@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Builds the Football League 2026 website into the dist/ folder.
+"""Builds the Football League website into the dist/ folder.
 
 Run:  python build.py            (uses base_path from site.yaml)
       python build.py --base ""  (build for a custom domain / local preview at /)
@@ -103,6 +103,7 @@ def main():
     site["social_names"] = {"youtube": "YouTube", "instagram": "Instagram", "x": "X", "tiktok": "TikTok", "discord": "Discord", "facebook": "Facebook"}
     site["social_handles"] = {k: "@" + v.rstrip("/").rsplit("/", 1)[-1].lstrip("@") for k, v in (site.get("social") or {}).items() if v and k != "discord"}
     site["social_list"] = [k for k in ("youtube", "instagram", "x", "tiktok", "discord", "facebook") if (site.get("social") or {}).get(k)]
+    site["social_urls"] = [site["social"][k] for k in site["social_list"]]
 
     if DIST.exists():
         shutil.rmtree(DIST)
@@ -155,6 +156,7 @@ def main():
     def icon(name, cls="icon"):
         return Markup(ICONS[name].replace("<svg ", f'<svg class="{cls}" aria-hidden="true" focusable="false" ', 1))
 
+    env.filters["faq_entity"] = lambda f: {"@type": "Question", "name": f["q"], "acceptedAnswer": {"@type": "Answer", "text": f["a"]}}
     env.globals.update(site=site, asset=asset, img=img, img_url=img_url, icon=icon, year=date.today().year)
 
     english = load_yaml(ROOT / "i18n" / "en.yaml")
@@ -187,7 +189,8 @@ def main():
                 canonical=f"{site['site_url']}{url(path)}",
             )
             out.write_text(html, encoding="utf-8")
-            sitemap.append(f"{site['site_url']}{url(path)}")
+            if template != "pages/coming-soon.html":  # placeholder pages stay out of search results
+                sitemap.append(f"{site['site_url']}{url(path)}")
 
         # One page per news post
         for post in news:

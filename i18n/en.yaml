@@ -1,8 +1,8 @@
 # English text for the website. Other languages copy this file and translate the values.
 
 meta:
-  home_title: "Football League 2026 – Free Mobile Football Game for iOS & Android"
-  home_description: "Build your ultimate squad, play officially licensed Manchester City, and take on rivals worldwide. Football League 2026 is free to play on iOS and Android."
+  home_title: "Football League – Free Mobile Soccer & Football Game | iOS & Android"
+  home_description: "Football League is a free mobile soccer game for iPhone and Android. Build your squad, play Career Mode, Local PvP and official Manchester City, online or offline. Football League 2027 is coming soon."
 
 nav:
   home: Home
@@ -26,7 +26,7 @@ hero:
   title_2a: Lives
   title_2b: Here
   tagline: A global game for everyone.
-  body: "Create your ultimate squad, take on global rivals, and dive into the full match-day rush of Football League 2026."
+  body: "Football League is the free mobile soccer game for football fans everywhere. Build your ultimate squad, take on rivals online or play offline, anywhere."
   cta_primary: Play Now
   cta_trailer: See the game
   cta_explore: See the game
@@ -47,7 +47,7 @@ engine:
   kicker: "Next-gen mobile football"
   title_1: Realistic football.
   title_2: Tactical depth.
-  intro: "Smart AI, responsive controls and fluid animations, with stylized visuals built for players all over the world."
+  intro: "Smart AI, responsive controls and fluid animations make Football League a mobile football game that plays like the real thing, on any phone."
   caption: "New in the 2027 update"
   points:
     - { num: "01", title: "Dynamic Match Engine", text: "Smart AI, responsive controls and fluid animations power every match, from the first touch to the final whistle." }
@@ -81,21 +81,21 @@ merch:
   kicker: "Merchandise"
   title_1: Wear
   title_2: the game.
-  text: "Official Football League 2026 shirts, hoodies and accessories. Designed for the stands, the street and the pitch."
+  text: "Official Football League shirts, hoodies and accessories. Designed for the stands, the street and the pitch."
   cta: Visit the shop
 
 download:
   kicker: "Free on iOS & Android"
   title_1: Join 100M+
   title_2: players.
-  text: "Download Football League 2026 for free and make your mark this season."
+  text: "Download Football League, the free soccer game for iOS and Android, and make your mark this season."
   gp_small: Get it on
   gp_big: Google Play
   as_small: Download on the
   as_big: App Store
 
 footer:
-  about: "Football League 2026 is a free mobile football game for iOS and Android, made by Mobile Soccer for players everywhere."
+  about: "Football League is a free mobile football and soccer game for iOS and Android, made by Mobile Soccer for players everywhere."
   col_game: Game
   col_company: Company
   col_follow: Follow us
@@ -109,8 +109,8 @@ footer:
   disclaimer: "Club names, logos and kits are trademarks of their respective owners and are used under license."
 
 shop:
-  meta_title: "Official Shop – Football League 2026 Merchandise"
-  meta_description: "Official Football League 2026 shirts, hoodies, jackets, kids' wear and stickers."
+  meta_title: "Official Shop – Football League Merchandise"
+  meta_description: "Official Football League soccer shirts, hoodies, jackets, kids' wear and accessories. Made to order and shipped worldwide."
   kicker: "Official merchandise"
   title_1: Wear
   title_2: the game.
@@ -174,7 +174,7 @@ cookies:
   always_on: Always on
 
 game_page:
-  meta_title: "What's New in FL27 – Football League"
+  meta_title: "Football League 2027 (FL27) – What's New in the Mobile Soccer Game"
   meta_description: "FL27 brings a refreshed home screen, a rebuilt Career Mode, upgraded match visuals, a brand-new stadium, daily challenges and Local PvP. Free on iOS and Android."
   kicker: "What's new this season"
   title_1: The new season
@@ -230,8 +230,8 @@ contact_page:
   email_cta: Send an email
 
 news:
-  meta_title: "News & Updates – Football League 2026"
-  meta_description: "Game updates, live events, new club licenses and announcements from Football League 2026."
+  meta_title: "News & Updates – Football League"
+  meta_description: "Football League game updates, live events, new club licenses and announcements from the mobile soccer game."
   kicker: "News & updates"
   title_1: Latest
   title_2: from the pitch.
@@ -249,6 +249,23 @@ news:
   copy_link: Copy link
   copied: Link copied
   featured: Latest
+
+faq:
+  kicker: "FAQ"
+  title: Questions, answered.
+  items:
+    - q: "Is Football League free to play?"
+      a: "Yes. Football League is free to download and play on Android phones and tablets (Google Play) and on iPhone and iPad (App Store)."
+    - q: "Can I play Football League offline?"
+      a: "Yes. You can play Football League offline with no Wi-Fi, or go online for live events and challenges. It's a soccer game you can play anywhere."
+    - q: "Is Football League a soccer game or a football game?"
+      a: "Both! Football League is a mobile soccer game. Most of the world calls the sport football, and in the US it's called soccer. Same game, same beautiful sport."
+    - q: "What can I play in Football League?"
+      a: "Career Mode, Local PvP against friends nearby, friendlies with any two clubs, daily skill challenges, live events, and leagues and cups from around the world."
+    - q: "Does Football League have real clubs?"
+      a: "Yes. Manchester City is officially licensed in Football League, with authentic kits and the official club badge."
+    - q: "When is Football League 2027 coming out?"
+      a: "Football League 2027 (FL27) is coming soon, with a refreshed look, a rebuilt Career Mode and a brand-new stadium. Follow our News page and socials to hear first."
 
 coming:
   kicker: "Coming soon"

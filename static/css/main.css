@@ -977,3 +977,16 @@ a.contact-channel:hover b .icon { transform: translateX(4px); }
 
 .game-hero-stores { margin: 28px 0 8px; }
 .ticker li:first-child { color: #0b0b0d; }
+
+/* ---------- FAQ ---------- */
+.faq-grid { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.6fr); gap: clamp(28px, 5vw, 80px); align-items: start; }
+.faq-list { border-top: 1px solid var(--line); }
+.faq-item { border-bottom: 1px solid var(--line); }
+.faq-item summary { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 22px 0; cursor: pointer; list-style: none;
+  font-size: clamp(17px, 1.6vw, 20px); font-weight: 700; }
+.faq-item summary::-webkit-details-marker { display: none; }
+.faq-chev { flex: none; width: 20px; height: 20px; color: var(--pink); transition: transform .25s; }
+.faq-item[open] .faq-chev { transform: rotate(180deg); }
+.faq-item summary:hover { color: var(--pink); }
+.faq-item p { padding: 0 40px 24px 0; color: var(--muted); font-size: 16px; max-width: 64ch; }
+@media (max-width: 900px) { .faq-grid { grid-template-columns: minmax(0, 1fr); } }
