@@ -2,13 +2,13 @@
   <div class="container footer-grid">
     <div class="footer-brand">
       <a class="brand" href="{{ url() }}">
-        <img src="{{ site.base }}/img/logo-mark.png" alt="" width="385" height="371" loading="lazy">
-        <span class="brand-word">FL<em>2026</em></span>
+        <img class="brand-logo" src="{{ site.base }}/brand/wordmark-white.png" alt="Football League" width="582" height="180" loading="lazy">
+        {% if site.brand_year %}<span class="brand-year" style="--year:url({{ site.base }}/brand/y{{ site.brand_year }}.png)" role="img" aria-label="{{ site.brand_year }}"></span>{% endif %}
       </a>
       <p>{{ t.footer.about }}</p>
       <ul class="social-row" role="list">
         {% for k in site.social_list %}
-        <li><a href="{{ site.social[k] }}" target="_blank" rel="noopener" aria-label="{{ k | capitalize }}">{{ icon(k) }}</a></li>
+        <li><a href="{{ site.social[k] }}" target="_blank" rel="noopener" aria-label="{{ site.social_names[k] }}">{{ icon(k) }}</a></li>
         {% endfor %}
       </ul>
     </div>

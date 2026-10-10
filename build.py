@@ -100,6 +100,7 @@ def main():
     base = (site.get("base_path") or "") if args.base is None else args.base
     base = "/" + base.strip("/") if base.strip("/") else ""
     site["base"] = base
+    site["social_names"] = {"youtube": "YouTube", "instagram": "Instagram", "x": "X", "tiktok": "TikTok", "discord": "Discord", "facebook": "Facebook"}
     site["social_list"] = [k for k in ("youtube", "instagram", "x", "tiktok", "discord", "facebook") if (site.get("social") or {}).get(k)]
 
     if DIST.exists():
@@ -118,6 +119,7 @@ def main():
             shutil.copy2(f, dest)
             assets[f.name] = f"{base}/{kind}/{dest.name}"
     shutil.copy2(ROOT / "static" / "img" / "logo-mark.png", DIST / "img" / "logo-mark.png")
+    shutil.copytree(ROOT / "static" / "brand", DIST / "brand")
     for f in (ROOT / "public").iterdir():
         shutil.copy2(f, DIST / f.name)
     (DIST / ".nojekyll").write_text("")

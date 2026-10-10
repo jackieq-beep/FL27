@@ -2,6 +2,8 @@
 
 name: Football League 2026
 short_name: FL2026
+# Year shown next to the logo in the official numeral style (2025, 2026 or 2027). Leave empty to hide.
+brand_year: 2027
 company: Mobile Soccer
 contact_email: partnerships@mobilesoccer.net
 legal_email: support@footballleaguegame.com
@@ -108,7 +110,7 @@ social:
   facebook: https://www.facebook.com/playfootballleague/
   youtube: ""
   x: ""
-  tiktok: ""
+  tiktok: https://www.tiktok.com/@footballleague.official
 
 # Languages. Set enabled: true once a language's file in i18n/ is translated.
 languages:

@@ -22,8 +22,8 @@
     </button>
 
     <a class="brand" href="{{ url() }}" aria-label="{{ site.name }} – {{ t.nav.home }}">
-      <img src="{{ site.base }}/img/logo-mark.png" alt="" width="385" height="371">
-      <span class="brand-word">FL<em>2026</em></span>
+      <img class="brand-logo" src="{{ site.base }}/brand/wordmark-white.png" alt="Football League" width="582" height="180">
+      {% if site.brand_year %}<span class="brand-year" style="--year:url({{ site.base }}/brand/y{{ site.brand_year }}.png)" role="img" aria-label="{{ site.brand_year }}"></span>{% endif %}
     </a>
 
     <nav class="main-nav" aria-label="Main">
@@ -52,8 +52,8 @@
   <div class="mobile-panel" role="dialog" aria-modal="true" aria-label="{{ t.nav.menu }}">
     <div class="mobile-top">
       <a class="brand" href="{{ url() }}">
-        <img src="{{ site.base }}/img/logo-mark.png" alt="" width="385" height="371">
-        <span class="brand-word">FL<em>2026</em></span>
+        <img class="brand-logo" src="{{ site.base }}/brand/wordmark-white.png" alt="Football League" width="582" height="180">
+        {% if site.brand_year %}<span class="brand-year" style="--year:url({{ site.base }}/brand/y{{ site.brand_year }}.png)" role="img" aria-label="{{ site.brand_year }}"></span>{% endif %}
       </a>
       <button class="icon-btn" type="button" aria-label="{{ t.nav.close }}" data-menu-close>{{ icon('close') }}</button>
     </div>
@@ -71,7 +71,7 @@
     <a class="btn btn-primary mobile-cta" href="{{ url() }}#download" data-menu-link>{{ t.nav.play_now }} {{ icon('arrow-right') }}</a>
     <ul class="social-row" role="list">
       {% for k in site.social_list %}
-      <li><a href="{{ site.social[k] }}" target="_blank" rel="noopener" aria-label="{{ k | capitalize }}">{{ icon(k) }}</a></li>
+      <li><a href="{{ site.social[k] }}" target="_blank" rel="noopener" aria-label="{{ site.social_names[k] }}">{{ icon(k) }}</a></li>
       {% endfor %}
     </ul>
   </div>

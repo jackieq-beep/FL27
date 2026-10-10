@@ -110,10 +110,15 @@ button { font: inherit; color: inherit; background: none; border: 0; cursor: poi
   height: 100%; display: flex; align-items: center; gap: 24px;
   max-width: calc(var(--container) + var(--gutter) * 2); margin-inline: auto; padding-inline: var(--gutter);
 }
-.brand { display: inline-flex; align-items: center; gap: 10px; flex: none; }
-.brand img { width: 34px; height: auto; }
-.brand-word { font-family: var(--font-display); font-weight: 900; font-style: italic; font-size: 26px; letter-spacing: -.02em; line-height: 1; }
-.brand-word em { color: var(--green); }
+.brand { display: inline-flex; align-items: center; gap: 12px; flex: none; --logo-h: 40px; }
+.brand .brand-logo { height: var(--logo-h); width: auto; display: block; }
+/* Year in the official "style a" numerals, coloured with CSS through a mask */
+.brand-year { display: block; height: calc(var(--logo-h) * .4); aspect-ratio: 339 / 120; background: var(--green);
+  -webkit-mask: var(--year) center / contain no-repeat; mask: var(--year) center / contain no-repeat; }
+.footer-brand .brand { --logo-h: 52px; }
+@media (min-width: 1081px) { .site-header .brand { --logo-h: 44px; } }
+.hero-year { display: block; height: clamp(44px, 7vw, 84px); aspect-ratio: 339 / 120; margin-bottom: 18px; background: var(--green);
+  -webkit-mask: var(--year) left center / contain no-repeat; mask: var(--year) left center / contain no-repeat; }
 .main-nav { margin-inline: auto; }
 .main-nav ul { display: flex; gap: 6px; }
 .main-nav a {
@@ -400,8 +405,7 @@ button { font: inherit; color: inherit; background: none; border: 0; cursor: poi
 }
 @media (max-width: 640px) {
   :root { --header-h: 64px; }
-  .brand-word { font-size: 23px; }
-  .brand img { width: 30px; }
+  .brand { --logo-h: 36px; }
   .hero { min-height: 100vh; min-height: 100svh; }
   .hero-img { object-position: 64% 20%; }
   .hero-media::after {
@@ -637,8 +641,7 @@ button { font: inherit; color: inherit; background: none; border: 0; cursor: poi
   .hero-title { font-size: 15vw; }
   .display { font-size: 30px; }
   .display-xl { font-size: 44px; }
-  .brand-word { font-size: 19px; }
-  .brand img { width: 26px; }
+  .brand { --logo-h: 30px; gap: 8px; }
   .header-inner { gap: 4px; }
   .lang-btn { padding: 0 6px; gap: 4px; }
   .hero-tagline { letter-spacing: .2em; }

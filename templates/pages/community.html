@@ -30,7 +30,7 @@
       <li>
         <a class="community-card cc-{{ k }}" href="{{ site.social[k] }}" target="_blank" rel="noopener">
           {{ icon(k, 'icon cc-icon') }}
-          <span><b>{{ k | capitalize if k != 'x' else 'X' }}</b><small>{{ t.community_page.channels[k] }}</small></span>
+          <span><b>{{ site.social_names[k] }}</b><small>{{ t.community_page.channels[k] }}</small></span>
           {{ icon('arrow-up-right', 'icon cc-arrow') }}
         </a>
       </li>

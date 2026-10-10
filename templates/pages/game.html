@@ -6,6 +6,7 @@
 <section class="page-hero game-hero">
   <div class="page-hero-bg">{{ img('u27-stadium.jpg', '', '100vw', eager=True) }}</div>
   <div class="container">
+    {% if site.brand_year %}<span class="hero-year" style="--year:url({{ site.base }}/brand/y{{ site.brand_year }}.png)" aria-hidden="true"></span>{% endif %}
     <p class="kicker">{{ t.game_page.kicker }}</p>
     <h1 class="display display-xl">{{ t.game_page.title_1 }} <span class="accent-pink">{{ t.game_page.title_2 }}</span></h1>
     <p class="lead">{{ t.game_page.text }}</p>
