@@ -111,7 +111,7 @@
   // Parallax depth: hero image and big pictures drift slower than the page
   if (!reduce) {
     const heroMedia = document.querySelector(".hero-media");
-    const drifters = [...document.querySelectorAll(".engine .feature-shot img")];
+    const drifters = []; // pictures are never zoomed or cropped
     let ticking = false;
     const frame = () => {
       const y = window.scrollY, vh = window.innerHeight;

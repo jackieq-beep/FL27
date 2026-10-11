@@ -80,7 +80,7 @@
     <ul class="mode-grid" role="list">
       {% for m in t.modes['items'] %}
       <li class="mode-card">
-        {{ img(m.img, m.title, '(min-width: 1000px) 300px, (min-width: 640px) 50vw, 100vw') }}
+        {{ fit(m.img, m.title, '(min-width: 1000px) 300px, (min-width: 640px) 50vw, 100vw') }}
         <div class="mode-body">
           <h3>{{ m.title }}</h3>
           <p>{{ m.text }}</p>

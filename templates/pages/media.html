@@ -28,7 +28,7 @@
     <p class="media-p">{{ t.media_page.shots_text }}</p>
     <ul class="shots" role="list">
       {% for s in ['hero.png', 'u27-stadium.jpg', 'match-engine.webp', 'u27-penalty.jpg', 'stadiums.webp', 'live-event.webp'] %}
-      <li><a href="{{ img_url(s, 99999) }}" target="_blank" rel="noopener" download>{{ img(s, 'Football League', '(min-width: 1000px) 380px, (min-width: 640px) 50vw, 100vw') }}<span>{{ icon('arrow-right', 'icon dl-ic') }}{{ t.media_page.download }}</span></a></li>
+      <li><a href="{{ img_url(s, 99999) }}" target="_blank" rel="noopener" download>{{ fit(s, 'Football League', '(min-width: 1000px) 380px, (min-width: 640px) 50vw, 100vw') }}<span>{{ icon('arrow-right', 'icon dl-ic') }}{{ t.media_page.download }}</span></a></li>
       {% endfor %}
     </ul>
 

@@ -21,7 +21,7 @@
 {% macro news_card(post, t, url, img, icon, big=False) %}
 <li class="news-card{% if big %} news-card-big{% endif %}" data-section="{{ post.section }}">
   <a href="{{ url('news/' ~ post.slug ~ '/') }}">
-    <div class="news-img">{{ img(post.image, post.title, '(min-width: 1000px) 800px, 100vw' if big else '(min-width: 1000px) 400px, 100vw') }}</div>
+    <div class="news-img">{{ fit(post.image, post.title, '(min-width: 1000px) 800px, 100vw' if big else '(min-width: 1000px) 400px, 100vw') }}</div>
     <div class="news-body">
       <div class="news-meta"><span class="tag tag-{{ post.section }}">{{ t.news.sections[post.section] }}</span>{{ news_date(post, t) }}</div>
       <h3>{{ post.title }}</h3>

@@ -23,7 +23,7 @@
     <article class="gf{% if loop.index is even %} gf-flip{% endif %}" id="{{ f.key }}">
       <div class="gf-media{% if f.images | length > 1 %} gf-media-multi{% endif %}">
         {% for im in f.images %}
-        {{ img(im, f.title, '(min-width: 1000px) 720px, 100vw' if loop.first else '(min-width: 1000px) 360px, 50vw') }}
+        {% if f.images | length > 1 %}{{ fit(im, f.title, '(min-width: 1000px) 720px, 100vw' if loop.first else '(min-width: 1000px) 360px, 50vw') }}{% else %}{{ img(im, f.title, '(min-width: 1000px) 720px, 100vw') }}{% endif %}
         {% endfor %}
       </div>
       <div class="gf-copy">

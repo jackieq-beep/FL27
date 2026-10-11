@@ -158,6 +158,15 @@ def main():
             f'width="{info["w"]}" height="{info["h"]}" alt="{Markup.escape(alt)}" {loading}{cls_attr}{style_attr}>'
         )
 
+    def img_src(name, width=480):
+        variants = images[name]["variants"]
+        pick = next((n for w, n in variants if w >= width), variants[-1][1])
+        return f"{base}/img/{pick}"
+
+    def fit(name, alt="", sizes="100vw", cls=""):
+        """Show the whole picture (never cropped) inside a fixed-shape box, with a soft blurred fill behind it."""
+        return Markup(f'<span class="fit {cls}" style="--fit-bg:url(\'{img_src(name)}\')">') + img(name, alt, sizes) + Markup("</span>")
+
     def img_url(name, width=1440):
         variants = images[name]["variants"]
         pick = next((n for w, n in variants if w >= width), variants[-1][1])
@@ -167,7 +176,7 @@ def main():
         return Markup(ICONS[name].replace("<svg ", f'<svg class="{cls}" aria-hidden="true" focusable="false" ', 1))
 
     env.filters["faq_entity"] = lambda f: {"@type": "Question", "name": f["q"], "acceptedAnswer": {"@type": "Answer", "text": f["a"]}}
-    env.globals.update(site=site, asset=asset, img=img, img_url=img_url, icon=icon, year=date.today().year)
+    env.globals.update(site=site, asset=asset, img=img, img_url=img_url, img_src=img_src, fit=fit, icon=icon, year=date.today().year)
 
     english = load_yaml(ROOT / "i18n" / "en.yaml")
     languages = [l for l in site["languages"] if l.get("enabled")]
