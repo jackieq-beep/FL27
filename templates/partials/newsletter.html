@@ -21,6 +21,7 @@
       </div>
       {# Spam traps: real people never fill these in #}
       <div class="nl-trap" aria-hidden="true"><input type="text" name="email_address_check" tabindex="-1" autocomplete="off"><input type="text" name="b_trap" tabindex="-1" autocomplete="off"></div>
+      {% if site.newsletter.provider == "brevo" %}<input type="hidden" name="html_type" value="simple">{% endif %}
       <input type="hidden" name="locale" value="{{ lang.code.split('-')[0] }}">
       <p class="nl-consent">{{ t.newsletter.consent }} <a href="{{ url('privacy/') }}">{{ t.newsletter.privacy }}</a></p>
       <p class="nl-status" role="status" aria-live="polite"></p>

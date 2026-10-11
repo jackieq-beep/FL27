@@ -19,7 +19,7 @@ ga_measurement_id: ""
 # provider: brevo or mailchimp. action: the form address from your Brevo / Mailchimp sign-up form.
 newsletter:
   provider: brevo
-  action: ""
+  action: "https://27a510ee.sibforms.com/serve/MUIFAGFwBWdb6HomSmFGzuwSSg0qldMCfRlPXTGpEH70zFxKzD4qxS6MmTF-1ZVx64X1rBvyCZdSFTLml2wEYUy8m47ppL9iLFBWhn_4t_7QKCstwy0trM90rbImrw-70Yvgxq7zv8EDKXzJqf-iFTLK8xZ_7axGHboNW_uL4dxzD9ELKfDuZ_vPvSCCYzKt8Oh134UP6go6uNMFWw=="
 
 # Google Search Console "HTML tag" verification code (only the content="..." part). Leave empty if not used.
 google_site_verification: ""
