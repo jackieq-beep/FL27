@@ -2,7 +2,7 @@
 title: "Persian/Farsi commentary arrives in Football League 2025"
 section: updates
 date: 2025-04-22
-image: ig-persian-commentary.jpg
+image: u27-goal.jpg
 summary: "Freshly introduced Persian/Farsi commentary on Android beta 0.1.47 and iOS 1.4.1, with more languages on the way."
 ---
 
