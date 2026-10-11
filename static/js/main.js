@@ -8,6 +8,14 @@
   onScroll();
   window.addEventListener("scroll", onScroll, { passive: true });
 
+  // Home: show the header logo only once the big hero logo is out of view
+  const heroLogo = document.querySelector("[data-hero-logo]");
+  if (header && heroLogo && "IntersectionObserver" in window) {
+    header.classList.add("has-hero-logo");
+    new IntersectionObserver(([e]) => header.classList.toggle("show-brand", !e.isIntersecting),
+      { rootMargin: "-" + header.offsetHeight + "px 0px 0px 0px" }).observe(heroLogo);
+  }
+
   // Language dropdown
   document.querySelectorAll("[data-dropdown]").forEach((dd) => {
     const btn = dd.querySelector("[data-dropdown-toggle]");

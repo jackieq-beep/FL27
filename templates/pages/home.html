@@ -14,12 +14,15 @@
   </div>
   {% endif %}
   <div class="container hero-inner">
-    <p class="kicker hero-kicker">{% if site.brand_year %}<span class="hero-kicker-year" style="--year:url({{ site.base }}/brand/y{{ site.brand_year }}.png)" role="img" aria-label="{{ site.brand_year }}"></span>{% else %}<span class="live-dot"></span>{% endif %}<span class="hk-text">{% if t.hero.eyebrow_brand %}<span>{{ t.hero.eyebrow_brand }}</span><span class="hk-sep"> · </span>{% endif %}<span>{{ t.hero.eyebrow }}</span></span></p>
+    <div class="hero-lockup" data-hero-logo>
+      <img class="hero-lockup-word" src="{{ site.base }}/brand/wordmark-white.png" alt="{{ t.hero.eyebrow_brand or 'Football League' }}" width="582" height="180">
+      {% if site.brand_year %}<i class="hero-lockup-rule" aria-hidden="true"></i><span class="hero-lockup-year" style="--year:url({{ site.base }}/brand/y{{ site.brand_year }}.png)" role="img" aria-label="{{ site.brand_year }}"></span>{% endif %}
+    </div>
+    <p class="hero-badge"><span class="live-dot"></span>{{ t.hero.eyebrow }}</p>
     <h1 class="hero-title">
       <span>{{ t.hero.title_1 }}</span>
       <span><em>{{ t.hero.title_2a }}</em> {{ t.hero.title_2b }}</span>
     </h1>
-    <p class="hero-tagline">{{ t.hero.tagline }}</p>
     <p class="hero-body">{{ t.hero.body }}</p>
     <div class="hero-ctas">
       <a class="btn btn-primary btn-lg" href="#download">{{ t.hero.cta_primary }} {{ icon('arrow-right') }}</a>
