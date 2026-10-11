@@ -125,13 +125,13 @@ shop:
   categories:
     men: メンズ
     women: レディース
-    kids: "キッズ & ベビー"
+    kids: "ユース"
     accessories: アクセサリー
   nav:
     all: すべての商品
     men: メンズ
     women: レディース
-    kids: "キッズ & ベビー"
+    kids: "ユース"
     accessories: アクセサリー
     home: "ホーム & リビング"
     stickers: ステッカー
@@ -312,8 +312,6 @@ media_page:
   title_1: "プレス＆"
   title_2: "パートナー"
   text: "Football League を紹介するための素材と、ブランドがゲームに参加する方法をまとめました。"
-  facts_title: "ゲーム概要"
-  facts: [["タイトル", "Football League"], ["最新作", "Football League 2027（近日公開）"], ["開発・販売", "Mobile Soccer"], ["対応機種", "iOS・Android"], ["価格", "基本プレイ無料"], ["プレイヤー", "1億ダウンロード以上"]]
   logos_title: "公式ロゴ"
   logos_text: "Football League の公式ロゴをご使用ください。変形・色の変更・加工はご遠慮ください。"
   logo_white: "白ロゴ（PNG）"
@@ -332,5 +330,13 @@ media_page:
   aff_who: "YouTuber、配信者、TikTok・Instagram クリエイター、ゲームサイトやコミュニティの方へ。"
   aff_cta: "アフィリエイトに応募する"
   aff_subject: "アフィリエイト応募"
+  beta_kicker: "ベータテスト"
+  beta_title: "ベータテスターになろう"
+  beta_text: "新機能や新シーズンを誰よりも早くプレイして、Football League をより良くするお手伝いをしてください。"
+  beta_points: ["リリース前の新モード・新機能・新シーズンを体験", "バグ報告やご意見を開発チームに直接お届け", "Football League のこれからを一緒に作る"]
+  beta_who: "Android・iOS のプレイヤーが対象です。各テストの募集人数には限りがあります。"
+  beta_cta: "ベータテスターに応募する"
+  beta_subject: "ベータテスター応募"
+  beta_discord: "Discord に参加する"
   press_title: "プレス窓口"
   press_text: "取材、レビュー用コード、素材、提携のご相談はメールでお問い合わせください。"

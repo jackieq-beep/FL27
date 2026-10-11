@@ -1111,3 +1111,10 @@ a.contact-channel:hover b .icon { transform: translateX(4px); }
 .aff-who { color: var(--dim); font-size: 15px; margin-bottom: 22px; }
 @media (max-width: 900px) { .aff { grid-template-columns: minmax(0, 1fr); } .aff-media img { aspect-ratio: 16 / 10; } }
 @media (max-width: 520px) { .aff .btn { width: 100%; } }
+.logos-row { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.2fr); gap: 24px clamp(32px, 5vw, 72px); align-items: center; }
+.aff-flip { grid-template-columns: minmax(0, 1.2fr) minmax(0, .8fr); }
+.aff-flip .aff-media { order: 2; }
+.aff-ctas { display: flex; flex-wrap: wrap; gap: 12px; }
+.aff-ctas .btn-outline .icon { width: 18px; height: 18px; }
+@media (max-width: 900px) { .logos-row, .aff-flip { grid-template-columns: minmax(0, 1fr); } .aff-flip .aff-media { order: 0; } }
+@media (max-width: 520px) { .aff-ctas .btn { width: 100%; } }

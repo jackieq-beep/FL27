@@ -125,13 +125,13 @@ shop:
   categories:
     men: "Pria"
     women: "Wanita"
-    kids: "Anak & Bayi"
+    kids: "Remaja"
     accessories: "Aksesori"
   nav:
     all: "Semua produk"
     men: "Pria"
     women: "Wanita"
-    kids: "Anak & Bayi"
+    kids: "Remaja"
     accessories: "Aksesori"
     home: "Rumah & Gaya Hidup"
     stickers: "Stiker"
@@ -312,8 +312,6 @@ media_page:
   title_1: "Pers &"
   title_2: "mitra."
   text: "Semua yang kamu butuhkan untuk menulis tentang Football League, plus cara brand bisa menjadi bagian dari game."
-  facts_title: "Info game"
-  facts: [["Game", "Football League"], ["Edisi terbaru", "Football League 2027 (segera hadir)"], ["Pengembang & penerbit", "Mobile Soccer"], ["Platform", "iOS dan Android"], ["Harga", "Gratis dimainkan"], ["Pemain", "100 Jt+ unduhan"]]
   logos_title: "Logo resmi"
   logos_text: "Gunakan logo resmi Football League. Jangan meregangkan, mengubah warna, atau mengeditnya."
   logo_white: "Logo putih (PNG)"
@@ -332,5 +330,13 @@ media_page:
   aff_who: "Untuk YouTuber, streamer, kreator TikTok dan Instagram, situs game, dan komunitas."
   aff_cta: "Daftar jadi afiliasi"
   aff_subject: "Pendaftaran afiliasi"
+  beta_kicker: "Beta"
+  beta_title: "Jadi beta tester."
+  beta_text: "Mainkan fitur dan musim baru lebih dulu dari siapa pun, dan bantu kami membuat Football League makin seru."
+  beta_points: ["Coba mode, fitur, dan musim baru sebelum rilis", "Laporkan bug dan kirim masukan langsung ke tim", "Ikut menentukan masa depan Football League"]
+  beta_who: "Terbuka untuk pemain Android dan iOS. Kuota terbatas untuk setiap tes."
+  beta_cta: "Daftar jadi beta tester"
+  beta_subject: "Pendaftaran beta tester"
+  beta_discord: "Gabung Discord kami"
   press_title: "Kontak pers"
   press_text: "Untuk wawancara, kode review, aset, atau kerja sama, kirim email kepada kami."

@@ -125,13 +125,13 @@ shop:
   categories:
     men: Men
     women: Women
-    kids: "Kids & Babies"
+    kids: "Youth"
     accessories: Accessories
   nav:
     all: All products
     men: Men
     women: Women
-    kids: "Kids & Babies"
+    kids: "Youth"
     accessories: Accessories
     home: "Home & Living"
     stickers: Stickers
@@ -312,8 +312,6 @@ media_page:
   title_1: "Press &"
   title_2: "partners."
   text: "Everything you need to write about Football League, plus how brands can be part of the game."
-  facts_title: "Fact sheet"
-  facts: [["Game", "Football League"], ["Latest edition", "Football League 2027 (coming soon)"], ["Developer & publisher", "Mobile Soccer"], ["Platforms", "iOS and Android"], ["Price", "Free to play"], ["Players", "100M+ downloads"]]
   logos_title: "Official logos"
   logos_text: "Use the official Football League wordmark. Please don't stretch, recolour or edit it."
   logo_white: "White logo (PNG)"
@@ -332,5 +330,13 @@ media_page:
   aff_who: "For YouTubers, streamers, TikTok and Instagram creators, gaming websites and communities."
   aff_cta: "Apply to become an affiliate"
   aff_subject: "Affiliate application"
+  beta_kicker: "Beta testing"
+  beta_title: "Become a beta tester."
+  beta_text: "Play new features and seasons before anyone else, and help us make Football League better."
+  beta_points: ["Try new modes, features and seasons before release", "Report bugs and share feedback directly with the team", "Help shape what comes next in Football League"]
+  beta_who: "Open to players on Android and iOS. Places are limited for each test."
+  beta_cta: "Apply to be a beta tester"
+  beta_subject: "Beta tester application"
+  beta_discord: "Join our Discord"
   press_title: "Press contact"
   press_text: "For interviews, review codes, assets or partnership enquiries, email us."

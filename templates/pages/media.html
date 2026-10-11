@@ -13,20 +13,14 @@
 
 <section class="section media-page">
   <div class="container">
-    <div class="media-top">
-      <div>
-        <h2 class="media-h">{{ t.media_page.facts_title }}</h2>
-        <dl class="facts">
-          {% for f in t.media_page.facts %}<div><dt>{{ f[0] }}</dt><dd>{{ f[1] }}</dd></div>{% endfor %}
-        </dl>
-      </div>
+    <div class="logos-row">
       <div>
         <h2 class="media-h">{{ t.media_page.logos_title }}</h2>
         <p class="media-p">{{ t.media_page.logos_text }}</p>
-        <div class="logo-dl">
-          <a class="logo-tile logo-dark" href="{{ site.base }}/FL-logo-white.png" download><img src="{{ site.base }}/brand/wordmark-white.png" alt="Football League" width="582" height="180" loading="lazy"><span>{{ icon('arrow-right', 'icon dl-ic') }}{{ t.media_page.logo_white }}</span></a>
-          <a class="logo-tile logo-light" href="{{ site.base }}/FL-logo-black.png" download><img src="{{ site.base }}/brand/wordmark-dark.png" alt="Football League" width="582" height="180" loading="lazy"><span>{{ icon('arrow-right', 'icon dl-ic') }}{{ t.media_page.logo_black }}</span></a>
-        </div>
+      </div>
+      <div class="logo-dl">
+        <a class="logo-tile logo-dark" href="{{ site.base }}/FL-logo-white.png" download><img src="{{ site.base }}/brand/wordmark-white.png" alt="Football League" width="582" height="180" loading="lazy"><span>{{ icon('arrow-right', 'icon dl-ic') }}{{ t.media_page.logo_white }}</span></a>
+        <a class="logo-tile logo-light" href="{{ site.base }}/FL-logo-black.png" download><img src="{{ site.base }}/brand/wordmark-dark.png" alt="Football League" width="582" height="180" loading="lazy"><span>{{ icon('arrow-right', 'icon dl-ic') }}{{ t.media_page.logo_black }}</span></a>
       </div>
     </div>
 
@@ -58,6 +52,23 @@
         </ul>
         <p class="aff-who">{{ t.media_page.aff_who }}</p>
         <a class="btn btn-primary" href="mailto:{{ site.contact_email }}?subject={{ t.media_page.aff_subject | urlencode }}">{{ t.media_page.aff_cta }} {{ icon('arrow-right') }}</a>
+      </div>
+    </div>
+
+    <div class="aff aff-flip" id="beta">
+      <div class="aff-media">{{ img('ig-fl26-beta-0168.jpg', '', '(min-width: 900px) 420px, 100vw') }}</div>
+      <div class="aff-body">
+        <p class="kicker">{{ t.media_page.beta_kicker }}</p>
+        <h2 class="display ad-title">{{ t.media_page.beta_title }}</h2>
+        <p class="media-p">{{ t.media_page.beta_text }}</p>
+        <ul class="aff-list" role="list">
+          {% for a in t.media_page.beta_points %}<li>{{ icon('check') }}<span>{{ a }}</span></li>{% endfor %}
+        </ul>
+        <p class="aff-who">{{ t.media_page.beta_who }}</p>
+        <div class="aff-ctas">
+          <a class="btn btn-primary" href="mailto:{{ site.contact_email }}?subject={{ t.media_page.beta_subject | urlencode }}">{{ t.media_page.beta_cta }} {{ icon('arrow-right') }}</a>
+          {% if site.social.discord %}<a class="btn btn-outline" href="{{ site.social.discord }}" target="_blank" rel="noopener">{{ icon('discord') }} {{ t.media_page.beta_discord }}</a>{% endif %}
+        </div>
       </div>
     </div>
 

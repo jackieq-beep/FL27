@@ -125,13 +125,13 @@ shop:
   categories:
     men: Hombre
     women: Mujer
-    kids: "Niños y bebés"
+    kids: "Juvenil"
     accessories: Accesorios
   nav:
     all: Todos los productos
     men: Hombre
     women: Mujer
-    kids: "Niños y bebés"
+    kids: "Juvenil"
     accessories: Accesorios
     home: "Hogar"
     stickers: Pegatinas
@@ -312,8 +312,6 @@ media_page:
   title_1: "Prensa y"
   title_2: "socios."
   text: "Todo lo que necesitas para escribir sobre Football League, y cómo las marcas pueden formar parte del juego."
-  facts_title: "Ficha del juego"
-  facts: [["Juego", "Football League"], ["Última edición", "Football League 2027 (próximamente)"], ["Desarrollo y edición", "Mobile Soccer"], ["Plataformas", "iOS y Android"], ["Precio", "Gratis"], ["Jugadores", "Más de 100M de descargas"]]
   logos_title: "Logos oficiales"
   logos_text: "Usa el logotipo oficial de Football League. No lo estires, recolorees ni modifiques."
   logo_white: "Logo blanco (PNG)"
@@ -332,5 +330,13 @@ media_page:
   aff_who: "Para youtubers, streamers, creadores de TikTok e Instagram, webs y comunidades de videojuegos."
   aff_cta: "Solicitar ser afiliado"
   aff_subject: "Solicitud de afiliado"
+  beta_kicker: "Beta"
+  beta_title: "Hazte beta tester."
+  beta_text: "Juega a las novedades y nuevas temporadas antes que nadie y ayúdanos a mejorar Football League."
+  beta_points: ["Prueba nuevos modos, funciones y temporadas antes del lanzamiento", "Reporta errores y envía tus comentarios directamente al equipo", "Ayuda a decidir lo que viene en Football League"]
+  beta_who: "Abierto a jugadores de Android e iOS. Plazas limitadas en cada prueba."
+  beta_cta: "Quiero ser beta tester"
+  beta_subject: "Solicitud de beta tester"
+  beta_discord: "Únete a nuestro Discord"
   press_title: "Contacto de prensa"
   press_text: "Para entrevistas, códigos, materiales o propuestas de colaboración, escríbenos."
