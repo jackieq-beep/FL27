@@ -1073,3 +1073,33 @@ a.contact-channel:hover b .icon { transform: translateX(4px); }
 .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0; }
 @media (max-width: 900px) { .nl-grid { grid-template-columns: minmax(0, 1fr); } }
 @media (max-width: 520px) { .nl-row { flex-direction: column; } .nl-row .btn { justify-content: center; } }
+
+/* ---------- media / press page ---------- */
+.media-page { padding-bottom: clamp(64px, 8vw, 110px); }
+.media-top { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: clamp(32px, 5vw, 72px); }
+.media-h { font-family: var(--font-display); font-weight: 900; text-transform: uppercase; font-size: clamp(24px, 2.6vw, 34px); line-height: 1.05; margin-bottom: 18px; }
+.media-gap { margin-top: clamp(56px, 7vw, 88px); }
+.media-p { color: var(--muted); max-width: 60ch; margin-bottom: 22px; }
+.facts { margin: 0; border-top: 1px solid var(--line); }
+.facts div { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.4fr); gap: 16px; padding: 14px 0; border-bottom: 1px solid var(--line); }
+.facts dt { color: var(--muted); }
+.facts dd { margin: 0; font-weight: 600; }
+.logo-dl { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 14px; }
+.logo-tile { display: grid; gap: 14px; padding: 22px; border: 1px solid var(--line); }
+.logo-tile img { height: 56px; width: auto; }
+.logo-dark { background: #0b0b0d; }
+.logo-light { background: #f4f4f5; color: #111; }
+.logo-tile span, .shots span { display: inline-flex; align-items: center; gap: 8px; font-weight: 700; font-size: 14px; }
+.dl-ic { width: 16px; height: 16px; transform: rotate(90deg); color: var(--pink); }
+.shots { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 18px; }
+.shots a { display: grid; gap: 10px; }
+.shots img { width: 100%; aspect-ratio: 16 / 10; object-fit: cover; border: 1px solid var(--line); }
+.shots a:hover span { color: var(--pink); }
+.ad-band { margin-top: clamp(56px, 7vw, 88px); display: grid; grid-template-columns: minmax(0, 1.4fr) auto; gap: 24px 48px; align-items: end; padding: clamp(28px, 4vw, 48px);
+  background: radial-gradient(80% 140% at 100% 0%, rgba(255, 0, 85, .22), transparent 60%), var(--surface); border: 1px solid var(--line); }
+.ad-title { font-size: clamp(30px, 3.6vw, 48px); margin: 6px 0 14px; }
+.ad-band .media-p { margin-bottom: 0; }
+.press { margin-top: clamp(56px, 7vw, 88px); }
+@media (max-width: 900px) { .media-top, .ad-band { grid-template-columns: minmax(0, 1fr); } .shots { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 520px) { .shots, .logo-dl { grid-template-columns: minmax(0, 1fr); } .ad-band .btn { width: 100%; } }
+.shot-top img { object-position: 50% 0; }

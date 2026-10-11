@@ -1,0 +1,57 @@
+{% extends "base.html" %}
+{% block title %}{{ t.media_page.meta_title }}{% endblock %}
+{% block description %}{{ t.media_page.meta_description }}{% endblock %}
+{% block content %}
+<section class="page-hero">
+  <div class="page-hero-bg">{{ img('stadiums.webp', '', '100vw', eager=True) }}</div>
+  <div class="container">
+    <p class="kicker">{{ t.media_page.kicker }}</p>
+    <h1 class="display display-xl">{{ t.media_page.title_1 }} <span class="accent-pink">{{ t.media_page.title_2 }}</span></h1>
+    <p class="lead">{{ t.media_page.text }}</p>
+  </div>
+</section>
+
+<section class="section media-page">
+  <div class="container">
+    <div class="media-top">
+      <div>
+        <h2 class="media-h">{{ t.media_page.facts_title }}</h2>
+        <dl class="facts">
+          {% for f in t.media_page.facts %}<div><dt>{{ f[0] }}</dt><dd>{{ f[1] }}</dd></div>{% endfor %}
+        </dl>
+      </div>
+      <div>
+        <h2 class="media-h">{{ t.media_page.logos_title }}</h2>
+        <p class="media-p">{{ t.media_page.logos_text }}</p>
+        <div class="logo-dl">
+          <a class="logo-tile logo-dark" href="{{ site.base }}/FL-logo-white.png" download><img src="{{ site.base }}/brand/wordmark-white.png" alt="Football League" width="582" height="180" loading="lazy"><span>{{ icon('arrow-right', 'icon dl-ic') }}{{ t.media_page.logo_white }}</span></a>
+          <a class="logo-tile logo-light" href="{{ site.base }}/FL-logo-black.png" download><img src="{{ site.base }}/brand/wordmark-dark.png" alt="Football League" width="582" height="180" loading="lazy"><span>{{ icon('arrow-right', 'icon dl-ic') }}{{ t.media_page.logo_black }}</span></a>
+        </div>
+      </div>
+    </div>
+
+    <h2 class="media-h media-gap">{{ t.media_page.shots_title }}</h2>
+    <p class="media-p">{{ t.media_page.shots_text }}</p>
+    <ul class="shots" role="list">
+      {% for s in ['hero.png', 'u27-stadium.jpg', 'match-engine.webp', 'u27-pvp-art.jpg', 'u27-penalty.jpg', 'stadiums.webp'] %}
+      <li{% if s == 'u27-pvp-art.jpg' %} class="shot-top"{% endif %}><a href="{{ img_url(s, 99999) }}" target="_blank" rel="noopener" download>{{ img(s, 'Football League', '(min-width: 1000px) 380px, (min-width: 640px) 50vw, 100vw') }}<span>{{ icon('arrow-right', 'icon dl-ic') }}{{ t.media_page.download }}</span></a></li>
+      {% endfor %}
+    </ul>
+
+    <div class="ad-band">
+      <div>
+        <p class="kicker">{{ t.media_page.ad_kicker }}</p>
+        <h2 class="display ad-title">{{ t.media_page.ad_title }}</h2>
+        <p class="media-p">{{ t.media_page.ad_text }}</p>
+      </div>
+      <a class="btn btn-primary" href="https://www.mobilesoccer.net/" target="_blank" rel="noopener">{{ t.media_page.ad_cta }} {{ icon('arrow-up-right') }}</a>
+    </div>
+
+    <div class="press">
+      <h2 class="media-h">{{ t.media_page.press_title }}</h2>
+      <p class="media-p">{{ t.media_page.press_text }}</p>
+      <a class="contact-email" href="mailto:{{ site.contact_email }}">{{ site.contact_email }} {{ icon('arrow-right') }}</a>
+    </div>
+  </div>
+</section>
+{% endblock %}
