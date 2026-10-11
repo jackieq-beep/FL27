@@ -41,20 +41,6 @@
       <a class="btn btn-primary" href="https://www.mobilesoccer.net/" target="_blank" rel="noopener">{{ t.media_page.ad_cta }} {{ icon('arrow-up-right') }}</a>
     </div>
 
-    <div class="aff" id="affiliates">
-      <div class="aff-media">{{ img('u27-pvp-art.jpg', '', '(min-width: 900px) 420px, 100vw') }}</div>
-      <div class="aff-body">
-        <p class="kicker">{{ t.media_page.aff_kicker }}</p>
-        <h2 class="display ad-title">{{ t.media_page.aff_title }}</h2>
-        <p class="media-p">{{ t.media_page.aff_text }}</p>
-        <ul class="aff-list" role="list">
-          {% for a in t.media_page.aff_points %}<li>{{ icon('check') }}<span>{{ a }}</span></li>{% endfor %}
-        </ul>
-        <p class="aff-who">{{ t.media_page.aff_who }}</p>
-        <a class="btn btn-primary" href="mailto:{{ site.contact_email }}?subject={{ t.media_page.aff_subject | urlencode }}">{{ t.media_page.aff_cta }} {{ icon('arrow-right') }}</a>
-      </div>
-    </div>
-
     <div class="aff aff-flip" id="beta">
       <div class="aff-media">{{ img('ig-fl26-beta-0168.jpg', '', '(min-width: 900px) 420px, 100vw') }}</div>
       <div class="aff-body">
@@ -65,10 +51,7 @@
           {% for a in t.media_page.beta_points %}<li>{{ icon('check') }}<span>{{ a }}</span></li>{% endfor %}
         </ul>
         <p class="aff-who">{{ t.media_page.beta_who }}</p>
-        <div class="aff-ctas">
-          <a class="btn btn-primary" href="mailto:{{ site.contact_email }}?subject={{ t.media_page.beta_subject | urlencode }}">{{ t.media_page.beta_cta }} {{ icon('arrow-right') }}</a>
-          {% if site.social.discord %}<a class="btn btn-outline" href="{{ site.social.discord }}" target="_blank" rel="noopener">{{ icon('discord') }} {{ t.media_page.beta_discord }}</a>{% endif %}
-        </div>
+        <a class="contact-email" href="mailto:{{ site.contact_email }}?subject={{ t.media_page.beta_subject | urlencode }}">{{ site.contact_email }} {{ icon('arrow-right') }}</a>
       </div>
     </div>
 
