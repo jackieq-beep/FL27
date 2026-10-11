@@ -296,6 +296,7 @@ newsletter:
   title: "Les infos FL27 en avant-première."
   text: "Dates de sortie, nouveautés, événements et récompenses exclusives, directement dans ta boîte mail."
   placeholder: "Ton adresse e-mail"
+  name_placeholder: "Ton prénom"
   button: "S'inscrire"
   consent: "En t'inscrivant, tu acceptes de recevoir des e-mails de Mobile Soccer sur Football League. Désinscription possible à tout moment."
   privacy: "Politique de confidentialité"

@@ -11,6 +11,10 @@
           data-msg-success="{{ t.newsletter.success }}" data-msg-error="{{ t.newsletter.error }}"
           data-msg-invalid="{{ t.newsletter.invalid }}" data-msg-sending="{{ t.newsletter.sending }}">
       <div class="nl-row">
+        <label class="sr-only" for="nl-name">{{ t.newsletter.name_placeholder }}</label>
+        <input id="nl-name" type="text" name="FIRSTNAME" autocomplete="given-name" maxlength="80" placeholder="{{ t.newsletter.name_placeholder }}">
+      </div>
+      <div class="nl-row">
         <label class="sr-only" for="nl-email">{{ t.newsletter.placeholder }}</label>
         <input id="nl-email" type="email" name="EMAIL" autocomplete="email" inputmode="email" placeholder="{{ t.newsletter.placeholder }}" required>
         <button class="btn btn-primary" type="submit">{{ t.newsletter.button }} {{ icon('arrow-right') }}</button>

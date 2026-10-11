@@ -1019,6 +1019,7 @@ a.contact-channel:hover b .icon { transform: translateX(4px); }
 .nl-copy h2 { margin: 10px 0 14px; }
 .nl-copy p:last-child { color: var(--muted); max-width: 46ch; }
 .nl-row { display: flex; gap: 10px; }
+.nl-row + .nl-row { margin-top: 10px; }
 .nl-row input { flex: 1; min-width: 0; min-height: 52px; padding: 0 20px; border-radius: 999px; border: 1px solid var(--line); background: rgba(255, 255, 255, .05);
   color: var(--text); font: inherit; font-size: 16px; transition: border-color .2s, background .2s; }
 .nl-row input::placeholder { color: var(--dim); }

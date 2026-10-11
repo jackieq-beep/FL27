@@ -296,6 +296,7 @@ newsletter:
   title: "Dapatkan kabar FL27 lebih dulu."
   text: "Tanggal rilis, fitur baru, event, dan hadiah eksklusif, langsung ke email kamu."
   placeholder: "Alamat email kamu"
+  name_placeholder: "Nama depan kamu"
   button: "Daftar"
   consent: "Dengan mendaftar, kamu setuju menerima email tentang Football League dari Mobile Soccer. Berhenti berlangganan kapan saja."
   privacy: "Kebijakan Privasi"
