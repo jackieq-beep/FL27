@@ -300,7 +300,7 @@ newsletter:
   button: "Daftar"
   consent: "Dengan mendaftar, kamu setuju menerima email tentang Football League dari Mobile Soccer. Berhenti berlangganan kapan saja."
   privacy: "Kebijakan Privasi"
-  success: "Berhasil! Cek email kamu untuk konfirmasi."
+  success: "Berhasil! Cek email kamu untuk konfirmasi. Tidak ketemu? Cek folder spam atau junk kamu."
   error: "Terjadi kesalahan. Silakan coba lagi."
   invalid: "Masukkan alamat email yang valid."
   sending: "Mengirim…"

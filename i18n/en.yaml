@@ -300,7 +300,7 @@ newsletter:
   button: "Sign up"
   consent: "By signing up you agree to receive emails about Football League from Mobile Soccer. Unsubscribe anytime."
   privacy: "Privacy Policy"
-  success: "You're in! Check your inbox to confirm your email."
+  success: "You're in! Check your inbox to confirm your email. Can't find it? Check your spam or junk folder."
   error: "Something went wrong. Please try again."
   invalid: "Please enter a valid email address."
   sending: "Sending…"

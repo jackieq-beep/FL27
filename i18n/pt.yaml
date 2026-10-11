@@ -300,7 +300,7 @@ newsletter:
   button: "Inscrever-se"
   consent: "Ao se inscrever, você concorda em receber e-mails da Mobile Soccer sobre o Football League. Cancele quando quiser."
   privacy: "Política de Privacidade"
-  success: "Pronto! Confira seu e-mail para confirmar a inscrição."
+  success: "Pronto! Confira seu e-mail para confirmar a inscrição. Não encontrou? Confira a pasta de spam ou lixo eletrônico."
   error: "Algo deu errado. Tente novamente."
   invalid: "Digite um e-mail válido."
   sending: "Enviando…"

@@ -300,7 +300,7 @@ newsletter:
   button: "订阅"
   consent: "订阅即表示你同意接收 Mobile Soccer 发送的 Football League 相关邮件，可随时退订。"
   privacy: "隐私政策"
-  success: "订阅成功！请查收邮件并确认你的邮箱。"
+  success: "订阅成功！请查收邮件并确认你的邮箱。没收到？请检查垃圾邮件文件夹。"
   error: "出错了，请稍后再试。"
   invalid: "请输入有效的邮箱地址。"
   sending: "提交中…"
