@@ -325,5 +325,12 @@ media_page:
   ad_title: "Coloque sua marca no jogo."
   ad_text: "A Mobile Soccer Media é a área de mídia da Mobile Soccer. Oferece às marcas patrocínio direto e seguro dentro do Football League: placas de LED, telões do estádio, Craque da Partida e patrocínio de eventos."
   ad_cta: "Visitar a Mobile Soccer Media"
+  aff_kicker: "Afiliados"
+  aff_title: "Criadores e afiliados."
+  aff_text: "Você faz vídeos, lives ou conteúdo sobre o Football League? Entre no nosso programa de afiliados e cresça com a gente."
+  aff_points: ["Acesso antecipado a novidades e novas temporadas", "Materiais oficiais, clipes e códigos de criador", "Recompensas e oportunidades de parceria para criadores ativos"]
+  aff_who: "Para youtubers, streamers, criadores do TikTok e Instagram, sites e comunidades de games."
+  aff_cta: "Quero ser afiliado"
+  aff_subject: "Inscrição de afiliado"
   press_title: "Contato de imprensa"
   press_text: "Para entrevistas, códigos, materiais ou parcerias, envie um e-mail."

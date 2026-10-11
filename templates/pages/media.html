@@ -33,8 +33,8 @@
     <h2 class="media-h media-gap">{{ t.media_page.shots_title }}</h2>
     <p class="media-p">{{ t.media_page.shots_text }}</p>
     <ul class="shots" role="list">
-      {% for s in ['hero.png', 'u27-stadium.jpg', 'match-engine.webp', 'u27-pvp-art.jpg', 'u27-penalty.jpg', 'stadiums.webp'] %}
-      <li{% if s == 'u27-pvp-art.jpg' %} class="shot-top"{% endif %}><a href="{{ img_url(s, 99999) }}" target="_blank" rel="noopener" download>{{ img(s, 'Football League', '(min-width: 1000px) 380px, (min-width: 640px) 50vw, 100vw') }}<span>{{ icon('arrow-right', 'icon dl-ic') }}{{ t.media_page.download }}</span></a></li>
+      {% for s in ['hero.png', 'u27-stadium.jpg', 'match-engine.webp', 'u27-penalty.jpg', 'stadiums.webp', 'live-event.webp'] %}
+      <li><a href="{{ img_url(s, 99999) }}" target="_blank" rel="noopener" download>{{ img(s, 'Football League', '(min-width: 1000px) 380px, (min-width: 640px) 50vw, 100vw') }}<span>{{ icon('arrow-right', 'icon dl-ic') }}{{ t.media_page.download }}</span></a></li>
       {% endfor %}
     </ul>
 
@@ -45,6 +45,20 @@
         <p class="media-p">{{ t.media_page.ad_text }}</p>
       </div>
       <a class="btn btn-primary" href="https://www.mobilesoccer.net/" target="_blank" rel="noopener">{{ t.media_page.ad_cta }} {{ icon('arrow-up-right') }}</a>
+    </div>
+
+    <div class="aff" id="affiliates">
+      <div class="aff-media">{{ img('u27-pvp-art.jpg', '', '(min-width: 900px) 420px, 100vw') }}</div>
+      <div class="aff-body">
+        <p class="kicker">{{ t.media_page.aff_kicker }}</p>
+        <h2 class="display ad-title">{{ t.media_page.aff_title }}</h2>
+        <p class="media-p">{{ t.media_page.aff_text }}</p>
+        <ul class="aff-list" role="list">
+          {% for a in t.media_page.aff_points %}<li>{{ icon('check') }}<span>{{ a }}</span></li>{% endfor %}
+        </ul>
+        <p class="aff-who">{{ t.media_page.aff_who }}</p>
+        <a class="btn btn-primary" href="mailto:{{ site.contact_email }}?subject={{ t.media_page.aff_subject | urlencode }}">{{ t.media_page.aff_cta }} {{ icon('arrow-right') }}</a>
+      </div>
     </div>
 
     <div class="press">

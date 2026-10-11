@@ -325,5 +325,12 @@ media_page:
   ad_title: "Ta marque, dans le match."
   ad_text: "Mobile Soccer Media est la branche médias de Mobile Soccer. Elle propose aux marques un sponsoring direct et sûr dans Football League : panneaux LED, écrans du stade, Joueur du match et habillage d'événements."
   ad_cta: "Découvrir Mobile Soccer Media"
+  aff_kicker: "Affiliés"
+  aff_title: "Créateurs & affiliés."
+  aff_text: "Tu fais des vidéos, des streams ou du contenu sur Football League ? Rejoins notre programme d'affiliation et grandis avec nous."
+  aff_points: ["Accès anticipé aux mises à jour et aux nouvelles saisons", "Visuels officiels, extraits et codes créateur", "Récompenses et opportunités de partenariat pour les créateurs actifs"]
+  aff_who: "Pour les youtubeurs, streamers, créateurs TikTok et Instagram, sites et communautés gaming."
+  aff_cta: "Devenir affilié"
+  aff_subject: "Candidature affilié"
   press_title: "Contact presse"
   press_text: "Pour une interview, des codes, des visuels ou un partenariat, écris-nous."

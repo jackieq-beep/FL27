@@ -325,5 +325,12 @@ media_page:
   ad_title: "Put your brand in the game."
   ad_text: "Mobile Soccer Media is the media arm of Mobile Soccer. It offers brands direct, brand-safe sponsorship inside Football League: pitch-side LED boards, stadium screens, Player of the Match and event takeovers."
   ad_cta: "Visit Mobile Soccer Media"
+  aff_kicker: "Affiliates"
+  aff_title: "Creators & affiliates."
+  aff_text: "Make videos, streams or content about Football League? Join our affiliate programme and grow with us."
+  aff_points: ["Early access to updates and new seasons", "Official assets, clips and creator codes", "Rewards and partnership opportunities for active creators"]
+  aff_who: "For YouTubers, streamers, TikTok and Instagram creators, gaming websites and communities."
+  aff_cta: "Apply to become an affiliate"
+  aff_subject: "Affiliate application"
   press_title: "Press contact"
   press_text: "For interviews, review codes, assets or partnership enquiries, email us."

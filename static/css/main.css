@@ -1103,3 +1103,11 @@ a.contact-channel:hover b .icon { transform: translateX(4px); }
 @media (max-width: 900px) { .media-top, .ad-band { grid-template-columns: minmax(0, 1fr); } .shots { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
 @media (max-width: 520px) { .shots, .logo-dl { grid-template-columns: minmax(0, 1fr); } .ad-band .btn { width: 100%; } }
 .shot-top img { object-position: 50% 0; }
+.aff { margin-top: clamp(56px, 7vw, 88px); display: grid; grid-template-columns: minmax(0, .8fr) minmax(0, 1.2fr); gap: clamp(28px, 4vw, 56px); align-items: center; }
+.aff-media img { width: 100%; aspect-ratio: 1 / 1; object-fit: cover; object-position: 50% 0; border: 1px solid var(--line); }
+.aff-list { display: grid; gap: 10px; margin: 0 0 18px; }
+.aff-list li { display: flex; gap: 12px; align-items: flex-start; }
+.aff-list .icon { flex: none; width: 20px; height: 20px; padding: 3px; margin-top: 2px; background: var(--green); color: #0b0b0d; border-radius: 50%; }
+.aff-who { color: var(--dim); font-size: 15px; margin-bottom: 22px; }
+@media (max-width: 900px) { .aff { grid-template-columns: minmax(0, 1fr); } .aff-media img { aspect-ratio: 16 / 10; } }
+@media (max-width: 520px) { .aff .btn { width: 100%; } }
