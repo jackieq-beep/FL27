@@ -3,12 +3,22 @@
 {% block title %}{{ t.news.meta_title }}{% endblock %}
 {% block description %}{{ t.news.meta_description }}{% endblock %}
 {% block content %}
-<section class="page-hero">
+{% set nl_on = site.newsletter and site.newsletter.action %}
+<section class="page-hero{% if nl_on %} page-hero-compact{% endif %}">
   <div class="page-hero-bg">{{ img('u27-gameplay.jpg', '', '100vw', eager=True) }}</div>
-  <div class="container">
-    <p class="kicker">{{ t.news.kicker }}</p>
-    <h1 class="display display-xl">{{ t.news.title_1 }} <span class="accent-pink">{{ t.news.title_2 }}</span></h1>
-    <p class="lead">{{ t.news.text }}</p>
+  <div class="container{% if nl_on %} hero-signup-grid{% endif %}">
+    <div>
+      <p class="kicker">{{ t.news.kicker }}</p>
+      <h1 class="display display-xl">{{ t.news.title_1 }} <span class="accent-pink">{{ t.news.title_2 }}</span></h1>
+      <p class="lead">{{ t.news.text }}</p>
+    </div>
+    {% if nl_on %}
+    <aside class="signup-card" aria-labelledby="hero-nl-title">
+      <p class="signup-card-kicker">{{ t.newsletter.kicker }}</p>
+      <h2 class="signup-card-title" id="hero-nl-title">{{ t.newsletter.title }}</h2>
+      {% with nl_id = "hero-nl" %}{% include "partials/newsletter_form.html" %}{% endwith %}
+    </aside>
+    {% endif %}
   </div>
 </section>
 

@@ -1,0 +1,21 @@
+{# The sign-up form itself. Set nl_id before including so ids stay unique. #}
+<form class="nl-form" action="{{ site.newsletter.action }}" method="post" target="_blank" novalidate
+      data-newsletter="{{ site.newsletter.provider }}" data-lang="{{ lang.code }}"
+      data-msg-success="{{ t.newsletter.success }}" data-msg-error="{{ t.newsletter.error }}"
+      data-msg-invalid="{{ t.newsletter.invalid }}" data-msg-sending="{{ t.newsletter.sending }}">
+  <div class="nl-row">
+    <label class="sr-only" for="{{ nl_id }}-name">{{ t.newsletter.name_placeholder }}</label>
+    <input id="{{ nl_id }}-name" type="text" name="FIRSTNAME" autocomplete="given-name" maxlength="80" placeholder="{{ t.newsletter.name_placeholder }}">
+  </div>
+  <div class="nl-row">
+    <label class="sr-only" for="{{ nl_id }}-email">{{ t.newsletter.placeholder }}</label>
+    <input id="{{ nl_id }}-email" type="email" name="EMAIL" autocomplete="email" inputmode="email" placeholder="{{ t.newsletter.placeholder }}" required>
+    <button class="btn btn-primary" type="submit">{{ t.newsletter.button }} {{ icon('arrow-right') }}</button>
+  </div>
+  {# Spam traps: real people never fill these in #}
+  <div class="nl-trap" aria-hidden="true"><input type="text" name="email_address_check" tabindex="-1" autocomplete="off"><input type="text" name="b_trap" tabindex="-1" autocomplete="off"></div>
+  {% if site.newsletter.provider == "brevo" %}<input type="hidden" name="html_type" value="simple">{% endif %}
+  <input type="hidden" name="locale" value="{{ lang.code.split('-')[0] }}">
+  <p class="nl-consent">{{ t.newsletter.consent }} <a href="{{ url('privacy/') }}">{{ t.newsletter.privacy }}</a></p>
+  <p class="nl-status" role="status" aria-live="polite"></p>
+</form>

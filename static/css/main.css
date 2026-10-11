@@ -762,6 +762,26 @@ button { font: inherit; color: inherit; background: none; border: 0; cursor: poi
 .page-hero-bg img { width: 100%; height: 100%; object-fit: cover; opacity: .3; }
 .page-hero-bg::after { content: ""; position: absolute; inset: 0; background: radial-gradient(90% 120% at 100% 0%, rgba(255, 0, 85, .25), transparent 60%), linear-gradient(180deg, rgba(9, 9, 11, .5), var(--bg)); }
 .page-hero .lead { margin-top: 18px; }
+/* News page: shorter header with the newsletter card beside the headline, so stories start on the first screen */
+.page-hero-compact { padding: calc(var(--header-h) + clamp(28px, 3vw, 40px)) 0 clamp(24px, 2.5vw, 32px); }
+.page-hero-compact .display-xl { font-size: clamp(40px, 4.8vw, 72px); }
+.page-hero-compact .lead { margin-top: 10px; }
+.page-hero-compact + .news-page { padding-top: 24px; }
+.page-hero-compact + .news-page .news-tabs { margin-bottom: 20px; }
+.page-hero-compact + .news-page .news-card-big .news-img img { min-height: 260px; }
+.hero-signup-grid { display: grid; grid-template-columns: minmax(0, 1.5fr) minmax(0, 1fr); gap: clamp(28px, 4vw, 56px); align-items: center; }
+.signup-card { padding: 22px 26px; background: rgba(18, 18, 22, .78); -webkit-backdrop-filter: blur(10px); backdrop-filter: blur(10px); border-inline-start: 3px solid var(--pink); }
+.signup-card-kicker { margin: 0 0 6px; font-size: 12px; letter-spacing: .2em; text-transform: uppercase; color: var(--muted); }
+.signup-card-title { margin: 0 0 14px; font-size: 19px; font-weight: 700; line-height: 1.25; }
+.signup-card .nl-row input, .signup-card .nl-row .btn { min-height: 46px; }
+.signup-card .nl-row input { padding: 0 18px; }
+.signup-card .nl-consent { margin-top: 10px; font-size: 12px; }
+.signup-card .nl-status { margin-top: 6px; font-size: 14px; }
+.signup-card .nl-status:empty { display: none; }
+@media (max-width: 900px) { .hero-signup-grid { grid-template-columns: minmax(0, 1fr); gap: 20px; } }
+:lang(ar) .signup-card-kicker { letter-spacing: 0; }
+:lang(ja) .signup-card-kicker, :lang(zh-cn) .signup-card-kicker { letter-spacing: .06em; }
+:lang(ja) .page-hero-compact .display-xl, :lang(zh-cn) .page-hero-compact .display-xl { font-size: clamp(36px, 4.2vw, 64px); }
 
 /* ---------- news ---------- */
 .news-page { padding-block: clamp(28px, 4vw, 48px) var(--section-y); }

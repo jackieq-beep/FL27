@@ -187,9 +187,7 @@
 })();
 
 // Newsletter sign-up (Brevo or Mailchimp) without leaving the page
-(function () {
-  const form = document.querySelector("[data-newsletter]");
-  if (!form) return;
+document.querySelectorAll("[data-newsletter]").forEach(function (form) {
   const status = form.querySelector(".nl-status"), btn = form.querySelector("button"), email = form.querySelector('input[name="EMAIL"]');
   const say = (msg, kind) => { status.textContent = msg; status.dataset.kind = kind || ""; };
   form.addEventListener("submit", (e) => {
@@ -216,4 +214,4 @@
       fetch(form.action, { method: "POST", body: data, mode: "no-cors" }).then(() => done(true)).catch(() => done(false));
     }
   });
-})();
+});
