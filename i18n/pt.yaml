@@ -37,7 +37,7 @@ hero:
 ticker:
   - "Football League 2027 · Já disponível"
   - Grátis para jogar
-  - Modo Carreira reconstruído
+  - "Nova página do Modo Carreira"
   - Online + offline
   - Eventos ao vivo toda semana
   - Ligas e copas
@@ -178,42 +178,42 @@ cookies:
 
 game_page:
   meta_title: "Football League 2027 (FL27) – Novidades do Jogo de Futebol para Celular"
-  meta_description: "O FL27 traz uma tela inicial renovada, um Modo Carreira reconstruído, visual de partida melhorado, um estádio novinho, desafios diários e PvP Local. Grátis no iOS e Android."
+  meta_description: "O FL27 traz interface e tela inicial renovadas, uma nova página do Modo Carreira, visual de partida atualizado, um estádio novo, novos desafios diários e melhorias contínuas no PvP Local. Grátis no iOS e Android."
   kicker: "Novidades desta temporada"
   title_1: A nova temporada
   title_2: começa aqui.
-  text: "O FL27 é a nossa maior renovação até agora: visual mais limpo, Modo Carreira reconstruído, dia de jogo com visual melhorado e novas formas de jogar com os amigos."
+  text: "O FL27 traz um visual mais limpo e moderno, Modo Carreira redesenhado, visual de partida atualizado, um estádio novo, novos desafios diários e um PvP Local que continua melhorando."
   jump: "Novidades"
   features:
     - key: ui
       label: "Novo visual"
-      title: "Uma tela inicial mais limpa e rápida"
-      text: "O FL27 traz uma interface totalmente renovada, com um estilo mais limpo e moderno. A nova tela inicial deixa todos os modos a um toque de distância, para você achar sua próxima partida mais rápido, e o jogo inteiro tem cara e sensação mais premium."
+      title: "Um visual mais limpo e moderno"
+      text: "O FL27 traz uma interface renovada, com um estilo visual mais limpo e moderno. Redesenhamos a tela inicial e a apresentação dos modos para deixar a navegação mais clara e dar ao jogo um visual mais fresco e premium."
       images: [u27-main-menu.jpg]
     - key: career
       label: "Modo Carreira"
-      title: "Modo Carreira, reconstruído"
-      text: "O Modo Carreira agora tem seu próprio hub. Gerencie transferências e finanças, bata as metas da diretoria, acompanhe a tabela rodada a rodada e brigue pelo título ao longo de uma temporada inteira, com melhorias de jogabilidade que deixam a jornada mais recompensadora."
+      title: "Uma nova página para o Modo Carreira"
+      text: "No FL27, redesenhamos o Modo Carreira, com uma nova página dedicada e mais melhorias de jogabilidade para o modo ficar mais completo e fácil de navegar. Assim, a progressão de longo prazo ganha mais identidade dentro do jogo."
       images: [u27-career.jpg]
     - key: visuals
       label: "Dia de jogo"
-      title: "Cada partida mais nítida"
-      text: "O dia de jogo foi turbinado do pontapé inicial ao apito final: nova tela pré-jogo, botões e HUD redesenhados e um Momento do Gol novinho que coloca o artilheiro em destaque. Tudo junto, uma experiência mais caprichada e consistente."
+      title: "Visual de partida atualizado"
+      text: "O FL27 melhora o visual das partidas: tela de carregamento pré-jogo redesenhada, botões e elementos de interface atualizados, nova apresentação do Momento do Gol e um estádio novo. Tudo isso deixa a experiência de partida mais caprichada e visualmente consistente."
       images: [u27-gameplay.jpg, u27-goal.jpg, u27-friendly.jpg]
     - key: stadium
       label: "Novo estádio"
-      title: "Uma casa novinha em folha"
-      text: "Toda edição ganha um estádio novo, e o do FL27 é o mais vibrante até hoje: arquibancadas lotadas, refletores, telões gigantes e a nova identidade do Football League, para cada partida parecer noite de decisão."
+      title: "Um estádio com design novo"
+      text: "Como em toda edição anual, o FL27 traz um estádio com design novo, identidade visual atualizada, novos elementos de apresentação e mais clima de dia de jogo."
       images: [u27-stadium.jpg]
     - key: challenges
       label: "Desafios diários"
-      title: "Desafios diários, recompensas diárias"
-      text: "Desafios de futebol rápidos e baseados em habilidade chegam todos os dias. Bata as metas, vença o goleiro e colete gemas e moedas. Perfeitos para uns minutinhos entre as partidas."
+      title: "Novos desafios diários"
+      text: "Novos desafios diários: complete desafios curtos de futebol para ganhar recompensas e tenha mais variedade além das partidas normais e dos modos de longo prazo."
       images: [u27-penalty.jpg]
     - key: pvp
       label: "PvP Local"
-      title: "Jogue com os amigos, frente a frente"
-      text: "Desafie amigos por perto e resolva tudo dentro de campo. O PvP Local fica cada vez melhor no FL27, deixando o Football League mais social do que nunca."
+      title: "Jogue contra amigos por perto"
+      text: "O PvP Local chegou recentemente e vai continuar melhorando no FL27. Dispute partidas diretamente com amigos por perto, num jeito mais social de jogar."
       images: [u27-pvp.jpg]
   cta_title_1: Pronto para
   cta_title_2: o apito inicial?
@@ -271,7 +271,7 @@ faq:
     - q: "Quem faz o Football League?"
       a: "O Football League é desenvolvido e publicado pela Mobile Soccer, um estúdio independente de jogos mobile que cria jogos de futebol grátis para jogadores do mundo todo."
     - q: "O Football League 2027 já saiu?"
-      a: "Sim. O Football League 2027 (FL27) já está disponível de graça no iPhone e no Android, com visual renovado, Modo Carreira reconstruído e um estádio novinho. Baixe na App Store ou no Google Play."
+      a: "Sim. O Football League 2027 (FL27) já está disponível de graça no iPhone e no Android, com visual renovado, Modo Carreira redesenhado e um estádio novo. Baixe na App Store ou no Google Play."
 
 alts:
   slides: Imagens do jogo

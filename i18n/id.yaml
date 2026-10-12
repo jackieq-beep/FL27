@@ -37,7 +37,7 @@ hero:
 ticker:
   - "Football League 2027 · Sudah tersedia"
   - "Gratis dimainkan"
-  - "Mode Karier yang dirombak"
+  - "Halaman Mode Karier baru"
   - "Online + offline"
   - "Event live setiap minggu"
   - "Liga & piala"
@@ -178,42 +178,42 @@ cookies:
 
 game_page:
   meta_title: "Football League 2027 (FL27) – Fitur Baru di Game Sepak Bola Mobile"
-  meta_description: "FL27 hadir dengan layar utama baru, Mode Karier yang dirombak, visual pertandingan yang ditingkatkan, stadion baru, tantangan harian, dan Local PvP. Gratis di iOS dan Android."
+  meta_description: "FL27 hadir dengan UI dan layar utama baru, halaman Mode Karier baru, visual pertandingan yang diperbarui, stadion baru, tantangan harian baru, dan Local PvP yang terus ditingkatkan. Gratis di iOS dan Android."
   kicker: "Yang baru musim ini"
   title_1: "Musim baru"
   title_2: "dimulai di sini."
-  text: "FL27 adalah penyegaran terbesar kami: tampilan lebih bersih, Mode Karier yang dirombak, visual hari pertandingan yang ditingkatkan, dan cara baru bermain bersama teman."
+  text: "FL27 hadir dengan tampilan yang lebih bersih dan modern, Mode Karier yang didesain ulang, visual pertandingan yang diperbarui, stadion baru, tantangan harian baru, dan Local PvP yang terus ditingkatkan."
   jump: "Apa yang baru"
   features:
     - key: ui
       label: "Tampilan baru"
-      title: "Layar utama lebih bersih dan cepat"
-      text: "FL27 menghadirkan antarmuka yang sepenuhnya diperbarui dengan gaya yang lebih bersih dan modern. Layar utama yang didesain ulang menempatkan setiap mode hanya sekali ketuk, jadi kamu lebih cepat menemukan laga berikutnya, dan seluruh game terlihat serta terasa lebih premium."
+      title: "Tampilan lebih bersih dan modern"
+      text: "FL27 menghadirkan antarmuka baru dengan gaya visual yang lebih bersih dan modern. Kami mendesain ulang layar utama dan tampilan mode agar navigasi lebih jelas, sekaligus membuat game terlihat lebih segar dan premium."
       images: [u27-main-menu.jpg]
     - key: career
       label: "Mode Karier"
-      title: "Mode Karier, dirombak total"
-      text: "Mode Karier kini punya hub khusus. Kelola transfer dan keuangan, capai target direksi, pantau klasemen liga dari pekan ke pekan, dan kejar gelar sepanjang satu musim penuh, dengan peningkatan gameplay yang membuat perjalanan panjang jadi lebih memuaskan."
+      title: "Halaman baru untuk Mode Karier"
+      text: "Di FL27, Mode Karier didesain ulang dengan halaman khusus yang baru serta peningkatan gameplay lebih lanjut, agar mode ini terasa lebih lengkap dan lebih mudah dinavigasi. Progres jangka panjang pun punya identitas yang lebih kuat di dalam game."
       images: [u27-career.jpg]
     - key: visuals
       label: "Hari pertandingan"
-      title: "Setiap laga tampil lebih tajam"
-      text: "Hari pertandingan ditingkatkan dari kick-off hingga peluit akhir: layar pra-pertandingan baru, tombol dan HUD dalam game yang didesain ulang, serta Momen Gol baru yang menyorot sang pencetak gol. Hasilnya, pengalaman yang lebih rapi dan konsisten."
+      title: "Visual pertandingan yang diperbarui"
+      text: "FL27 meningkatkan visual pertandingan: pengalaman loading sebelum laga yang didesain ulang, tombol dan elemen UI dalam game yang diperbarui, tampilan Goal Moment yang baru, dan lingkungan stadion baru. Semua ini membuat pengalaman bertanding terasa lebih rapi dan konsisten secara visual."
       images: [u27-gameplay.jpg, u27-goal.jpg, u27-friendly.jpg]
     - key: stadium
       label: "Stadion baru"
-      title: "Kandang yang benar-benar baru"
-      text: "Setiap edisi mendapat stadion baru, dan stadion FL27 adalah yang paling meriah sejauh ini: tribun penuh, lampu terang, layar raksasa, dan branding Football League yang segar, membuat setiap laga terasa seperti malam besar."
+      title: "Stadion dengan desain baru"
+      text: "Seperti setiap edisi tahunan, FL27 menghadirkan lingkungan stadion dengan desain baru, branding yang diperbarui, elemen presentasi baru, dan suasana hari pertandingan yang lebih terasa."
       images: [u27-stadium.jpg]
     - key: challenges
       label: "Tantangan harian"
-      title: "Tantangan harian, hadiah harian"
-      text: "Tantangan sepak bola singkat berbasis skill hadir setiap hari. Capai target, kalahkan kiper, dan kumpulkan permata serta koin. Pas banget untuk beberapa menit di sela pertandingan."
+      title: "Tantangan harian baru"
+      text: "Konten tantangan harian baru: selesaikan tantangan sepak bola singkat untuk mendapatkan hadiah, dan nikmati lebih banyak variasi di luar laga biasa dan mode jangka panjang."
       images: [u27-penalty.jpg]
     - key: pvp
       label: "Local PvP"
-      title: "Lawan temanmu, tatap muka"
-      text: "Tantang teman di dekatmu dan buktikan di lapangan. Local PvP makin seru di FL27, membuat Football League lebih sosial dari sebelumnya."
+      title: "Lawan temanmu secara lokal"
+      text: "Local PvP baru saja hadir dan akan terus ditingkatkan di FL27. Bertanding langsung dengan teman di dekatmu untuk cara bermain yang lebih sosial."
       images: [u27-pvp.jpg]
   cta_title_1: "Siap untuk"
   cta_title_2: "kick-off?"
@@ -271,7 +271,7 @@ faq:
     - q: "Siapa pembuat Football League?"
       a: "Football League dikembangkan dan diterbitkan oleh Mobile Soccer, studio game mobile independen yang membuat game sepak bola gratis untuk pemain di mana saja."
     - q: "Apakah Football League 2027 sudah rilis?"
-      a: "Ya. Football League 2027 (FL27) sudah tersedia gratis di iPhone dan Android, dengan tampilan baru, Mode Karier yang dirombak, dan stadion yang benar-benar baru. Unduh di App Store atau Google Play."
+      a: "Ya. Football League 2027 (FL27) sudah tersedia gratis di iPhone dan Android, dengan tampilan baru, Mode Karier yang didesain ulang, dan stadion baru. Unduh di App Store atau Google Play."
 
 alts:
   slides: "Gambar game"

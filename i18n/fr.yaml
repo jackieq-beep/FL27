@@ -37,7 +37,7 @@ hero:
 ticker:
   - "Football League 2027 · Disponible maintenant"
   - "Gratuit"
-  - "Mode Carrière reconstruit"
+  - "Nouvelle page mode Carrière"
   - "En ligne + hors ligne"
   - "Événements live chaque semaine"
   - "Championnats & coupes"
@@ -178,42 +178,42 @@ cookies:
 
 game_page:
   meta_title: "Football League 2027 (FL27) – Les nouveautés du jeu de foot mobile"
-  meta_description: "FL27 apporte un écran d'accueil repensé, un mode Carrière reconstruit, des visuels de match améliorés, un tout nouveau stade, des défis quotidiens et le PvP local. Gratuit sur iOS et Android."
+  meta_description: "FL27 apporte une interface et un écran d'accueil repensés, une nouvelle page pour le mode Carrière, des visuels de match améliorés, un nouveau stade, de nouveaux défis quotidiens et un PvP local qui continue de progresser. Gratuit sur iOS et Android."
   kicker: "Les nouveautés de la saison"
   title_1: "La nouvelle saison"
   title_2: "commence ici."
-  text: "FL27, c'est notre plus grosse refonte à ce jour : un look plus épuré, un mode Carrière reconstruit, des visuels de match améliorés et de nouvelles façons de jouer entre potes."
+  text: "FL27 apporte un look plus épuré et moderne, un mode Carrière repensé, des visuels de match améliorés, un nouveau stade, de nouveaux défis quotidiens et un PvP local qui continue de progresser."
   jump: "Quoi de neuf"
   features:
     - key: ui
       label: "Nouveau look"
-      title: "Un écran d'accueil plus clair et plus rapide"
-      text: "FL27 arrive avec une interface entièrement repensée, au style plus épuré et plus moderne. Le nouvel écran d'accueil met chaque mode à portée de doigt pour trouver ton prochain match plus vite, et tout le jeu gagne en finition premium."
+      title: "Un look plus épuré et moderne"
+      text: "FL27 arrive avec une interface repensée, au style visuel plus épuré et plus moderne. Nous avons redessiné l'écran d'accueil et la présentation des modes pour une navigation plus claire et un jeu au look plus frais et plus premium."
       images: [u27-main-menu.jpg]
     - key: career
       label: "Mode Carrière"
-      title: "Le mode Carrière, reconstruit"
-      text: "Le mode Carrière a désormais son propre hub. Gère les transferts et les finances, remplis les objectifs de ta direction, suis le classement journée après journée et vise le titre sur une saison complète, avec des améliorations de gameplay qui rendent le long terme plus gratifiant."
+      title: "Une nouvelle page pour le mode Carrière"
+      text: "Dans FL27, le mode Carrière a été repensé, avec une nouvelle page dédiée et d'autres améliorations de gameplay pour un mode plus complet et plus facile à parcourir. La progression sur le long terme gagne ainsi une identité plus forte dans le jeu."
       images: [u27-career.jpg]
     - key: visuals
       label: "Jour de match"
-      title: "Chaque match gagne en netteté"
-      text: "Le jour de match a été amélioré du coup d'envoi au coup de sifflet final : un nouvel écran d'avant-match, des boutons et un HUD redessinés, et un tout nouveau Moment du but qui met le buteur sous les projecteurs. Résultat : une expérience plus soignée et plus cohérente."
+      title: "Des visuels de match améliorés"
+      text: "FL27 améliore l'aspect des matchs : un écran de chargement d'avant-match repensé, des boutons et éléments d'interface mis à jour, une nouvelle présentation du Moment But et un nouveau stade. Le tout rend l'expérience de match plus soignée et plus cohérente visuellement."
       images: [u27-gameplay.jpg, u27-goal.jpg, u27-friendly.jpg]
     - key: stadium
       label: "Nouveau stade"
-      title: "Un tout nouveau stade"
-      text: "Chaque édition a droit à son nouveau stade, et celui de FL27 est le plus vibrant à ce jour : tribunes pleines à craquer, projecteurs, écrans géants et nouvel habillage Football League pour que chaque match ait des airs de grande soirée."
+      title: "Un stade au nouveau design"
+      text: "Comme à chaque édition annuelle, FL27 propose un stade au nouveau design, avec un habillage mis à jour, de nouveaux éléments de présentation et une ambiance de jour de match plus marquée."
       images: [u27-stadium.jpg]
     - key: challenges
       label: "Défis quotidiens"
-      title: "Des défis et des récompenses chaque jour"
-      text: "De courts défis de foot basés sur la technique arrivent chaque jour. Atteins les objectifs, bats le gardien et récupère gemmes et pièces. Parfait pour quelques minutes entre deux matchs."
+      title: "De nouveaux défis quotidiens"
+      text: "De nouveaux défis quotidiens t'attendent : relève de courts défis footballistiques pour gagner des récompenses et profite de plus de variété en dehors des matchs classiques et des modes au long cours."
       images: [u27-penalty.jpg]
     - key: pvp
       label: "PvP local"
-      title: "Affronte tes potes en face-à-face"
-      text: "Défie tes amis à proximité et réglez ça sur le terrain. Le PvP local continue de progresser dans FL27, et Football League n'a jamais été aussi social."
+      title: "Affronte tes amis en local"
+      text: "Le PvP local est arrivé récemment et continuera de s'améliorer dans FL27. Affronte directement tes amis à proximité pour une façon de jouer plus sociale."
       images: [u27-pvp.jpg]
   cta_title_1: "Prêt pour"
   cta_title_2: "le coup d'envoi ?"
@@ -271,7 +271,7 @@ faq:
     - q: "Qui développe Football League ?"
       a: "Football League est développé et édité par Mobile Soccer, un studio indépendant de jeux mobiles qui crée des jeux de foot gratuits pour les joueurs du monde entier."
     - q: "Football League 2027 est-il sorti ?"
-      a: "Oui. Football League 2027 (FL27) est disponible gratuitement sur iPhone et Android, avec un look repensé, un mode Carrière reconstruit et un tout nouveau stade. Télécharge-le sur l'App Store ou Google Play."
+      a: "Oui. Football League 2027 (FL27) est disponible gratuitement sur iPhone et Android, avec un look plus moderne, un mode Carrière repensé et un nouveau stade. Télécharge-le sur l'App Store ou Google Play."
 
 alts:
   slides: "Images du jeu"

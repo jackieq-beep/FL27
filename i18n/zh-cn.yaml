@@ -37,7 +37,7 @@ hero:
 ticker:
   - "Football League 2027 · 现已推出"
   - "免费畅玩"
-  - "重制生涯模式"
+  - "生涯模式全新页面"
   - "在线 + 离线"
   - "每周实时活动"
   - "联赛与杯赛"
@@ -178,42 +178,42 @@ cookies:
 
 game_page:
   meta_title: "Football League 2027 (FL27) – 手机足球游戏全新内容"
-  meta_description: "FL27 带来焕新主界面、重制生涯模式、升级比赛画面、全新球场、每日挑战和本地 PvP。iOS 和 Android 免费畅玩。"
+  meta_description: "FL27 带来焕新界面与主界面、全新生涯模式页面、升级的比赛画面、全新球场、新的每日挑战，本地 PvP 也将持续优化。iOS 和 Android 免费畅玩。"
   kicker: "本赛季新内容"
   title_1: "新赛季"
   title_2: "从这里开始。"
-  text: "FL27 是我们迄今最大的一次焕新：更简洁的外观、重制的生涯模式、升级的比赛日画面，以及和好友一起玩的新方式。"
+  text: "FL27 带来更简洁现代的外观、重新设计的生涯模式、升级的比赛画面、全新球场和新的每日挑战，本地 PvP 也将持续优化。"
   jump: "新内容一览"
   features:
     - key: ui
       label: "全新外观"
-      title: "更简洁、更快速的主界面"
-      text: "FL27 全面焕新界面，风格更简洁、更现代。重新设计的主界面让所有模式一键直达，更快找到下一场比赛，整个游戏的观感和手感都更高级。"
+      title: "更简洁、更现代的外观"
+      text: "FL27 焕新了用户界面，视觉风格更简洁、更现代。我们重新设计了主界面和模式展示，让导航更清晰，也让整个游戏看起来更清新、更高级。"
       images: [u27-main-menu.jpg]
     - key: career
       label: "生涯模式"
-      title: "生涯模式，全面重制"
-      text: "生涯模式现在拥有专属中心。管理转会和财务，完成董事会目标，逐轮关注积分榜，在完整赛季中冲击冠军，玩法改进让长线经营更有成就感。"
+      title: "生涯模式全新页面"
+      text: "FL27 重新设计了生涯模式的呈现方式，新增专属页面，并进一步改进玩法，让这一模式更完整、更易于浏览。我们希望让长期养成类模式在游戏中拥有更鲜明的定位。"
       images: [u27-career.jpg]
     - key: visuals
       label: "比赛日"
-      title: "每场比赛都更清晰"
-      text: "比赛日从开球到终场全面升级：全新赛前界面、重新设计的游戏内按钮和 HUD，以及让进球者成为焦点的全新进球时刻。整体体验更精致、更统一。"
+      title: "升级的比赛画面"
+      text: "FL27 对比赛画面做了多项升级，包括重新设计的赛前加载体验、更新的游戏内按钮和界面元素、进球时刻演出以及全新的球场环境，让整体比赛体验更精致、视觉风格更统一。"
       images: [u27-gameplay.jpg, u27-goal.jpg, u27-friendly.jpg]
     - key: stadium
       label: "全新球场"
-      title: "全新主场"
-      text: "每一代都有新球场，而 FL27 的球场是我们氛围感最强的一座：座无虚席的看台、璀璨的灯光、巨型大屏和全新的 Football League 品牌元素，让每场比赛都像焦点之夜。"
+      title: "全新设计的球场"
+      text: "和每一年的新版本一样，FL27 带来全新设计的球场环境，配有更新的品牌元素和展示元素，比赛日氛围更加浓厚。"
       images: [u27-stadium.jpg]
     - key: challenges
       label: "每日挑战"
-      title: "每日挑战，每日奖励"
-      text: "简短的足球技巧挑战每天上新。完成目标、攻破门将，收集宝石和金币。比赛间隙玩几分钟正合适。"
+      title: "新的每日挑战"
+      text: "新增每日挑战内容：完成简短的足球挑战即可获得奖励，在常规比赛和长期模式之外带来更多玩法变化。"
       images: [u27-penalty.jpg]
     - key: pvp
       label: "本地 PvP"
-      title: "和好友面对面较量"
-      text: "挑战身边的好友，球场上见分晓。本地 PvP 在 FL27 中持续进化，让 Football League 比以往更有社交乐趣。"
+      title: "和身边好友面对面对战"
+      text: "本地 PvP 近期刚刚推出，并将在 FL27 中持续优化。你可以和身边的好友直接对战，玩法更具社交乐趣。"
       images: [u27-pvp.jpg]
   cta_title_1: "准备好"
   cta_title_2: "开球了吗？"
@@ -271,7 +271,7 @@ faq:
     - q: "Football League 是谁开发的？"
       a: "Football League 由 Mobile Soccer 开发并发行，这是一家独立手游工作室，致力于为全球玩家打造免费足球游戏。"
     - q: "Football League 2027 推出了吗？"
-      a: "已推出。Football League 2027（FL27）现已在 iPhone 和 Android 上免费推出，带来焕新外观、重制生涯模式和全新球场。快去 App Store 或 Google Play 下载吧。"
+      a: "已推出。Football League 2027（FL27）现已在 iPhone 和 Android 上免费推出，带来焕新外观、重新设计的生涯模式和全新球场。快去 App Store 或 Google Play 下载吧。"
 
 alts:
   slides: "游戏截图"
