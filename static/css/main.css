@@ -1129,11 +1129,11 @@ a.contact-channel:hover b .icon { transform: translateX(4px); }
 
 
 /* ---------- homepage section backgrounds (Pitch & Paper) ---------- */
-.page-home .page-home .section { position: relative; isolation: isolate; overflow: hidden; padding-block: var(--section-y); }
-.page-home .page-home .section::before, .page-home .section::after { content: ""; position: absolute; inset: 0; pointer-events: none; }
-.page-home .page-home .section::before { z-index: -2; }
-.page-home .page-home .section::after { z-index: -1; }
-.page-home .page-home .ticker-wrap { margin-block: -26px; z-index: 5; }
+.page-home .section { position: relative; isolation: isolate; overflow: hidden; padding-block: var(--section-y); }
+.page-home .section::before, .page-home .section::after { content: ""; position: absolute; inset: 0; pointer-events: none; }
+.page-home .section::before { z-index: -2; }
+.page-home .section::after { z-index: -1; }
+.page-home .ticker-wrap { margin-block: -26px; z-index: 5; }
 
 /* Light band: re-scope the palette so every component follows */
 .page-home .band-light {
