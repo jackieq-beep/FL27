@@ -32,13 +32,11 @@ hero:
   cta_explore: "Découvrir le jeu"
   stats:
     - { value: "100M+", label: "joueurs" }
-    - { value: "En ligne + hors ligne", label: "jouable partout" }
 
 ticker:
   - "Football League 2027 · Disponible maintenant"
   - "Gratuit"
   - "Nouvelle page mode Carrière"
-  - "En ligne + hors ligne"
   - "Événements live chaque semaine"
   - "Championnats & coupes"
   - "Taillé pour le jour de match"

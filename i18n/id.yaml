@@ -32,13 +32,11 @@ hero:
   cta_explore: "Lihat gamenya"
   stats:
     - { value: "100 Jt+", label: "pemain" }
-    - { value: "Online + Offline", label: "main di mana saja" }
 
 ticker:
   - "Football League 2027 · Sudah tersedia"
   - "Gratis dimainkan"
   - "Halaman Mode Karier baru"
-  - "Online + offline"
   - "Event live setiap minggu"
   - "Liga & piala"
   - "Dibuat untuk hari pertandingan"

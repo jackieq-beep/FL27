@@ -32,13 +32,11 @@ hero:
   cta_explore: Conheça o jogo
   stats:
     - { value: "100M+", label: "jogadores" }
-    - { value: "Online + Offline", label: "jogue em qualquer lugar" }
 
 ticker:
   - "Football League 2027 · Já disponível"
   - Grátis para jogar
   - "Nova página do Modo Carreira"
-  - Online + offline
   - Eventos ao vivo toda semana
   - Ligas e copas
   - Feito para dia de jogo

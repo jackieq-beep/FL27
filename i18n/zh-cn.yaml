@@ -32,13 +32,11 @@ hero:
   cta_explore: "了解游戏"
   stats:
     - { value: "1亿+", label: "玩家" }
-    - { value: "在线 + 离线", label: "随时随地畅玩" }
 
 ticker:
   - "Football League 2027 · 现已推出"
   - "免费畅玩"
   - "生涯模式全新页面"
-  - "在线 + 离线"
   - "每周实时活动"
   - "联赛与杯赛"
   - "为比赛日而生"

@@ -32,13 +32,11 @@ hero:
   cta_explore: See the game
   stats:
     - { value: "100M+", label: "players" }
-    - { value: "Online + Offline", label: "playable anywhere" }
 
 ticker:
   - "Football League 2027 · Out now"
   - Free to play
   - "New Career Mode page"
-  - Online + offline
   - Live events every week
   - Leagues & cups
   - Made for match day
