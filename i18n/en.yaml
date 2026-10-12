@@ -35,7 +35,7 @@ hero:
     - { value: "Online + Offline", label: "playable anywhere" }
 
 ticker:
-  - Football League 2027 · Coming soon
+  - Football League 2027 · Out now
   - Free to play
   - Official Manchester City license
   - Online + offline
@@ -268,8 +268,6 @@ faq:
       a: "Both! Football League is a mobile soccer game. Most of the world calls the sport football, and in the US it's called soccer. Same game, same beautiful sport."
     - q: "What can I play in Football League?"
       a: "Career Mode, Local PvP against friends nearby, friendlies with any two clubs, daily skill challenges, live events, and leagues and cups from around the world."
-    - q: "Does Football League have real clubs?"
-      a: "Yes. Manchester City is officially licensed in Football League, with authentic kits and the official club badge."
     - q: "Who makes Football League?"
       a: "Football League is developed and published by Mobile Soccer, an independent mobile game studio making free football games for players everywhere."
     - q: "When is Football League 2027 coming out?"

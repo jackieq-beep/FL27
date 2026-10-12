@@ -35,7 +35,7 @@ hero:
     - { value: "在线 + 离线", label: "随时随地畅玩" }
 
 ticker:
-  - "Football League 2027 · 即将登场"
+  - "Football League 2027 · 现已推出"
   - "免费畅玩"
   - "Manchester City 官方授权"
   - "在线 + 离线"
@@ -268,8 +268,6 @@ faq:
       a: "都是！Football League 是一款手机足球游戏。世界上大多数地方把这项运动叫 football，在美国则叫 soccer。同一款游戏，同一项美丽运动。"
     - q: "Football League 里能玩什么？"
       a: "生涯模式、与身边好友对战的本地 PvP、任选两队的友谊赛、每日技巧挑战、实时活动，以及来自世界各地的联赛和杯赛。"
-    - q: "Football League 有真实俱乐部吗？"
-      a: "有。Manchester City 已正式授权入驻 Football League，拥有正版球衣和官方俱乐部队徽。"
     - q: "Football League 是谁开发的？"
       a: "Football League 由 Mobile Soccer 开发并发行，这是一家独立手游工作室，致力于为全球玩家打造免费足球游戏。"
     - q: "Football League 2027 什么时候推出？"

@@ -35,7 +35,7 @@ hero:
     - { value: "Online + Offline", label: "jogue em qualquer lugar" }
 
 ticker:
-  - Football League 2027 · Em breve
+  - Football League 2027 · Já disponível
   - Grátis para jogar
   - Licença oficial do Manchester City
   - Online + offline
@@ -268,8 +268,6 @@ faq:
       a: "Os dois! Football League é um jogo de futebol para celular. A maior parte do mundo chama o esporte de football, e nos EUA ele é chamado de soccer. Mesmo jogo, mesmo esporte apaixonante."
     - q: "O que dá para jogar no Football League?"
       a: "Modo Carreira, PvP Local contra amigos por perto, amistosos com quaisquer dois clubes, desafios diários de habilidade, eventos ao vivo e ligas e copas do mundo todo."
-    - q: "O Football League tem clubes reais?"
-      a: "Sim. O Manchester City tem licença oficial no Football League, com uniformes autênticos e o escudo oficial do clube."
     - q: "Quem faz o Football League?"
       a: "O Football League é desenvolvido e publicado pela Mobile Soccer, um estúdio independente de jogos mobile que cria jogos de futebol grátis para jogadores do mundo todo."
     - q: "Quando sai o Football League 2027?"
