@@ -2,7 +2,7 @@
 
 meta:
   home_title: "Football League – 無料モバイルサッカーゲーム | iOS & Android"
-  home_description: "Football Leagueは、iPhoneとAndroidで遊べる無料のモバイルサッカーゲーム。最強チームを作り、キャリアモードやローカルPvP、公式ライセンスのマンチェスター・シティをオンラインでもオフラインでも楽しめます。Football League 2027、好評配信中！"
+  home_description: "Football Leagueは、iPhoneとAndroidで遊べる無料のモバイルサッカーゲーム。最強チームを作り、キャリアモードやローカルPvP、公式ライセンスのマンチェスター・シティをオンラインでもオフラインでも楽しめます。Football League 2027、まもなく登場！"
 
 nav:
   home: ホーム
@@ -35,7 +35,7 @@ hero:
     - { value: "オンライン + オフライン", label: "どこでもプレイ" }
 
 ticker:
-  - "Football League 2027 · 好評配信中"
+  - Football League 2027 · まもなく登場
   - 基本プレイ無料
   - マンチェスター・シティ公式ライセンス
   - オンライン + オフライン
@@ -270,8 +270,8 @@ faq:
       a: "キャリアモード、近くの友だちと対戦できるローカルPvP、好きな2クラブで戦うフレンドリーマッチ、デイリースキルチャレンジ、ライブイベント、そして世界中のリーグやカップ戦が楽しめます。"
     - q: "Football Leagueを開発しているのは？"
       a: "Football Leagueは、世界中のプレイヤーに向けて無料のサッカーゲームを作るインディーモバイルゲームスタジオ、Mobile Soccerが開発・配信しています。"
-    - q: "Football League 2027はもう配信されていますか？"
-      a: "はい。Football League 2027（FL27）はiPhoneとAndroidで好評配信中です（基本プレイ無料）。デザインの一新、再構築されたキャリアモード、新スタジアムを搭載。App StoreまたはGoogle Playからダウンロードしてください。"
+    - q: "Football League 2027はいつリリースされますか？"
+      a: "Football League 2027（FL27）はまもなく登場予定です。デザインの一新、再構築されたキャリアモード、新スタジアムを搭載。最新情報はニュースページと公式SNSでいち早くお届けします。"
 
 alts:
   slides: ゲーム画像
