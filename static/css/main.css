@@ -1187,3 +1187,6 @@ a.contact-channel:hover b .icon { transform: translateX(4px); }
 .page-home .download::after { background: linear-gradient(90deg, rgba(9, 9, 11, .95) 0%, rgba(9, 9, 11, .8) 45%, rgba(255, 0, 85, .45) 100%); }
 [dir="rtl"] .page-home .download::after { background: linear-gradient(-90deg, rgba(9, 9, 11, .95) 0%, rgba(9, 9, 11, .8) 45%, rgba(255, 0, 85, .45) 100%); }
 .page-home .download .download-media::before { display: none; }
+
+.clubs-media figure:only-child { margin-inline: 0; }
+.clubs-media figure:only-child figcaption { top: auto; bottom: 14px; inset-inline-end: auto; inset-inline-start: 14px; }
