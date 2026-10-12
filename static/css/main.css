@@ -1126,3 +1126,62 @@ a.contact-channel:hover b .icon { transform: translateX(4px); }
 .mode-card .fit { --fit-ar: 4 / 3; }
 .shots .fit { --fit-ar: 16 / 10; border: 1px solid var(--line); }
 .gf-media-multi .fit:first-child { grid-column: 1 / -1; }
+
+
+/* ---------- homepage section backgrounds (Night Match) ---------- */
+.page-home .section { position: relative; isolation: isolate; overflow: hidden; padding-block: var(--section-y); }
+.page-home .section::before, .page-home .section::after { content: ""; position: absolute; inset: 0; pointer-events: none; }
+.page-home .section::before { z-index: -2; }
+.page-home .section::after { z-index: -1; }
+.page-home .ticker-wrap { margin-block: -26px; z-index: 5; }
+
+
+
+/* Engine: navy sky with two floodlight beams */
+.page-home .engine { background: radial-gradient(120% 80% at 50% 0%, #142057 0%, #070b22 60%, #050713 100%); }
+.page-home .engine::before { background:
+  conic-gradient(from 160deg at 6% -8%, transparent 0deg, rgba(190, 220, 255, .16) 10deg, transparent 26deg),
+  conic-gradient(from 174deg at 94% -8%, transparent 0deg, rgba(190, 220, 255, .16) 16deg, transparent 32deg); }
+.page-home .engine::after { background:
+  radial-gradient(circle at 6% 0%, rgba(255, 255, 255, .7) 0 6px, rgba(160, 200, 255, .25) 7px, transparent 70px),
+  radial-gradient(circle at 94% 0%, rgba(255, 255, 255, .7) 0 6px, rgba(160, 200, 255, .25) 7px, transparent 70px); }
+.page-home .engine { --line: rgba(160, 190, 255, .18); }
+
+/* Modes: live-event photo, purple night */
+.page-home .modes::before { background: var(--bg-photo) center 30% / cover no-repeat; }
+.page-home .modes::after { background: linear-gradient(180deg, rgba(20, 6, 40, .9) 0%, rgba(20, 6, 40, .72) 50%, rgba(9, 9, 11, .94) 100%); }
+.page-home .modes { --surface: rgba(16, 8, 30, .82); --line: rgba(255, 255, 255, .14); }
+
+/* Clubs: tactics board, chalk lines on dark green */
+.page-home .clubs { background: #0b1f17; }
+.page-home .clubs::before { background:
+  linear-gradient(rgba(255, 255, 255, .045) 1px, transparent 1px) 0 0 / 40px 40px,
+  linear-gradient(90deg, rgba(255, 255, 255, .045) 1px, transparent 1px) 0 0 / 40px 40px; }
+.page-home .clubs::after { background:
+  radial-gradient(circle at 78% 50%, transparent 0 150px, rgba(255, 255, 255, .14) 150px 152px, transparent 152px),
+  radial-gradient(circle at 78% 50%, rgba(109, 255, 253, .12), transparent 380px); }
+.page-home .clubs .kicker { color: var(--cyan); }
+
+/* News: stadium photo, blurred */
+.page-home .updates::before { background: var(--bg-photo) center / cover no-repeat; filter: blur(14px) saturate(1.3); inset: -40px; }
+.page-home .updates::after { background: linear-gradient(180deg, rgba(9, 9, 11, .88), rgba(9, 9, 11, .76) 50%, rgba(9, 9, 11, .92)); }
+.page-home .updates { --surface: rgba(18, 18, 20, .86); }
+
+/* Merch: magenta-to-violet glow */
+.page-home .merch { background: #12061f; }
+.page-home .merch::before { background:
+  radial-gradient(60% 90% at 85% 20%, rgba(255, 0, 85, .65), transparent 65%),
+  radial-gradient(50% 80% at 10% 100%, rgba(120, 60, 255, .55), transparent 65%); }
+.page-home .merch .merch-card { background: rgba(9, 9, 11, .35); border-color: rgba(255, 255, 255, .12); }
+
+/* FAQ: carbon-fibre weave */
+.page-home .faq { background: #0c0c0e; }
+.page-home .faq::before { background:
+  linear-gradient(45deg, rgba(255, 255, 255, .03) 25%, transparent 25% 75%, rgba(255, 255, 255, .03) 75%) 0 0 / 12px 12px,
+  linear-gradient(45deg, rgba(255, 255, 255, .03) 25%, transparent 25% 75%, rgba(255, 255, 255, .03) 75%) 6px 6px / 12px 12px; }
+.page-home .faq::after { background: radial-gradient(60% 70% at 0% 0%, rgba(255, 0, 85, .12), transparent 70%); }
+
+/* Download: corner-kick photo with a green wash */
+.page-home .download::before { background: var(--bg-photo) center / cover no-repeat; }
+.page-home .download::after { background: linear-gradient(90deg, rgba(3, 20, 10, .96) 0%, rgba(3, 20, 10, .85) 45%, rgba(0, 120, 50, .45) 100%); }
+[dir="rtl"] .page-home .download::after { background: linear-gradient(-90deg, rgba(3, 20, 10, .96) 0%, rgba(3, 20, 10, .85) 45%, rgba(0, 120, 50, .45) 100%); }
