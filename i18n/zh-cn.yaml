@@ -2,7 +2,7 @@
 
 meta:
   home_title: "Football League – 免费手机足球游戏 | iOS & Android"
-  home_description: "Football League 是一款适用于 iPhone 和 Android 的免费手机足球游戏。组建你的阵容，畅玩生涯模式、本地 PvP，还有官方授权的 Manchester City，在线离线都能踢。Football League 2027 即将登场。"
+  home_description: "Football League 是一款适用于 iPhone 和 Android 的免费手机足球游戏。组建你的阵容，畅玩生涯模式、本地 PvP，还有官方授权的 Manchester City，在线离线都能踢。Football League 2027 现已推出。"
 
 nav:
   home: "首页"
@@ -35,7 +35,7 @@ hero:
     - { value: "在线 + 离线", label: "随时随地畅玩" }
 
 ticker:
-  - "Football League 2027 · 即将登场"
+  - "Football League 2027 · 现已推出"
   - "免费畅玩"
   - "Manchester City 官方授权"
   - "在线 + 离线"
@@ -270,8 +270,8 @@ faq:
       a: "生涯模式、与身边好友对战的本地 PvP、任选两队的友谊赛、每日技巧挑战、实时活动，以及来自世界各地的联赛和杯赛。"
     - q: "Football League 是谁开发的？"
       a: "Football League 由 Mobile Soccer 开发并发行，这是一家独立手游工作室，致力于为全球玩家打造免费足球游戏。"
-    - q: "Football League 2027 什么时候推出？"
-      a: "Football League 2027（FL27）即将登场，带来焕新外观、重制生涯模式和全新球场。关注我们的新闻页面和社交媒体，第一时间获取消息。"
+    - q: "Football League 2027 推出了吗？"
+      a: "已推出。Football League 2027（FL27）现已在 iPhone 和 Android 上免费推出，带来焕新外观、重制生涯模式和全新球场。快去 App Store 或 Google Play 下载吧。"
 
 alts:
   slides: "游戏截图"
