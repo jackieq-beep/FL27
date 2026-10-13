@@ -224,6 +224,11 @@ contact_page:
   title_1: Get in
   title_2: touch.
   text: "Questions, ideas or business enquiries? Reach the right team directly."
+  who: "Who's getting in touch?"
+  bands:
+    support: ["I'm a player", "and need help"]
+    partnerships: ["I'm a brand,", "partner or press"]
+    community: ["I just want to", "follow the game"]
   cards:
     - { key: partnerships, icon: mail, title: "Partnerships & business", text: "Brand partnerships, licensing, advertising and media enquiries." }
     - { key: support, icon: gamepad, title: "Player support", text: "Help with the game, your account, purchases or privacy requests." }

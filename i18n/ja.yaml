@@ -224,6 +224,11 @@ contact_page:
   title_1: お気軽に
   title_2: ご連絡ください。
   text: "ご質問、アイデア、ビジネスのご相談は、担当チームまで直接ご連絡ください。"
+  who: "お問い合わせの種類を選んでください"
+  bands:
+    support: ["プレイヤーの方", "サポートが必要"]
+    partnerships: ["企業・パートナー", "メディアの方"]
+    community: ["ゲームの最新情報を", "フォローしたい"]
   cards:
     - { key: partnerships, icon: mail, title: "提携 & ビジネス", text: "ブランド提携、ライセンス、広告、メディアに関するお問い合わせ。" }
     - { key: support, icon: gamepad, title: "プレイヤーサポート", text: "ゲーム、アカウント、購入、プライバシーに関するご相談。" }

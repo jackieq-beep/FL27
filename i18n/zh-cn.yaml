@@ -224,6 +224,11 @@ contact_page:
   title_1: "联系"
   title_2: "我们。"
   text: "有问题、想法或商务咨询？直接联系对应团队。"
+  who: "您想联系哪个团队？"
+  bands:
+    support: ["我是玩家", "需要帮助"]
+    partnerships: ["我是品牌、", "合作伙伴或媒体"]
+    community: ["我只想", "关注游戏动态"]
   cards:
     - { key: partnerships, icon: mail, title: "合作与商务", text: "品牌合作、授权、广告及媒体咨询。" }
     - { key: support, icon: gamepad, title: "玩家支持", text: "游戏、账号、购买或隐私请求相关帮助。" }

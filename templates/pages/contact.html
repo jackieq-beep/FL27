@@ -2,36 +2,31 @@
 {% block title %}{{ t.contact_page.meta_title }}{% endblock %}
 {% block description %}{{ t.contact_page.meta_description }}{% endblock %}
 {% block content %}
-<section class="contact-hero">
-  <div class="contact-hero-bg">{{ img('u27-stadium.jpg', '', '100vw', eager=True) }}</div>
-  <div class="container contact-hero-grid">
-    <div class="contact-intro">
-      <p class="kicker">{{ t.contact_page.kicker }}</p>
-      <h1 class="display display-xl">{{ t.contact_page.title_1 }} <span class="accent-pink">{{ t.contact_page.title_2 }}</span></h1>
-      <p class="lead">{{ t.contact_page.text }}</p>
+{% set cards = {} %}{% for c in t.contact_page.cards %}{% set _ = cards.update({c.key: c}) %}{% endfor %}
+<section class="contact-bands">
+  <div class="container contact-bands-head">
+    <p class="kicker">{{ t.contact_page.kicker }}</p>
+    <h1>{{ t.contact_page.who }}</h1>
+  </div>
+  {% for key, em in [('support', site.support_email), ('partnerships', site.contact_email)] %}
+  <a class="contact-band is-{{ key }}" href="mailto:{{ em }}">
+    <div class="container contact-band-in">
+      <h2><span>{{ t.contact_page.bands[key][0] }}</span> <span>{{ t.contact_page.bands[key][1] }}</span></h2>
+      <p>{{ cards[key].text }}</p>
+      <span class="contact-pill">{{ em }} {{ icon('arrow-right') }}</span>
     </div>
-    <ul class="contact-channels" role="list">
-      {% for c in t.contact_page.cards %}
-      {% if c.key == 'community' %}
-      <li class="contact-channel is-social">
-        <small>{{ c.title }}</small>
-        <ul class="contact-socials" role="list">
-          {% for k in site.social_list %}
-          <li><a class="fs-{{ k }}" href="{{ site.social[k] }}" target="_blank" rel="noopener" aria-label="{{ site.social_names[k] }}" title="{{ site.social_names[k] }}"><span class="fs-tile">{{ icon(k) }}</span></a></li>
-          {% endfor %}
-        </ul>
-      </li>
-      {% else %}
-      {% set em = site.contact_email if c.key == 'partnerships' else site.support_email %}
-      <li>
-        <a class="contact-channel" href="mailto:{{ em }}">
-          <small>{{ c.title }}</small>
-          <b>{{ em }} {{ icon('arrow-right') }}</b>
-        </a>
-      </li>
-      {% endif %}
-      {% endfor %}
-    </ul>
+  </a>
+  {% endfor %}
+  <div class="contact-band is-community">
+    <div class="container contact-band-in">
+      <h2><span>{{ t.contact_page.bands.community[0] }}</span> <span>{{ t.contact_page.bands.community[1] }}</span></h2>
+      <p>{{ cards.community.text }}</p>
+      <ul class="contact-socials" role="list">
+        {% for k in site.social_list %}
+        <li><a class="fs-{{ k }}" href="{{ site.social[k] }}" target="_blank" rel="noopener" aria-label="{{ site.social_names[k] }}" title="{{ site.social_names[k] }}"><span class="fs-tile">{{ icon(k) }}</span></a></li>
+        {% endfor %}
+      </ul>
+    </div>
   </div>
 </section>
 {% endblock %}

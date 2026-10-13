@@ -224,6 +224,11 @@ contact_page:
   title_1: Fale
   title_2: conosco.
   text: "Dúvidas, ideias ou propostas comerciais? Fale direto com a equipe certa."
+  who: "Quem está entrando em contato?"
+  bands:
+    support: ["Sou jogador", "e preciso de ajuda"]
+    partnerships: ["Sou uma marca,", "parceiro ou imprensa"]
+    community: ["Só quero", "acompanhar o jogo"]
   cards:
     - { key: partnerships, icon: mail, title: "Parcerias e negócios", text: "Parcerias de marca, licenciamento, publicidade e contatos de mídia." }
     - { key: support, icon: gamepad, title: "Suporte ao jogador", text: "Ajuda com o jogo, sua conta, compras ou solicitações de privacidade." }

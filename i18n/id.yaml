@@ -224,6 +224,11 @@ contact_page:
   title_1: "Hubungi"
   title_2: "kami."
   text: "Punya pertanyaan, ide, atau urusan bisnis? Langsung hubungi tim yang tepat."
+  who: "Siapa yang menghubungi kami?"
+  bands:
+    support: ["Saya pemain", "dan butuh bantuan"]
+    partnerships: ["Saya brand,", "mitra atau media"]
+    community: ["Saya hanya ingin", "mengikuti game ini"]
   cards:
     - { key: partnerships, icon: mail, title: "Kemitraan & bisnis", text: "Kemitraan merek, lisensi, iklan, dan pertanyaan media." }
     - { key: support, icon: gamepad, title: "Dukungan pemain", text: "Bantuan terkait game, akun, pembelian, atau permintaan privasi." }

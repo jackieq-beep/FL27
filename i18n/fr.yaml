@@ -224,6 +224,11 @@ contact_page:
   title_1: "Restons"
   title_2: "en contact."
   text: "Des questions, des idées ou une demande pro ? Contacte directement la bonne équipe."
+  who: "Qui nous contacte ?"
+  bands:
+    support: ["Je suis joueur", "et j'ai besoin d'aide"]
+    partnerships: ["Je suis une marque,", "un partenaire ou la presse"]
+    community: ["Je veux juste", "suivre le jeu"]
   cards:
     - { key: partnerships, icon: mail, title: "Partenariats & business", text: "Partenariats de marque, licences, publicité et demandes médias." }
     - { key: support, icon: gamepad, title: "Assistance joueurs", text: "De l'aide pour le jeu, ton compte, tes achats ou tes demandes de confidentialité." }
