@@ -1196,3 +1196,6 @@ a.contact-channel:hover b .icon { transform: translateX(4px); }
 
 .clubs-media figure:only-child { margin-inline: 0; }
 .clubs-media figure:only-child figcaption { top: auto; bottom: 14px; inset-inline-end: auto; inset-inline-start: 14px; }
+
+/* Hero: plain 'new season' line, no box */
+.hero-badge { padding: 0; border: 0; background: none; -webkit-backdrop-filter: none; backdrop-filter: none; }

@@ -16,7 +16,7 @@
   <div class="container hero-inner">
     <div class="hero-lockup" data-hero-logo>
       <img class="hero-lockup-word" src="{{ site.base }}/brand/wordmark-white.png" alt="{{ t.hero.eyebrow_brand or 'Football League' }}" width="582" height="180">
-      {% if site.brand_year %}<i class="hero-lockup-rule" aria-hidden="true"></i><span class="hero-lockup-year" style="--year:url({{ site.base }}/brand/y{{ site.brand_year }}.png)" role="img" aria-label="{{ site.brand_year }}"></span>{% endif %}
+      {% if site.brand_year %}<span class="hero-lockup-year" style="--year:url({{ site.base }}/brand/y{{ site.brand_year }}.png)" role="img" aria-label="{{ site.brand_year }}"></span>{% endif %}
     </div>
     <p class="hero-badge"><span class="live-dot"></span>{{ t.hero.eyebrow }}</p>
     <h1 class="hero-title">
