@@ -2,7 +2,7 @@
 
 meta:
   home_title: "Football League – Free Mobile Soccer & Football Game | iOS & Android"
-  home_description: "Football League is a free mobile soccer game for iPhone and Android. Build your squad, play Career Mode, Local PvP and official Manchester City, online or offline. Football League 2027 is coming soon."
+  home_description: "Football League is a free mobile soccer game for iPhone and Android. Build your squad, play Career Mode and official Manchester City, online or offline. Football League 2027 is coming soon."
 
 nav:
   home: Home
@@ -58,7 +58,7 @@ modes:
   title_2: Every stage.
   items:
     - { img: u27-career.jpg, title: "Team Career", text: "Run the club: transfers, finances, board targets and a full league season." }
-    - { img: u27-pvp.jpg, title: "Local PvP", text: "Go head to head with a friend and settle it on the pitch." }
+    - { img: cups.jpg, title: "Leagues & Cups", text: "Compete in leagues and cups from around the world." }
     - { img: u27-friendly.jpg, title: "Friendlies", text: "Pick any two clubs, choose the kits and the stadium, and kick off." }
     - { img: u27-penalty.jpg, title: "Challenges & Rewards", text: "Hit the targets in skill challenges to win gems and coins." }
 
@@ -176,11 +176,11 @@ cookies:
 
 game_page:
   meta_title: "Football League 2027 (FL27) – What's New in the Mobile Soccer Game"
-  meta_description: "FL27 brings a refreshed UI and home screen, a new Career Mode page, updated match visuals, a new stadium, new daily challenges and continued Local PvP improvements. Free on iOS and Android."
+  meta_description: "FL27 brings a refreshed UI and home screen, a new Career Mode page, updated match visuals, a new stadium and new daily challenges. Free on iOS and Android."
   kicker: "What's new this season"
   title_1: The new season
   title_2: starts here.
-  text: "FL27 brings a cleaner, more modern look, a redesigned Career Mode, updated match visuals, a new stadium, new daily challenges and a Local PvP that keeps improving."
+  text: "FL27 brings a cleaner, more modern look, a redesigned Career Mode, updated match visuals, a new stadium and new daily challenges."
   jump: "What's new"
   features:
     - key: ui
@@ -208,11 +208,6 @@ game_page:
       title: "New daily challenges"
       text: "New daily challenge content lets you complete short football-based challenges for rewards, adding more variety outside standard matches and longer-term modes."
       images: [u27-penalty.jpg]
-    - key: pvp
-      label: "Local PvP"
-      title: "Play your friends locally"
-      text: "Local PvP arrived recently and will keep improving in FL27. Compete directly with friends nearby for a more social way to play."
-      images: [u27-pvp.jpg]
   cta_title_1: Ready for
   cta_title_2: kick-off?
   cta_text: "Football League is free to play on iOS and Android."
@@ -270,7 +265,7 @@ faq:
     - q: "Is Football League a soccer game or a football game?"
       a: "Both! Football League is a mobile soccer game. Most of the world calls the sport football, and in the US it's called soccer. Same game, same beautiful sport."
     - q: "What can I play in Football League?"
-      a: "Career Mode, Local PvP against friends nearby, friendlies with any two clubs, daily skill challenges, live events, and leagues and cups from around the world."
+      a: "Career Mode, friendlies with any two clubs, daily skill challenges, live events, and leagues and cups from around the world."
     - q: "Who makes Football League?"
       a: "Football League is developed and published by Mobile Soccer, an independent mobile game studio making free football games for players everywhere."
 

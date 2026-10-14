@@ -2,7 +2,7 @@
 
 meta:
   home_title: "Football League – Game Sepak Bola Mobile Gratis | iOS & Android"
-  home_description: "Football League adalah game sepak bola mobile gratis untuk iPhone dan Android. Bangun skuad, mainkan Mode Karier, Local PvP, dan Manchester City resmi, online maupun offline. Football League 2027 segera hadir."
+  home_description: "Football League adalah game sepak bola mobile gratis untuk iPhone dan Android. Bangun skuad, mainkan Mode Karier dan Manchester City resmi, online maupun offline. Football League 2027 segera hadir."
 
 nav:
   home: "Beranda"
@@ -58,7 +58,7 @@ modes:
   title_2: "Setiap panggung."
   items:
     - { img: u27-career.jpg, title: "Karier Tim", text: "Kelola klub: transfer, keuangan, target direksi, dan satu musim liga penuh." }
-    - { img: u27-pvp.jpg, title: "Local PvP", text: "Duel langsung dengan teman dan buktikan siapa terbaik di lapangan." }
+    - { img: cups.jpg, title: "Liga & Piala", text: "Bertanding di liga dan piala dari seluruh dunia." }
     - { img: u27-friendly.jpg, title: "Laga Persahabatan", text: "Pilih dua klub mana saja, tentukan jersey dan stadion, lalu kick-off." }
     - { img: u27-penalty.jpg, title: "Tantangan & Hadiah", text: "Capai target di tantangan skill untuk memenangkan permata dan koin." }
 
@@ -176,11 +176,11 @@ cookies:
 
 game_page:
   meta_title: "Football League 2027 (FL27) – Fitur Baru di Game Sepak Bola Mobile"
-  meta_description: "FL27 hadir dengan UI dan layar utama baru, halaman Mode Karier baru, visual pertandingan yang diperbarui, stadion baru, tantangan harian baru, dan Local PvP yang terus ditingkatkan. Gratis di iOS dan Android."
+  meta_description: "FL27 hadir dengan UI dan layar utama baru, halaman Mode Karier baru, visual pertandingan yang diperbarui, stadion baru, dan tantangan harian baru. Gratis di iOS dan Android."
   kicker: "Yang baru musim ini"
   title_1: "Musim baru"
   title_2: "dimulai di sini."
-  text: "FL27 hadir dengan tampilan yang lebih bersih dan modern, Mode Karier yang didesain ulang, visual pertandingan yang diperbarui, stadion baru, tantangan harian baru, dan Local PvP yang terus ditingkatkan."
+  text: "FL27 hadir dengan tampilan yang lebih bersih dan modern, Mode Karier yang didesain ulang, visual pertandingan yang diperbarui, stadion baru, dan tantangan harian baru."
   jump: "Apa yang baru"
   features:
     - key: ui
@@ -208,11 +208,6 @@ game_page:
       title: "Tantangan harian baru"
       text: "Konten tantangan harian baru: selesaikan tantangan sepak bola singkat untuk mendapatkan hadiah, dan nikmati lebih banyak variasi di luar laga biasa dan mode jangka panjang."
       images: [u27-penalty.jpg]
-    - key: pvp
-      label: "Local PvP"
-      title: "Lawan temanmu secara lokal"
-      text: "Local PvP baru saja hadir dan akan terus ditingkatkan di FL27. Bertanding langsung dengan teman di dekatmu untuk cara bermain yang lebih sosial."
-      images: [u27-pvp.jpg]
   cta_title_1: "Siap untuk"
   cta_title_2: "kick-off?"
   cta_text: "Football League gratis dimainkan di iOS dan Android."
@@ -270,7 +265,7 @@ faq:
     - q: "Football League itu game soccer atau game football?"
       a: "Dua-duanya! Football League adalah game sepak bola mobile. Sebagian besar dunia menyebut olahraga ini football, sementara di AS disebut soccer. Game yang sama, olahraga indah yang sama."
     - q: "Apa saja yang bisa dimainkan di Football League?"
-      a: "Mode Karier, Local PvP melawan teman di dekatmu, laga persahabatan dengan dua klub mana saja, tantangan skill harian, event live, serta liga dan piala dari seluruh dunia."
+      a: "Mode Karier, laga persahabatan dengan dua klub mana saja, tantangan skill harian, event live, serta liga dan piala dari seluruh dunia."
     - q: "Siapa pembuat Football League?"
       a: "Football League dikembangkan dan diterbitkan oleh Mobile Soccer, studio game mobile independen yang membuat game sepak bola gratis untuk pemain di mana saja."
 

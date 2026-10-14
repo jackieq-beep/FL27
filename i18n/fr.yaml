@@ -2,7 +2,7 @@
 
 meta:
   home_title: "Football League – Jeu de foot mobile gratuit | iOS & Android"
-  home_description: "Football League est un jeu de foot mobile gratuit pour iPhone et Android. Monte ton équipe, joue en mode Carrière, en PvP local et avec Manchester City en licence officielle, en ligne ou hors ligne. Football League 2027 arrive bientôt."
+  home_description: "Football League est un jeu de foot mobile gratuit pour iPhone et Android. Monte ton équipe, joue en mode Carrière et avec Manchester City en licence officielle, en ligne ou hors ligne. Football League 2027 arrive bientôt."
 
 nav:
   home: "Accueil"
@@ -58,7 +58,7 @@ modes:
   title_2: "Chaque scène."
   items:
     - { img: u27-career.jpg, title: "Carrière Club", text: "Dirige le club : transferts, finances, objectifs de la direction et une saison de championnat complète." }
-    - { img: u27-pvp.jpg, title: "PvP local", text: "Affronte un pote en face-à-face et réglez ça sur le terrain." }
+    - { img: cups.jpg, title: "Championnats & coupes", text: "Affronte des championnats et des coupes du monde entier." }
     - { img: u27-friendly.jpg, title: "Matchs amicaux", text: "Choisis deux clubs, les maillots et le stade, et c'est parti." }
     - { img: u27-penalty.jpg, title: "Défis & récompenses", text: "Atteins les objectifs des défis techniques pour gagner des gemmes et des pièces." }
 
@@ -176,11 +176,11 @@ cookies:
 
 game_page:
   meta_title: "Football League 2027 (FL27) – Les nouveautés du jeu de foot mobile"
-  meta_description: "FL27 apporte une interface et un écran d'accueil repensés, une nouvelle page pour le mode Carrière, des visuels de match améliorés, un nouveau stade, de nouveaux défis quotidiens et un PvP local qui continue de progresser. Gratuit sur iOS et Android."
+  meta_description: "FL27 apporte une interface et un écran d'accueil repensés, une nouvelle page pour le mode Carrière, des visuels de match améliorés, un nouveau stade et de nouveaux défis quotidiens. Gratuit sur iOS et Android."
   kicker: "Les nouveautés de la saison"
   title_1: "La nouvelle saison"
   title_2: "commence ici."
-  text: "FL27 apporte un look plus épuré et moderne, un mode Carrière repensé, des visuels de match améliorés, un nouveau stade, de nouveaux défis quotidiens et un PvP local qui continue de progresser."
+  text: "FL27 apporte un look plus épuré et moderne, un mode Carrière repensé, des visuels de match améliorés, un nouveau stade et de nouveaux défis quotidiens."
   jump: "Quoi de neuf"
   features:
     - key: ui
@@ -208,11 +208,6 @@ game_page:
       title: "De nouveaux défis quotidiens"
       text: "De nouveaux défis quotidiens t'attendent : relève de courts défis footballistiques pour gagner des récompenses et profite de plus de variété en dehors des matchs classiques et des modes au long cours."
       images: [u27-penalty.jpg]
-    - key: pvp
-      label: "PvP local"
-      title: "Affronte tes amis en local"
-      text: "Le PvP local est arrivé récemment et continuera de s'améliorer dans FL27. Affronte directement tes amis à proximité pour une façon de jouer plus sociale."
-      images: [u27-pvp.jpg]
   cta_title_1: "Prêt pour"
   cta_title_2: "le coup d'envoi ?"
   cta_text: "Football League est gratuit sur iOS et Android."
@@ -270,7 +265,7 @@ faq:
     - q: "Football League, c'est du soccer ou du football ?"
       a: "Les deux ! Football League est un jeu de foot mobile. La majeure partie du monde appelle ce sport football, et aux États-Unis on dit soccer. Même jeu, même sport magnifique."
     - q: "À quoi peut-on jouer dans Football League ?"
-      a: "Mode Carrière, PvP local contre des amis à proximité, matchs amicaux entre deux clubs au choix, défis techniques quotidiens, événements live, et des championnats et coupes du monde entier."
+      a: "Mode Carrière, matchs amicaux entre deux clubs au choix, défis techniques quotidiens, événements live, et des championnats et coupes du monde entier."
     - q: "Qui développe Football League ?"
       a: "Football League est développé et édité par Mobile Soccer, un studio indépendant de jeux mobiles qui crée des jeux de foot gratuits pour les joueurs du monde entier."
 

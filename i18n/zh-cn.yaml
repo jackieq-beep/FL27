@@ -2,7 +2,7 @@
 
 meta:
   home_title: "Football League – 免费手机足球游戏 | iOS & Android"
-  home_description: "Football League 是一款适用于 iPhone 和 Android 的免费手机足球游戏。组建你的阵容，畅玩生涯模式、本地 PvP，还有官方授权的 Manchester City，在线离线都能踢。Football League 2027 即将登场。"
+  home_description: "Football League 是一款适用于 iPhone 和 Android 的免费手机足球游戏。组建你的阵容，畅玩生涯模式，还有官方授权的 Manchester City，在线离线都能踢。Football League 2027 即将登场。"
 
 nav:
   home: "首页"
@@ -58,7 +58,7 @@ modes:
   title_2: "每一个舞台。"
   items:
     - { img: u27-career.jpg, title: "球队生涯", text: "执掌俱乐部：转会、财务、董事会目标，外加完整的联赛赛季。" }
-    - { img: u27-pvp.jpg, title: "本地 PvP", text: "和好友正面对决，球场上见真章。" }
+    - { img: cups.jpg, title: "联赛与杯赛", text: "征战来自世界各地的联赛和杯赛。" }
     - { img: u27-friendly.jpg, title: "友谊赛", text: "任选两支球队，挑好球衣和球场，即刻开球。" }
     - { img: u27-penalty.jpg, title: "挑战与奖励", text: "完成技巧挑战目标，赢取宝石和金币。" }
 
@@ -176,11 +176,11 @@ cookies:
 
 game_page:
   meta_title: "Football League 2027 (FL27) – 手机足球游戏全新内容"
-  meta_description: "FL27 带来焕新界面与主界面、全新生涯模式页面、升级的比赛画面、全新球场、新的每日挑战，本地 PvP 也将持续优化。iOS 和 Android 免费畅玩。"
+  meta_description: "FL27 带来焕新界面与主界面、全新生涯模式页面、升级的比赛画面、全新球场和新的每日挑战。iOS 和 Android 免费畅玩。"
   kicker: "本赛季新内容"
   title_1: "新赛季"
   title_2: "从这里开始。"
-  text: "FL27 带来更简洁现代的外观、重新设计的生涯模式、升级的比赛画面、全新球场和新的每日挑战，本地 PvP 也将持续优化。"
+  text: "FL27 带来更简洁现代的外观、重新设计的生涯模式、升级的比赛画面、全新球场和新的每日挑战。"
   jump: "新内容一览"
   features:
     - key: ui
@@ -208,11 +208,6 @@ game_page:
       title: "新的每日挑战"
       text: "新增每日挑战内容：完成简短的足球挑战即可获得奖励，在常规比赛和长期模式之外带来更多玩法变化。"
       images: [u27-penalty.jpg]
-    - key: pvp
-      label: "本地 PvP"
-      title: "和身边好友面对面对战"
-      text: "本地 PvP 近期刚刚推出，并将在 FL27 中持续优化。你可以和身边的好友直接对战，玩法更具社交乐趣。"
-      images: [u27-pvp.jpg]
   cta_title_1: "准备好"
   cta_title_2: "开球了吗？"
   cta_text: "Football League 在 iOS 和 Android 上免费畅玩。"
@@ -270,7 +265,7 @@ faq:
     - q: "Football League 是 soccer 游戏还是 football 游戏？"
       a: "都是！Football League 是一款手机足球游戏。世界上大多数地方把这项运动叫 football，在美国则叫 soccer。同一款游戏，同一项美丽运动。"
     - q: "Football League 里能玩什么？"
-      a: "生涯模式、与身边好友对战的本地 PvP、任选两队的友谊赛、每日技巧挑战、实时活动，以及来自世界各地的联赛和杯赛。"
+      a: "生涯模式、任选两队的友谊赛、每日技巧挑战、实时活动，以及来自世界各地的联赛和杯赛。"
     - q: "Football League 是谁开发的？"
       a: "Football League 由 Mobile Soccer 开发并发行，这是一家独立手游工作室，致力于为全球玩家打造免费足球游戏。"
 
