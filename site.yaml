@@ -25,8 +25,8 @@ newsletter:
 google_site_verification: ""
 
 # Where the site lives. Leave base_path empty once a custom domain is set up.
-site_url: https://jackieq-beep.github.io
-base_path: /FL27
+site_url: https://www.footballleaguegame.com
+base_path: ""
 
 stores:
   google_play: https://play.google.com/store/apps/details?id=com.football.soccer.league
