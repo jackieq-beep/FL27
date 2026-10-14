@@ -2,7 +2,7 @@
 
 meta:
   home_title: "Football League – Game Sepak Bola Mobile Gratis | iOS & Android"
-  home_description: "Football League adalah game sepak bola mobile gratis untuk iPhone dan Android. Bangun skuad, mainkan Mode Karier, Local PvP, dan Manchester City resmi, online maupun offline. Football League 2027 sudah tersedia."
+  home_description: "Football League adalah game sepak bola mobile gratis untuk iPhone dan Android. Bangun skuad, mainkan Mode Karier, Local PvP, dan Manchester City resmi, online maupun offline. Football League 2027 segera hadir."
 
 nav:
   home: "Beranda"
@@ -21,7 +21,7 @@ nav:
 
 hero:
   eyebrow_brand: "Football League"
-  eyebrow: "Musim baru sudah rilis"
+  eyebrow: "Musim baru segera hadir"
   title_1: "Sepak bola"
   title_2a: "Hidup"
   title_2b: "Di Sini"
@@ -34,7 +34,7 @@ hero:
     - { value: "100 Jt+", label: "pemain" }
 
 ticker:
-  - "Football League 2027 · Sudah tersedia"
+  - "Football League 2027 · Segera hadir"
   - "Gratis dimainkan"
   - "Halaman Mode Karier baru"
   - "Event live setiap minggu"

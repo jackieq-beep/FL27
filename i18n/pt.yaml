@@ -2,7 +2,7 @@
 
 meta:
   home_title: "Football League – Jogo de Futebol Grátis para Celular | iOS e Android"
-  home_description: "Football League é um jogo de futebol grátis para iPhone e Android. Monte seu elenco, jogue o Modo Carreira, o PvP Local e com o Manchester City oficial, online ou offline. Football League 2027 já está disponível."
+  home_description: "Football League é um jogo de futebol grátis para iPhone e Android. Monte seu elenco, jogue o Modo Carreira, o PvP Local e com o Manchester City oficial, online ou offline. Football League 2027 chega em breve."
 
 nav:
   home: Início
@@ -21,7 +21,7 @@ nav:
 
 hero:
   eyebrow_brand: "Football League"
-  eyebrow: "Nova temporada já disponível"
+  eyebrow: "Nova temporada em breve"
   title_1: O futebol
   title_2a: vive
   title_2b: aqui
@@ -34,7 +34,7 @@ hero:
     - { value: "100M+", label: "jogadores" }
 
 ticker:
-  - "Football League 2027 · Já disponível"
+  - Football League 2027 · Em breve
   - Grátis para jogar
   - "Nova página do Modo Carreira"
   - Eventos ao vivo toda semana

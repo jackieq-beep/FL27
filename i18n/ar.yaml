@@ -2,7 +2,7 @@
 
 meta:
   home_title: "Football League – لعبة كرة القدم المجانية على الجوال | iOS و Android"
-  home_description: "Football League لعبة كرة قدم مجانية على الجوال لأجهزة iPhone و Android. كوّن تشكيلتك، والعب وضع المسيرة و Local PvP مع مانشستر سيتي الرسمي، أونلاين أو بدون إنترنت. Football League 2027 متوفرة الآن."
+  home_description: "Football League لعبة كرة قدم مجانية على الجوال لأجهزة iPhone و Android. كوّن تشكيلتك، والعب وضع المسيرة و Local PvP مع مانشستر سيتي الرسمي، أونلاين أو بدون إنترنت. Football League 2027 قادمة قريبًا."
 
 nav:
   home: "الرئيسية"
@@ -21,7 +21,7 @@ nav:
 
 hero:
   eyebrow_brand: "Football League"
-  eyebrow: "الموسم الجديد متاح الآن"
+  eyebrow: "الموسم الجديد قادم قريبًا"
   title_1: "كرة القدم"
   title_2a: "تعيش"
   title_2b: "هنا"
@@ -34,7 +34,7 @@ hero:
     - { value: "+100 مليون", label: "لاعب" }
 
 ticker:
-  - "Football League 2027 · متوفرة الآن"
+  - "Football League 2027 · قريبًا"
   - "مجانية بالكامل"
   - "صفحة جديدة لوضع المسيرة"
   - "فعاليات مباشرة كل أسبوع"

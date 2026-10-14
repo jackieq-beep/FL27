@@ -2,7 +2,7 @@
 
 meta:
   home_title: "Football League – 無料モバイルサッカーゲーム | iOS & Android"
-  home_description: "Football Leagueは、iPhoneとAndroidで遊べる無料のモバイルサッカーゲーム。最強チームを作り、キャリアモードやローカルPvP、公式ライセンスのマンチェスター・シティをオンラインでもオフラインでも楽しめます。Football League 2027、好評配信中！"
+  home_description: "Football Leagueは、iPhoneとAndroidで遊べる無料のモバイルサッカーゲーム。最強チームを作り、キャリアモードやローカルPvP、公式ライセンスのマンチェスター・シティをオンラインでもオフラインでも楽しめます。Football League 2027、まもなく登場！"
 
 nav:
   home: ホーム
@@ -21,7 +21,7 @@ nav:
 
 hero:
   eyebrow_brand: "Football League"
-  eyebrow: "新シーズン配信中"
+  eyebrow: "新シーズンまもなく登場"
   title_1: サッカーの
   title_2a: すべてが、
   title_2b: ここに。
@@ -34,7 +34,7 @@ hero:
     - { value: "1億+", label: "プレイヤー" }
 
 ticker:
-  - "Football League 2027 · 好評配信中"
+  - Football League 2027 · まもなく登場
   - 基本プレイ無料
   - "キャリアモード新ページ"
   - 毎週ライブイベント開催
